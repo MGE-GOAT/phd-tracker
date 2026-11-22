@@ -106,8 +106,10 @@ function planView(){
    <li>Attach your CV, <code>Mahrad_Ghazli_Academic_CV_2026-11-13.pdf</code>.</li>
    <li>Send, then press <b>Mark as sent</b> here.</li></ol>
    <div class="visa" style="margin-top:8px">Send 2 or 3 a day, in the morning Europe time. Start with the orange ones, they are real open jobs.</div></div>
-  <h3>Batch 1</h3>`;
+`;
+  let lastBatch=0;
   steps.forEach((st,i)=>{
+    if(st.batch!==lastBatch){lastBatch=st.batch;h+=`<h3>${st.batch===1?"Batch 1, this week":"Batch 2, next week (easier places, more chances)"}</h3>`}
     const isDone=!!sent[st.id],dl=st.deadline?`<span class="tag dl">Deadline ${esc(st.deadline)}, ${days(st.deadline)} days</span>`:"";
     h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
       <div class="who">${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
