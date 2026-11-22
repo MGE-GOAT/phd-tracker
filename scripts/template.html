@@ -95,9 +95,10 @@ let tab="plan";
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1600)}
 async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg)}catch(e){prompt("Copy this text",t)}}
 function gmail(st){return "https://mail.google.com/mail/?view=cm&fs=1"+(st.address?"&to="+encodeURIComponent(st.address):"")+"&su="+encodeURIComponent(st.subject||"")+"&body="+encodeURIComponent(st.body||"")}
+function apply(st){return st.kind==="Apply online"}
 function days(d){return Math.round((new Date(d)-new Date(D.updated))/864e5)}
 function planView(){
-  const steps=[...(D.plan.steps||[])].sort((a,b)=>(a.batch-b.batch)||((b.hot?1:0)-(a.hot?1:0))||((b.match||0)+(b.chance||0)-(a.match||0)-(a.chance||0))),done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
+  const steps=[...(D.plan.steps||[])].sort((a,b)=>(a.batch-b.batch)||((b.hot?1:0)-(a.hot?1:0))||((a.deadline||'9999').localeCompare(b.deadline||'9999'))||((b.match||0)+(b.chance||0)-(a.match||0)-(a.chance||0))),done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
   let h=`<section class="next">${next?`<small>Your next step</small><h2>${esc(next.kind==="Apply online"?"Apply to":"Email")} ${esc(next.who)}, ${esc(next.where)}</h2><p>${esc(next.why)}</p>`
     :`<small>Batch done</small><h2>All sent. Now wait for replies.</h2><p>When someone answers, paste it to Claude and it will write your reply. If nobody answers in 10 days, ask Claude for follow-ups and batch 2.</p>`}</section>
   <div class="bar"><i style="width:${steps.length?100*done/steps.length:0}%"></i></div><div class="count">${done} of ${steps.length} done</div>
@@ -106,6 +107,7 @@ function planView(){
    <li>Press <b>Professor's page</b> and copy their email address into the "To" box (it is filled already when we know it).</li>
    <li>Attach your CV, <code>Mahrad_Ghazli_Academic_CV_2026-11-13.pdf</code>.</li>
    <li>Send, then press <b>Mark as sent</b> here.</li></ol>
+   <b>Steps that say "Apply online"</b> go through the university's own portal, not email. Press <b>Copy cover letter</b>, paste it into a document, save it as PDF and upload it with your CV.
    <div class="visa" style="margin-top:8px">Send 2 or 3 a day, in the morning Europe time. Orange ones are real open PhD positions, do those first.<br><b>Match</b> is how close their research is to yours. <b>Chance</b> is a rough guess of getting a positive reply, based on competition and whether they have money now. Ten emails at chance 5 usually give two or three real conversations.</div></div>
 `;
   let lastBatch=0;
@@ -117,12 +119,12 @@ function planView(){
       <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag">${esc(st.kind)}</span>${dl}</div>
       <div class="why">${esc(st.why)}</div>${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
-        ${st.body?`<a class="btn main" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button>`
+        ${apply(st)?`<a class="btn main" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
+          :st.body?`<a class="btn main" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button><a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`
           :`<a class="btn main" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>`}
-        ${st.body?`<a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`:""}
         <button class="btn ${isDone?"ok":""}" data-sent="${st.id}">${isDone?"Sent ✓":"Mark as sent"}</button>
       </div>
-      ${st.body?`<details class="preview"><summary>Read the email</summary><pre>Subject: ${esc(st.subject)}\n\n${esc(st.body)}</pre></details>`:""}
+      ${st.body?`<details class="preview"><summary>${apply(st)?"Read the cover letter":"Read the email"}</summary><pre>${apply(st)?"":`Subject: ${esc(st.subject)}\n\n`}${esc(st.body)}</pre></details>`:""}
     </div></article>`;
   });
   h+=`<h3>Visa, in one line each</h3><div class="how visa"><b>Austria</b> is the easiest, you can file via Istanbul. <b>Germany</b>, register on the embassy waitlist as soon as you have any offer. <b>Netherlands</b>, the entry visa for Iranians was suspended in August, ask the university early.</div>`;
@@ -149,7 +151,7 @@ function countryView(){
 function render(){
   $("#main").innerHTML=tab==="plan"?planView():tab==="db"?dbView():countryView();
   if(tab==="db"){dbList();$("#q").oninput=dbList;$("#fc").oninput=dbList}
-  document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(`Subject: ${st.subject}\n\n${st.body}`,"Email copied")});
+  document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(apply(st)?st.body:`Subject: ${st.subject}\n\n${st.body}`,apply(st)?"Cover letter copied":"Email copied")});
   document.querySelectorAll("[data-sent]").forEach(b=>b.onclick=()=>{const id=b.dataset.sent;sent[id]=!sent[id];save();render()});
 }
 $("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;

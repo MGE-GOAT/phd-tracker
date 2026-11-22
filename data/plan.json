@@ -523,6 +523,65 @@
    "address": "jobs@pro2future.at",
    "match": 7,
    "chance": 5
+  },
+  {
+   "id": "ulm_just",
+   "batch": 1,
+   "country": "Germany",
+   "who": "Prof. Fabian Just",
+   "where": "Ulm University, Institute of Biomedical Engineering",
+   "why": "Open PhD on a wearable knee orthosis. Firmware, sensors, wireless data and ML on movement data, at the university hospital. Fully funded E13 100%, up to 4 years.",
+   "kind": "Apply online",
+   "hot": true,
+   "deadline": "2026-12-06",
+   "page": "https://www.uni-ulm.de/in/bmt/institut/stellenangebote/wearable-knee-orthosis/",
+   "email": "cover_ulm_just.txt",
+   "match": 9,
+   "chance": 7,
+   "note": "Apply through the Ulm job portal, not by email. Cover letter max 2 pages. German B1 is expected within the first year. Same institute as Prof. Karlen in batch 2, that email can still go."
+  },
+  {
+   "id": "mcml",
+   "batch": 1,
+   "country": "Germany",
+   "who": "MCML PhD call 2027",
+   "where": "LMU Munich and TU Munich",
+   "why": "One application, matched with a machine learning professor in Munich. Pick professors who work on efficient or on-device ML or on health data.",
+   "kind": "Apply online",
+   "deadline": "2026-12-07",
+   "page": "https://www.portal.graduatecenter.lmu.de/ocgc/mcml",
+   "match": 6,
+   "chance": 3,
+   "note": "Long shot, very competitive. The portal closes at 09:00 Munich time, not midnight."
+  },
+  {
+   "id": "csmaxplanck",
+   "batch": 1,
+   "country": "Germany",
+   "who": "CS@max planck doctoral program",
+   "where": "Max Planck institutes with Saarland, Tübingen and Stuttgart",
+   "why": "One application for many computer science groups. Choose supervisors in Tübingen or Stuttgart, those degrees are group A on the approved list (Saarland is group C).",
+   "kind": "Apply online",
+   "deadline": "2026-12-15",
+   "page": "https://www.cis.mpg.de/cs-max-planck",
+   "match": 6,
+   "chance": 3,
+   "note": "Long shot. References are only asked after a first review."
+  },
+  {
+   "id": "acta_su",
+   "batch": 2,
+   "country": "Netherlands",
+   "who": "Dr. Naichuan Su",
+   "where": "ACTA, Vrije Universiteit Amsterdam",
+   "why": "Open PhD in the EU project MYDIAG.AI. Build and clinically validate AI that screens for heart disease and diabetes from dental and health records. 4 years, €3,204 to €4,051 a month.",
+   "kind": "Apply online",
+   "deadline": "2027-03-01",
+   "page": "https://www.academictransfer.com/en/jobs/365626/phd-ai-for-early-detection-of-cardiometabolic-diseases-using-oral-health-data/",
+   "email": "cover_acta_su.txt",
+   "match": 6,
+   "chance": 5,
+   "note": "Reviewed on a rolling basis, so apply in December, not March. Emailed applications are not considered."
   }
  ]
 }
