@@ -39,6 +39,7 @@ h3{margin:26px 0 10px;font-size:15px;text-transform:uppercase;letter-spacing:.06
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
 .tag{font-size:12px;border-radius:999px;padding:2px 9px;background:var(--chip);color:var(--muted)}
 .tag.hot{background:var(--hot-soft);color:var(--hot);font-weight:600}
+.tag.score{background:var(--accent-soft);color:var(--accent);font-weight:600}
 .tag.dl{background:var(--hot-soft);color:var(--hot)}
 .why{margin:2px 0 4px}
 .note{font-size:14px;color:var(--hot);margin:4px 0}
@@ -96,7 +97,7 @@ async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg)
 function gmail(st){return "https://mail.google.com/mail/?view=cm&fs=1"+(st.address?"&to="+encodeURIComponent(st.address):"")+"&su="+encodeURIComponent(st.subject||"")+"&body="+encodeURIComponent(st.body||"")}
 function days(d){return Math.round((new Date(d)-new Date(D.updated))/864e5)}
 function planView(){
-  const steps=D.plan.steps||[],done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
+  const steps=[...(D.plan.steps||[])].sort((a,b)=>(a.batch-b.batch)||((b.hot?1:0)-(a.hot?1:0))||((b.match||0)+(b.chance||0)-(a.match||0)-(a.chance||0))),done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
   let h=`<section class="next">${next?`<small>Your next step</small><h2>${esc(next.kind==="Apply online"?"Apply to":"Email")} ${esc(next.who)}, ${esc(next.where)}</h2><p>${esc(next.why)}</p>`
     :`<small>Batch done</small><h2>All sent. Now wait for replies.</h2><p>When someone answers, paste it to Claude and it will write your reply. If nobody answers in 10 days, ask Claude for follow-ups and batch 2.</p>`}</section>
   <div class="bar"><i style="width:${steps.length?100*done/steps.length:0}%"></i></div><div class="count">${done} of ${steps.length} done</div>
@@ -105,15 +106,15 @@ function planView(){
    <li>Press <b>Professor's page</b> and copy their email address into the "To" box (it is filled already when we know it).</li>
    <li>Attach your CV, <code>Mahrad_Ghazli_Academic_CV_2026-11-13.pdf</code>.</li>
    <li>Send, then press <b>Mark as sent</b> here.</li></ol>
-   <div class="visa" style="margin-top:8px">Send 2 or 3 a day, in the morning Europe time. Start with the orange ones, they are real open jobs.</div></div>
+   <div class="visa" style="margin-top:8px">Send 2 or 3 a day, in the morning Europe time. Orange ones are real open PhD positions, do those first.<br><b>Match</b> is how close their research is to yours. <b>Chance</b> is a rough guess of getting a positive reply, based on competition and whether they have money now. Ten emails at chance 5 usually give two or three real conversations.</div></div>
 `;
   let lastBatch=0;
   steps.forEach((st,i)=>{
-    if(st.batch!==lastBatch){lastBatch=st.batch;h+=`<h3>${st.batch===1?"Batch 1, this week":"Batch 2, next week (easier places, more chances)"}</h3>`}
+    if(st.batch!==lastBatch){lastBatch=st.batch;h+=`<h3>${({1:"Batch 1, this week",2:"Batch 2, next week (easier places, more chances)",3:"Batch 3, the week after (broad list, send 3 to 5 a day)"})[st.batch]}</h3>`}
     const isDone=!!sent[st.id],dl=st.deadline?`<span class="tag dl">Deadline ${esc(st.deadline)}, ${days(st.deadline)} days</span>`:"";
     h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
       <div class="who">${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
-      <div class="tags">${st.hot?`<span class="tag hot">Open job</span>`:""}<span class="tag">${esc(st.kind)}</span>${dl}</div>
+      <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag">${esc(st.kind)}</span>${dl}</div>
       <div class="why">${esc(st.why)}</div>${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
         ${st.body?`<a class="btn main" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button>`

@@ -12,7 +12,9 @@
    "hot": true,
    "page": "https://tugraz.at/en/institutes/iti/jobs-training/jobs/project-assistant-m-f-x-phd-student-in-embedded-machine-learning",
    "email": "email_saukh.txt",
-   "note": "The advert wants your CV and a statement of interest as ONE PDF. Ask Claude to write the statement first."
+   "note": "The advert wants your CV and a statement of interest as ONE PDF. Ask Claude to write the statement first.",
+   "match": 10,
+   "chance": 6
   },
   {
    "id": "beigl",
@@ -25,7 +27,9 @@
    "hot": true,
    "page": "https://www.teco.kit.edu/",
    "email": "email_beigl.txt",
-   "note": "His address is on the TECO website."
+   "note": "His address is on the TECO website.",
+   "match": 9,
+   "chance": 6
   },
   {
    "id": "saeed",
@@ -36,7 +40,9 @@
    "why": "Audio for health on personal devices, his grant pays for 5 PhDs.",
    "kind": "Email",
    "page": "https://tue.nl/en/research/researchers/aaqib-saeed",
-   "email": "email_saeed.txt"
+   "email": "email_saeed.txt",
+   "match": 9,
+   "chance": 4
   },
   {
    "id": "devries",
@@ -48,7 +54,9 @@
    "kind": "Email",
    "page": "https://tue.nl/onderzoek/research-groups/signal-processing-systems/biaslab",
    "email": "email_devries.txt",
-   "address": "bert.de.vries@tue.nl"
+   "address": "bert.de.vries@tue.nl",
+   "match": 8,
+   "chance": 4
   },
   {
    "id": "mueller",
@@ -59,7 +67,9 @@
    "why": "TinyML and ML compilers, has a funded edge-AI project.",
    "kind": "Email",
    "page": "https://informatics.tuwien.ac.at/people/daniel-mueller-gritschneder",
-   "email": "email_mueller_gritschneder.txt"
+   "email": "email_mueller_gritschneder.txt",
+   "match": 9,
+   "chance": 5
   },
   {
    "id": "jku",
@@ -71,7 +81,9 @@
    "kind": "Email",
    "page": "https://jku.at/en/lit-artificial-intelligence-lab/career/deep-learning",
    "email": "email_jku.txt",
-   "address": "recruiting@ai-lab.jku.at"
+   "address": "recruiting@ai-lab.jku.at",
+   "match": 7,
+   "chance": 5
   },
   {
    "id": "vanlaerhoven",
@@ -82,7 +94,9 @@
    "why": "Wearables and on-body audio, already supervises an Iranian PhD student.",
    "kind": "Email",
    "page": "https://ubi29.informatik.uni-siegen.de/usi/",
-   "email": "email_vanlaerhoven.txt"
+   "email": "email_vanlaerhoven.txt",
+   "match": 9,
+   "chance": 6
   },
   {
    "id": "meyer",
@@ -93,7 +107,9 @@
    "why": "Speech and keyword spotting for hearing research.",
    "kind": "Email",
    "page": "https://www.uol.de/en/communication-acoustics",
-   "email": "email_meyer.txt"
+   "email": "email_meyer.txt",
+   "match": 9,
+   "chance": 5
   },
   {
    "id": "pernkopf",
@@ -105,7 +121,9 @@
    "kind": "Email",
    "page": "https://www.spsc.tugraz.at/",
    "email": "email_pernkopf.txt",
-   "note": "First check on his page that he still leads the group."
+   "note": "First check on his page that he still leads the group.",
+   "match": 7,
+   "chance": 4
   },
   {
    "id": "ista",
@@ -117,7 +135,9 @@
    "kind": "Apply online",
    "deadline": "2027-01-08",
    "page": "https://phd.ista.ac.at/phd-application-admission/",
-   "note": "Ask Dr. Mohammadzadeh for a reference letter now, letters are due 12 Jan."
+   "note": "Ask Dr. Mohammadzadeh for a reference letter now, letters are due 12 Jan.",
+   "match": 8,
+   "chance": 3
   },
   {
    "id": "knowcenter",
@@ -131,7 +151,9 @@
    "page": "https://www.know-center.at/wp-content/uploads/2025/10/IACAI-Stellenausschreibung-PhD-Researcher_EN.pdf",
    "email": "email_knowcenter.txt",
    "address": "career@know-center.at",
-   "note": "Posted Oct 2025, some places are filled, the email asks which are still open."
+   "note": "Posted Oct 2025, some places are filled, the email asks which are still open.",
+   "match": 8,
+   "chance": 6
   },
   {
    "id": "hoogantink",
@@ -142,7 +164,9 @@
    "why": "Biomedical signal quality, engineering doctorate (Dr.-Ing.), easy subject match for a BME degree.",
    "kind": "Email",
    "page": "https://www.etit.tu-darmstadt.de/kismed/",
-   "email": "email_hoogantink.txt"
+   "email": "email_hoogantink.txt",
+   "match": 8,
+   "chance": 5
   },
   {
    "id": "karlen",
@@ -153,7 +177,9 @@
    "why": "Intelligent mobile health sensors, institute was hiring in summer 2026.",
    "kind": "Email",
    "page": "https://www.uni-ulm.de/en/in/bmt/institute/open-positions/",
-   "email": "email_karlen.txt"
+   "email": "email_karlen.txt",
+   "match": 8,
+   "chance": 6
   },
   {
    "id": "eskofier",
@@ -164,7 +190,9 @@
    "why": "Big lab for embedded ML on wearables, many international PhD students.",
    "kind": "Email",
    "page": "https://www.mad.tf.fau.de/",
-   "email": "email_eskofier.txt"
+   "email": "email_eskofier.txt",
+   "match": 8,
+   "chance": 6
   },
   {
    "id": "schiele",
@@ -175,7 +203,9 @@
    "why": "Tiny ML on cheap sensors, for example heart-rhythm detection.",
    "kind": "Email",
    "page": "https://www.uni-due.de/es/team.php",
-   "email": "email_schiele.txt"
+   "email": "email_schiele.txt",
+   "match": 8,
+   "chance": 5
   },
   {
    "id": "pryss",
@@ -186,7 +216,325 @@
    "why": "Mobile health and voice biomarkers, medical faculty, less competition.",
    "kind": "Email",
    "page": "https://www.med.uni-wuerzburg.de/",
-   "email": "email_pryss.txt"
+   "email": "email_pryss.txt",
+   "match": 7,
+   "chance": 6
+  },
+  {
+   "id": "hein",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Andreas Hein",
+   "where": "University of Oldenburg, assistive systems",
+   "why": "Elderly care, fall detection and assistive living, your thesis topic exactly.",
+   "kind": "Email",
+   "page": "https://uol.de/en/medizinische-informatik",
+   "email": "email_hein.txt",
+   "match": 10,
+   "chance": 6
+  },
+  {
+   "id": "offis",
+   "batch": 3,
+   "country": "Germany",
+   "who": "OFFIS Health division",
+   "where": "Oldenburg, PhD with University of Oldenburg",
+   "why": "In-home fall detection with automatic emergency calls, the same product you built.",
+   "kind": "Email",
+   "page": "https://www.offis.de/en/applications/health.html",
+   "email": "email_offis.txt",
+   "match": 9,
+   "chance": 6
+  },
+  {
+   "id": "strodthoff",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Nils Strodthoff",
+   "where": "University of Oldenburg, AI4Health",
+   "why": "Deep learning on ECG and biosignals, BME plus ML.",
+   "kind": "Email",
+   "page": "https://uol.de/en/ai4health",
+   "email": "email_strodthoff.txt",
+   "match": 8,
+   "chance": 6
+  },
+  {
+   "id": "kirste",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Thomas Kirste",
+   "where": "University of Rostock",
+   "why": "Activity recognition and emergency detection for assisted living.",
+   "kind": "Email",
+   "page": "https://www.ief.uni-rostock.de/",
+   "email": "email_kirste.txt",
+   "match": 8,
+   "chance": 6
+  },
+  {
+   "id": "otte",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Sebastian Otte",
+   "where": "University of Lübeck, Adaptive AI",
+   "why": "AI that keeps learning under tight energy and memory limits.",
+   "kind": "Email",
+   "page": "https://www.uni-luebeck.de/",
+   "email": "email_otte.txt",
+   "match": 8,
+   "chance": 6
+  },
+  {
+   "id": "grzegorzek",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Marcin Grzegorzek",
+   "where": "University of Lübeck, Medical Informatics",
+   "why": "Wearable and multimodal health sensing.",
+   "kind": "Email",
+   "page": "https://www.uni-luebeck.de/en/university/university.html",
+   "email": "email_grzegorzek.txt",
+   "match": 7,
+   "chance": 6
+  },
+  {
+   "id": "bringmann",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Oliver Bringmann",
+   "where": "University of Tübingen, Embedded Systems",
+   "why": "Ultra-low-power audio AI and medical edge computing.",
+   "kind": "Email",
+   "page": "https://embedded.uni-tuebingen.de/team/oliver-bringmann/",
+   "email": "email_bringmann.txt",
+   "match": 9,
+   "chance": 5
+  },
+  {
+   "id": "froening",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Holger Fröning",
+   "where": "Heidelberg University, HAWAII Lab",
+   "why": "Quantisation and int8 deployment, exactly your skills.",
+   "kind": "Email",
+   "page": "https://hawaii.ziti.uni-heidelberg.de/",
+   "email": "email_froening.txt",
+   "match": 9,
+   "chance": 5
+  },
+  {
+   "id": "idmt",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Fraunhofer IDMT, Hearing, Speech and Audio",
+   "where": "Oldenburg, PhD with University of Oldenburg",
+   "why": "Speech recognition in real products, values shipped code.",
+   "kind": "Email",
+   "page": "https://www.idmt.fraunhofer.de/en/hsa.html",
+   "email": "email_idmt.txt",
+   "match": 9,
+   "chance": 5
+  },
+  {
+   "id": "maier",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Andreas Maier",
+   "where": "FAU Erlangen, Pattern Recognition Lab",
+   "why": "Clinical speech analysis and medical AI, very large lab.",
+   "kind": "Email",
+   "page": "https://lme.tf.fau.de/",
+   "email": "email_maier.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "empkins",
+   "batch": 3,
+   "country": "Germany",
+   "who": "EmpkinS research centre (Prof. Martin Vossiek)",
+   "where": "FAU Erlangen",
+   "why": "Getting human health state out of imperfect physical sensors.",
+   "kind": "Email",
+   "page": "https://www.empkins.de/",
+   "email": "email_empkins.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "arnrich",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Bert Arnrich",
+   "where": "HPI Potsdam, Digital Health",
+   "why": "Health sensing outside the clinic.",
+   "kind": "Email",
+   "page": "https://hpi.de/en/arnrich/",
+   "email": "email_arnrich.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "lukowicz",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Paul Lukowicz",
+   "where": "DFKI Kaiserslautern, Embedded Intelligence",
+   "why": "Wearables and energy-efficient sensing systems, very international.",
+   "kind": "Email",
+   "page": "http://ei.dfki.de/en/",
+   "email": "email_lukowicz.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "kolossa",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Dorothea Kolossa",
+   "where": "TU Berlin, Electronic Systems of Medical Engineering",
+   "why": "Robust speech recognition and medical electronic systems.",
+   "kind": "Email",
+   "page": "https://www.tu.berlin/",
+   "email": "email_kolossa.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "schuller_tum",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Björn Schuller",
+   "where": "TUM, Health Informatics",
+   "why": "Computer audition for health, competitive.",
+   "kind": "Email",
+   "page": "https://kiinformatik.mri.tum.de/en/chair-health-informatics-chi",
+   "email": "email_schuller_tum.txt",
+   "match": 8,
+   "chance": 4
+  },
+  {
+   "id": "martin",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Rainer Martin",
+   "where": "Ruhr University Bochum, Communication Acoustics",
+   "why": "Hearing devices and low-complexity speech processing.",
+   "kind": "Email",
+   "page": "https://www.ika.ruhr-uni-bochum.de/",
+   "email": "email_martin.txt",
+   "address": "ika-office@ruhr-uni-bochum.de",
+   "match": 7,
+   "chance": 5
+  },
+  {
+   "id": "haeb",
+   "batch": 3,
+   "country": "Germany",
+   "who": "Prof. Reinhold Haeb-Umbach",
+   "where": "Paderborn University, Communications Engineering",
+   "why": "Robust speech recognition.",
+   "kind": "Email",
+   "page": "https://www.uni-paderborn.de/en/person/242/",
+   "email": "email_haeb.txt",
+   "match": 7,
+   "chance": 5
+  },
+  {
+   "id": "durmaz",
+   "batch": 3,
+   "country": "Netherlands",
+   "who": "Prof. Özlem Durmaz-Incel",
+   "where": "University of Twente, Pervasive Systems",
+   "why": "Distributed embedded AI and sensing, the group is growing.",
+   "kind": "Email",
+   "page": "https://www.utwente.nl/en/eemcs/ps/",
+   "email": "email_durmaz.txt",
+   "address": "ozlem.durmaz@utwente.nl",
+   "match": 9,
+   "chance": 5
+  },
+  {
+   "id": "qingwang",
+   "batch": 3,
+   "country": "Netherlands",
+   "who": "Dr. Qing Wang",
+   "where": "TU Delft, Embedded AI lab",
+   "why": "Low-bit networks on microcontrollers, coordinates an EU embedded-AI doctoral network.",
+   "kind": "Email",
+   "page": "https://www.google.com/search?q=Qing+Wang+TU+Delft+Embedded+AI+lab",
+   "email": "email_qingwang.txt",
+   "match": 9,
+   "chance": 4
+  },
+  {
+   "id": "tejedor",
+   "batch": 3,
+   "country": "Netherlands",
+   "who": "Dr. Cristian Tejedor Garcia",
+   "where": "Radboud University, voice diagnostics",
+   "why": "Speech AI for diagnosing disease, grant for several PhDs.",
+   "kind": "Email",
+   "page": "https://www.ru.nl/en/research/research-news/ngf-ained-fellowship-grant-for-research-into-voice-diagnostics",
+   "email": "email_tejedor.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "stuijk",
+   "batch": 3,
+   "country": "Netherlands",
+   "who": "Prof. Sander Stuijk / Prof. Henk Corporaal",
+   "where": "TU Eindhoven, Electronic Systems",
+   "why": "Efficient edge AI processing.",
+   "kind": "Email",
+   "page": "https://www.tue.nl/onderzoek/researchers/sander-stuijk",
+   "email": "email_stuijk.txt",
+   "match": 7,
+   "chance": 4
+  },
+  {
+   "id": "rinner",
+   "batch": 3,
+   "country": "Austria",
+   "who": "Prof. Bernhard Rinner",
+   "where": "University of Klagenfurt, Networked and Embedded Systems",
+   "why": "Embedded and pervasive systems, often hiring PhDs.",
+   "kind": "Email",
+   "page": "https://nes.aau.at/",
+   "email": "email_rinner.txt",
+   "address": "bernhard.rinner@aau.at",
+   "match": 7,
+   "chance": 5
+  },
+  {
+   "id": "aral",
+   "batch": 3,
+   "country": "Austria",
+   "who": "Asst. Prof. Atakan Aral",
+   "where": "University of Vienna, edge AI and IoT",
+   "why": "Edge AI, federated learning and IoT, has hired PhDs on this.",
+   "kind": "Email",
+   "page": "https://sc.cs.univie.ac.at/news-events/open-positions",
+   "email": "email_aral.txt",
+   "match": 8,
+   "chance": 5
+  },
+  {
+   "id": "pro2future",
+   "batch": 3,
+   "country": "Austria",
+   "who": "Pro2Future (PhD with TU Graz)",
+   "where": "Graz",
+   "why": "Embedded AI PhD in a research centre, some adverts ask for good German.",
+   "kind": "Email",
+   "page": "https://www.pro2future.at/?p=15170",
+   "email": "email_pro2future.txt",
+   "address": "jobs@pro2future.at",
+   "match": 7,
+   "chance": 5
   }
  ]
 }
