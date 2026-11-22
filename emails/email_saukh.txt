@@ -1,0 +1,17 @@
+To: Assoc. Prof. Olga Saukh (address on https://tugraz.at/arbeitsgruppen/iti-teams/elss)
+Subject: Application, PhD Student in Embedded Machine Learning (MSCA Doctoral Network, ELSS)
+
+Dear Prof. Saukh,
+
+I would like to apply for the PhD Student position in Embedded Machine Learning in your Embedded Learning and Sensing Systems group, part of the MSCA Doctoral Network "Embedded AI Systems and Applications". My CV and statement of interest are attached as one PDF, as the advert asks.
+
+Running deep learning on very constrained devices with attention to energy and privacy is exactly what my MSc thesis did. I built a voice assistant for older adults that keeps all listening on the device. I designed a 75k-parameter wake-word model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi, with the full pipeline in C++ and TFLite. Under five-fold cross-validation it beat DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute on every fold, and int8 conversion cost 0.1 points or less. In deployment the device microphone tripled false alarms while AUC barely moved, and retraining on hard negatives recorded on the device cut false activations from 60 to 3 in a 388-hour test.
+
+The work has produced a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I also work as an embedded and ML systems engineer, so I can take a model from training all the way to firmware.
+
+I meet the MSCA mobility rule, as I have never lived in Austria. I would be glad to answer any questions or talk at a time that suits you.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

@@ -23,6 +23,8 @@ ROOT = Path(__file__).resolve().parent.parent
 POS = ROOT / "data" / "positions.json"
 COUNTRIES = ROOT / "data" / "countries.json"
 LEADS = ROOT / "research" / "leads_manual_check.json"
+PLAN = ROOT / "data" / "plan.json"
+EMAILS = ROOT / "emails"
 TEMPLATE = ROOT / "scripts" / "template.html"
 STATUSES = ["new", "shortlist", "emailed", "applied", "interview", "offer", "rejected", "skip", "expired"]
 KEEP = ("status", "notes", "added", "history")
@@ -119,7 +121,15 @@ def main():
     POS.write_text(json.dumps(items, indent=1, ensure_ascii=False) + "\n", encoding="utf8")
     countries = load(COUNTRIES, [])
     leads = load(LEADS, [])
-    payload = json.dumps({"positions": items, "countries": countries, "updated": today, "statuses": STATUSES, "leads": leads}, ensure_ascii=False)
+    plan = load(PLAN, {"steps": []})
+    for st in plan.get("steps", []):
+        f = st.get("email")
+        if f and (EMAILS / f).exists():
+            lines = (EMAILS / f).read_text(encoding="utf8").split("\n")
+            st["to_hint"] = lines[0].replace("To:", "").strip()
+            st["subject"] = lines[1].replace("Subject:", "").strip()
+            st["body"] = "\n".join(lines[2:]).strip()
+    payload = json.dumps({"positions": items, "countries": countries, "updated": today, "statuses": STATUSES, "leads": leads, "plan": plan}, ensure_ascii=False)
     page = TEMPLATE.read_text(encoding="utf8").replace("/*DATA*/null", payload.replace("</", "<\\/"))
     (ROOT / "index.html").write_text(page, encoding="utf8")
     (ROOT / "README.md").write_text(readme(items, countries, today, leads), encoding="utf8")

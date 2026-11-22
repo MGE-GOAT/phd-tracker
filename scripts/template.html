@@ -3,140 +3,156 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PhD Tracker</title>
+<title>PhD Plan</title>
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#16202c;--muted:#5d6b7a;--line:#dde3ea;--accent:#1d6f7a;--accent-soft:#e3f1f2;
---warn:#a4570a;--warn-soft:#fdf1e2;--bad:#a12a2a;--bad-soft:#fbe8e8;--good:#1f7a3f;--good-soft:#e5f5ea;--chip:#eef1f5}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f141a;--card:#171e26;--ink:#e6ebf0;--muted:#94a3b3;--line:#2a3440;
---accent:#5cc3cf;--accent-soft:#16343a;--warn:#f0a95b;--warn-soft:#3a2a17;--bad:#f08a8a;--bad-soft:#3a1c1c;--good:#7fd69a;--good-soft:#173322;--chip:#222c37}}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#141c26;--muted:#5c6a79;--line:#dfe4ea;--accent:#16707b;--accent-ink:#fff;--accent-soft:#e2f1f2;
+--hot:#a4570a;--hot-soft:#fdf0df;--done:#1f7a3f;--done-soft:#e4f4e9;--chip:#eef1f5}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e131a;--card:#161d26;--ink:#e7ecf1;--muted:#93a2b2;--line:#28323e;
+--accent:#56c0cc;--accent-ink:#06262a;--accent-soft:#143238;--hot:#f2ab5d;--hot-soft:#3a2a16;--done:#7fd69a;--done-soft:#163222;--chip:#212b36}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-header{padding:28px 16px 10px;max-width:1180px;margin:auto}
-h1{margin:0;font-size:26px;letter-spacing:-.01em}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:auto;padding:0 16px}
+header{padding:30px 0 6px}
+h1{margin:0;font-size:28px;letter-spacing:-.01em}
 .sub{color:var(--muted);margin-top:4px}
-.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:120px}
-.stat b{display:block;font-size:22px}
-.stat span{color:var(--muted);font-size:13px}
-nav{max-width:1180px;margin:8px auto 0;padding:0 16px;display:flex;gap:6px;flex-wrap:wrap}
-nav button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer;font:inherit}
-nav button.on{background:var(--accent);border-color:var(--accent);color:#fff}
-main{max-width:1180px;margin:auto;padding:12px 16px 60px}
-.bar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
-.bar input,.bar select{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
-.bar input{flex:1;min-width:180px}
-.item{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
-.top{display:grid;grid-template-columns:86px 1fr auto;gap:12px;padding:12px 14px;cursor:pointer;align-items:center}
-.dl{font-weight:600;font-variant-numeric:tabular-nums}
-.dl small{display:block;font-weight:400;color:var(--muted);font-size:12px}
-.dl.soon{color:var(--warn)}
-.ttl{font-weight:600}
-.meta{color:var(--muted);font-size:13px}
-.right{display:flex;gap:6px;align-items:center}
-.fit{font-weight:700;border-radius:8px;padding:3px 8px;background:var(--accent-soft);color:var(--accent);font-variant-numeric:tabular-nums}
-.st{font-size:12px;border-radius:999px;padding:3px 9px;background:var(--chip);color:var(--muted);text-transform:capitalize}
-.st.applied,.st.interview,.st.emailed{background:var(--accent-soft);color:var(--accent)}
-.st.offer{background:var(--good-soft);color:var(--good)}
-.st.rejected,.st.expired,.st.skip{background:var(--bad-soft);color:var(--bad)}
-.st.shortlist{background:var(--warn-soft);color:var(--warn)}
-.body{display:none;border-top:1px solid var(--line);padding:12px 14px;font-size:14px}
-.item.open .body{display:block}
-.grid{display:grid;grid-template-columns:150px 1fr;gap:6px 14px}
-.grid dt{color:var(--muted)}
-.grid dd{margin:0}
-.flag{color:var(--bad)}
-a{color:var(--accent)}
-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 6px}
+nav button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 15px;border-radius:999px;cursor:pointer;font:inherit;font-size:14px}
+nav button.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.next{background:var(--accent);color:var(--accent-ink);border-radius:16px;padding:20px 22px;margin:14px 0 8px}
+.next small{opacity:.85;text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:600}
+.next h2{margin:4px 0 6px;font-size:22px}
+.next p{margin:0;opacity:.92}
+.bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:16px 0 6px}
+.bar i{display:block;height:100%;background:var(--done);transition:width .3s}
+.count{color:var(--muted);font-size:14px}
+.how{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:14px 0}
+.how ol{margin:6px 0 0;padding-left:20px}
+.how li{margin:3px 0}
+h3{margin:26px 0 10px;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:16px 18px;display:grid;grid-template-columns:38px 1fr;gap:4px 12px}
+.step.hot{border-color:var(--hot);box-shadow:0 0 0 1px var(--hot) inset}
+.step.done{opacity:.62}
+.num{width:30px;height:30px;border-radius:50%;background:var(--chip);display:grid;place-items:center;font-weight:700;font-size:14px}
+.step.done .num{background:var(--done-soft);color:var(--done)}
+.who{font-weight:700;font-size:17px}
+.where{color:var(--muted);font-size:14px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.tag{font-size:12px;border-radius:999px;padding:2px 9px;background:var(--chip);color:var(--muted)}
+.tag.hot{background:var(--hot-soft);color:var(--hot);font-weight:600}
+.tag.dl{background:var(--hot-soft);color:var(--hot)}
+.why{margin:2px 0 4px}
+.note{font-size:14px;color:var(--hot);margin:4px 0}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.btn{font:inherit;font-size:14px;border-radius:10px;padding:8px 13px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn.ok{background:var(--done-soft);border-color:var(--done-soft);color:var(--done);font-weight:600}
+details.preview{margin-top:10px}
+details.preview summary{cursor:pointer;color:var(--muted);font-size:14px}
+pre{white-space:pre-wrap;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;margin:8px 0 0}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+.visa{font-size:14px;color:var(--muted)}
+.visa b{color:var(--ink)}
+/* database view */
+.dbbar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.dbbar input,.dbbar select{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.dbbar input{flex:1;min-width:160px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:8px;padding:11px 14px;font-size:14px}
+.item b{font-size:15px}
+.item .m{color:var(--muted)}
+.item details summary{cursor:pointer;color:var(--accent);margin-top:4px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--line);vertical-align:top}
 th{color:var(--muted);font-weight:600;font-size:13px}
-.score{font-variant-numeric:tabular-nums;font-weight:600}
-.empty{color:var(--muted);padding:30px;text-align:center}
-@media (max-width:640px){.top{grid-template-columns:70px 1fr}.right{grid-column:1/-1}.grid{grid-template-columns:1fr}.grid dt{margin-top:6px}}
+a{color:var(--accent)}
+footer{color:var(--muted);font-size:13px;margin:30px 0 40px}
+@media (max-width:560px){.step{grid-template-columns:1fr}.num{display:none}}
 </style>
 </head>
 <body>
+<div class="wrap">
 <header>
-  <h1>PhD Tracker</h1>
+  <h1>PhD Plan</h1>
   <div class="sub" id="sub"></div>
-  <div class="stats" id="stats"></div>
+  <nav id="tabs">
+    <button data-t="plan" class="on">What to do</button>
+    <button data-t="db">All positions</button>
+    <button data-t="countries">Countries</button>
+  </nav>
 </header>
-<nav id="tabs">
-  <button data-t="adverts" class="on">Open positions</button>
-  <button data-t="cold">Cold-email PIs</button>
-  <button data-t="countries">Countries</button>
-  <button data-t="leads">Check by hand</button>
-</nav>
-<main>
-  <div class="bar" id="bar">
-    <input id="q" placeholder="Search institution, PI, topic">
-    <select id="fc"><option value="">All countries</option></select>
-    <select id="fs"><option value="">Active statuses</option><option value="*">All statuses</option></select>
-    <select id="ff"><option value="0">Any fit</option><option value="7">Fit 7+</option><option value="8">Fit 8+</option><option value="9">Fit 9+</option></select>
-  </div>
-  <div id="list"></div>
-</main>
+<main id="main"></main>
+<footer id="foot"></footer>
+</div>
+<div class="toast" id="toast"></div>
 <script>
 const D=/*DATA*/null;
-const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const today=D.updated, inactive=new Set(["expired","skip","rejected"]);
-let tab="adverts";
-function days(d){if(!/^\d{4}-\d{2}-\d{2}$/.test(d||""))return null;return Math.round((new Date(d)-new Date(today))/864e5)}
-function init(){
-  $("#sub").textContent=`Fully funded PhD positions, verified on official pages. Last updated ${today}.`;
-  const ad=D.positions.filter(p=>p.type==="advert"&&!inactive.has(p.status));
-  const soon=ad.filter(p=>{const n=days(p.deadline);return n!==null&&n>=0&&n<=30}).length;
-  const act=D.positions.filter(p=>["emailed","applied","interview","offer"].includes(p.status)).length;
-  $("#stats").innerHTML=[[ad.length,"open positions"],[soon,"deadlines in 30 days"],[D.positions.filter(p=>p.type==="cold-email").length,"cold-email PIs"],[act,"in progress"]]
-    .map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
-  [...new Set(D.positions.map(p=>p.country))].sort().forEach(c=>$("#fc").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
-  D.statuses.forEach(s=>$("#fs").insertAdjacentHTML("beforeend",`<option value="${s}">${s}</option>`));
-  $("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
-  ["#q","#fc","#fs","#ff"].forEach(s=>$(s).oninput=render);
-  render();
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const KEY="phdplan-sent-v1";
+let sent={};try{sent=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(sent))}catch(e){}};
+let tab="plan";
+function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1600)}
+async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg)}catch(e){prompt("Copy this text",t)}}
+function gmail(st){return "https://mail.google.com/mail/?view=cm&fs=1"+(st.address?"&to="+encodeURIComponent(st.address):"")+"&su="+encodeURIComponent(st.subject||"")+"&body="+encodeURIComponent(st.body||"")}
+function days(d){return Math.round((new Date(d)-new Date(D.updated))/864e5)}
+function planView(){
+  const steps=D.plan.steps||[],done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
+  let h=`<section class="next">${next?`<small>Your next step</small><h2>${esc(next.kind==="Apply online"?"Apply to":"Email")} ${esc(next.who)}, ${esc(next.where)}</h2><p>${esc(next.why)}</p>`
+    :`<small>Batch done</small><h2>All sent. Now wait for replies.</h2><p>When someone answers, paste it to Claude and it will write your reply. If nobody answers in 10 days, ask Claude for follow-ups and batch 2.</p>`}</section>
+  <div class="bar"><i style="width:${steps.length?100*done/steps.length:0}%"></i></div><div class="count">${done} of ${steps.length} done</div>
+  <div class="how"><b>How each email works</b><ol>
+   <li>Press <b>Open in Gmail</b>. The subject and text are filled in for you.</li>
+   <li>Press <b>Professor's page</b> and copy their email address into the "To" box (it is filled already when we know it).</li>
+   <li>Attach your CV, <code>Mahrad_Ghazli_Academic_CV_2026-11-13.pdf</code>.</li>
+   <li>Send, then press <b>Mark as sent</b> here.</li></ol>
+   <div class="visa" style="margin-top:8px">Send 2 or 3 a day, in the morning Europe time. Start with the orange ones, they are real open jobs.</div></div>
+  <h3>Batch 1</h3>`;
+  steps.forEach((st,i)=>{
+    const isDone=!!sent[st.id],dl=st.deadline?`<span class="tag dl">Deadline ${esc(st.deadline)}, ${days(st.deadline)} days</span>`:"";
+    h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
+      <div class="who">${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
+      <div class="tags">${st.hot?`<span class="tag hot">Open job</span>`:""}<span class="tag">${esc(st.kind)}</span>${dl}</div>
+      <div class="why">${esc(st.why)}</div>${st.note?`<div class="note">${esc(st.note)}</div>`:""}
+      <div class="actions">
+        ${st.body?`<a class="btn main" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button>`
+          :`<a class="btn main" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>`}
+        ${st.body?`<a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`:""}
+        <button class="btn ${isDone?"ok":""}" data-sent="${st.id}">${isDone?"Sent ✓":"Mark as sent"}</button>
+      </div>
+      ${st.body?`<details class="preview"><summary>Read the email</summary><pre>Subject: ${esc(st.subject)}\n\n${esc(st.body)}</pre></details>`:""}
+    </div></article>`;
+  });
+  h+=`<h3>Visa, in one line each</h3><div class="how visa"><b>Austria</b> is the easiest, you can file via Istanbul. <b>Germany</b>, register on the embassy waitlist as soon as you have any offer. <b>Netherlands</b>, the entry visa for Iranians was suspended in August, ask the university early.</div>`;
+  return h;
 }
-function filtered(type){
-  const q=$("#q").value.toLowerCase(),c=$("#fc").value,s=$("#fs").value,f=+$("#ff").value;
-  return D.positions.filter(p=>p.type===type&&(!c||p.country===c)&&(s==="*"||(s?p.status===s:!inactive.has(p.status)))&&(+p.fit_1_10||0)>=f&&
-    (!q||[p.institution,p.pi,p.title,p.topic,p.group,p.city].join(" ").toLowerCase().includes(q)));
+function dbView(){
+  const P=D.positions,cs=[...new Set(P.map(p=>p.country))].sort();
+  return `<div class="dbbar"><input id="q" placeholder="Search"><select id="fc"><option value="">All countries</option>${cs.map(c=>`<option>${esc(c)}</option>`).join("")}</select></div><div id="dbl"></div>`;
 }
-function card(p){
-  const n=days(p.deadline), dl=n===null?`<div class="dl">${esc(p.deadline||"rolling")}</div>`:
-    `<div class="dl ${n>=0&&n<=30?"soon":""}">${esc(p.deadline.slice(5))}<small>${n<0?"passed":n+" days"}</small></div>`;
-  const pubs=(p.pi_recent_pubs||[]).map(x=>`<div>${esc(x)}</div>`).join("");
-  const row=(k,v)=>v?`<dt>${k}</dt><dd>${v}</dd>`:"";
-  return `<div class="item"><div class="top">${p.type==="advert"?dl:`<div class="dl">PI</div>`}
-    <div><div class="ttl">${esc(p.title||p.topic)}</div><div class="meta">${esc(p.institution)}${p.group?" · "+esc(p.group):""} · ${esc(p.city||"")}, ${esc(p.country)} · ${esc(p.pi||"")}</div></div>
-    <div class="right"><span class="st ${esc(p.status)}">${esc(p.status)}</span><span class="fit">${esc(p.fit_1_10)}</span></div></div>
-    <div class="body"><dl class="grid">
-      ${row("Topic",esc(p.topic))}${row("Why it fits",esc(p.why_fit))}${row("Your edge",esc(p.overqualified_angle))}
-      ${row("Competition",esc(p.competition))}${row("Funding",esc(p.funding))}${row("Start",esc(p.start))}
-      ${row("English",esc(p.english_requirement))}${row("PI",p.pi_url?`<a href="${esc(p.pi_url)}" target="_blank" rel="noopener">${esc(p.pi)}</a>`:esc(p.pi))}
-      ${row("PI recent work",pubs)}${row("Apply",p.apply_url?`<a href="${esc(p.apply_url)}" target="_blank" rel="noopener">official page</a>`:"")}
-      ${row("Evidence",esc(p.evidence))}${row("Red flags",p.red_flags?`<span class="flag">${esc(p.red_flags)}</span>`:"")}
-      ${row("Verified",esc(p.verified_on))}${row("Notes",esc(p.notes))}
-    </dl></div></div>`;
+function dbList(){
+  const q=($("#q")?.value||"").toLowerCase(),c=$("#fc")?.value||"";
+  const P=D.positions.filter(p=>!["expired","skip"].includes(p.status)&&(!c||p.country===c)&&(!q||JSON.stringify(p).toLowerCase().includes(q)))
+    .sort((a,b)=>(+b.fit_1_10||0)-(+a.fit_1_10||0));
+  $("#dbl").innerHTML=P.map(p=>`<div class="item"><b>${esc(p.pi)}</b> <span class="m">· ${esc(p.institution)}, ${esc(p.country)} · fit ${esc(p.fit_1_10)}/10${p.type==="advert"?` · open job, deadline ${esc(p.deadline)}`:" · email"}</span>
+    <div>${esc(p.title)}</div><details><summary>Details</summary><div class="m">${esc(p.topic)}</div><div>${esc(p.funding||"")}</div>
+    ${p.apply_url?`<div><a href="${esc(p.apply_url)}" target="_blank" rel="noopener">Official page</a></div>`:""}${p.pi_url?`<div><a href="${esc(p.pi_url)}" target="_blank" rel="noopener">Professor</a></div>`:""}
+    ${p.red_flags?`<div class="m">Watch out, ${esc(p.red_flags)}</div>`:""}</details></div>`).join("")||`<div class="item">Nothing matches.</div>`;
+}
+function countryView(){
+  const cs=[...D.countries].sort((a,b)=>(a.rank??99)-(b.rank??99));
+  return `<p class="sub">Your priority is the Netherlands, Austria and Germany. This table is background on visas and work after the PhD.</p><table><tr><th>Country</th><th>Visa from Iran</th><th>Work after</th><th>Economy</th><th>Note</th></tr>${
+    cs.map(c=>`<tr><td><b>${esc(c.country)}</b></td><td>${esc(c.visa)}/10</td><td>${esc(c.work)}/10</td><td>${esc(c.economy)}/10</td><td>${esc(c.note)}</td></tr>`).join("")}</table>`;
 }
 function render(){
-  $("#bar").style.display=(tab==="countries"||tab==="leads")?"none":"flex";
-  if(tab==="leads"){
-    const ls=D.leads||[];
-    $("#list").innerHTML=ls.length?`<table><tr><th>Country</th><th>Institution</th><th>Lead</th><th>Why it matters</th><th>What to check</th></tr>${
-      ls.map(l=>`<tr><td>${esc(l.country)}</td><td><b>${esc(l.institution)}</b></td><td><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a></td><td>${esc(l.why_promising)}</td><td>${esc(l.what_to_check)}</td></tr>`).join("")}</table>`
-      :`<div class="empty">No manual leads.</div>`;
-    return;
-  }
-  if(tab==="countries"){
-    const cs=[...D.countries].sort((a,b)=>(a.rank??99)-(b.rank??99));
-    $("#list").innerHTML=cs.length?`<table><tr><th>#</th><th>Country</th><th>Visa from Iran</th><th>Work after PhD</th><th>Economy</th><th>Note</th></tr>${
-      cs.map(c=>`<tr><td>${esc(c.rank)}</td><td><b>${esc(c.country)}</b></td><td class="score">${esc(c.visa)}</td><td class="score">${esc(c.work)}</td><td class="score">${esc(c.economy)}</td><td>${esc(c.note)}</td></tr>`).join("")}</table>`
-      :`<div class="empty">No country data yet.</div>`;
-    return;
-  }
-  const items=filtered(tab==="adverts"?"advert":"cold-email");
-  $("#list").innerHTML=items.length?items.map(card).join(""):`<div class="empty">Nothing matches these filters.</div>`;
-  document.querySelectorAll(".top").forEach(t=>t.onclick=()=>t.parentElement.classList.toggle("open"));
+  $("#main").innerHTML=tab==="plan"?planView():tab==="db"?dbView():countryView();
+  if(tab==="db"){dbList();$("#q").oninput=dbList;$("#fc").oninput=dbList}
+  document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(`Subject: ${st.subject}\n\n${st.body}`,"Email copied")});
+  document.querySelectorAll("[data-sent]").forEach(b=>b.onclick=()=>{const id=b.dataset.sent;sent[id]=!sent[id];save();render()});
 }
-init();
+$("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;
+$("#foot").textContent="Your 'sent' ticks are saved in this browser only. Tell Claude who you emailed so the plan stays up to date.";
+$("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
+render();
 </script>
 </body>
 </html>
