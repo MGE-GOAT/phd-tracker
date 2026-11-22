@@ -64,6 +64,7 @@ th{color:var(--muted);font-weight:600;font-size:13px}
   <button data-t="adverts" class="on">Open positions</button>
   <button data-t="cold">Cold-email PIs</button>
   <button data-t="countries">Countries</button>
+  <button data-t="leads">Check by hand</button>
 </nav>
 <main>
   <div class="bar" id="bar">
@@ -116,7 +117,14 @@ function card(p){
     </dl></div></div>`;
 }
 function render(){
-  $("#bar").style.display=tab==="countries"?"none":"flex";
+  $("#bar").style.display=(tab==="countries"||tab==="leads")?"none":"flex";
+  if(tab==="leads"){
+    const ls=D.leads||[];
+    $("#list").innerHTML=ls.length?`<table><tr><th>Country</th><th>Institution</th><th>Lead</th><th>Why it matters</th><th>What to check</th></tr>${
+      ls.map(l=>`<tr><td>${esc(l.country)}</td><td><b>${esc(l.institution)}</b></td><td><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a></td><td>${esc(l.why_promising)}</td><td>${esc(l.what_to_check)}</td></tr>`).join("")}</table>`
+      :`<div class="empty">No manual leads.</div>`;
+    return;
+  }
   if(tab==="countries"){
     const cs=[...D.countries].sort((a,b)=>(a.rank??99)-(b.rank??99));
     $("#list").innerHTML=cs.length?`<table><tr><th>#</th><th>Country</th><th>Visa from Iran</th><th>Work after PhD</th><th>Economy</th><th>Note</th></tr>${

@@ -22,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 POS = ROOT / "data" / "positions.json"
 COUNTRIES = ROOT / "data" / "countries.json"
+LEADS = ROOT / "research" / "leads_manual_check.json"
 TEMPLATE = ROOT / "scripts" / "template.html"
 STATUSES = ["new", "shortlist", "emailed", "applied", "interview", "offer", "rejected", "skip", "expired"]
 KEEP = ("status", "notes", "added", "history")
@@ -76,7 +77,7 @@ def md_escape(s):
     return str(s or "").replace("|", "/").replace("\n", " ")
 
 
-def readme(items, countries, today):
+def readme(items, countries, today, leads=()):
     adverts = [p for p in items if p.get("type") == "advert"]
     cold = [p for p in items if p.get("type") == "cold-email"]
     out = [f"# PhD tracker\n\nLast updated {today}. Open `index.html` for the full view with filters.\n"]
@@ -93,6 +94,10 @@ def readme(items, countries, today):
     for p in sorted(cold, key=lambda p: -float(p.get("fit_1_10") or 0)):
         out.append(f"| {p.get('fit_1_10', '')} | {p.get('status', '')} | {p.get('country', '')} | {md_escape(p.get('institution'))} | "
                    f"[{md_escape(p.get('pi'))}]({p.get('pi_url', '')}) | {md_escape(p.get('topic'))} |")
+    if leads:
+        out.append("\n## Check by hand (pages that block automated reading)\n\n| Country | Institution | Lead | What to check |\n|---|---|---|---|")
+        for l in leads:
+            out.append(f"| {l.get('country', '')} | {md_escape(l.get('institution'))} | [{md_escape(l.get('title'))}]({l.get('url', '')}) | {md_escape(l.get('what_to_check'))} |")
     return "\n".join(out) + "\n"
 
 
@@ -113,10 +118,11 @@ def main():
     items.sort(key=sort_key)
     POS.write_text(json.dumps(items, indent=1, ensure_ascii=False) + "\n", encoding="utf8")
     countries = load(COUNTRIES, [])
-    payload = json.dumps({"positions": items, "countries": countries, "updated": today, "statuses": STATUSES}, ensure_ascii=False)
+    leads = load(LEADS, [])
+    payload = json.dumps({"positions": items, "countries": countries, "updated": today, "statuses": STATUSES, "leads": leads}, ensure_ascii=False)
     page = TEMPLATE.read_text(encoding="utf8").replace("/*DATA*/null", payload.replace("</", "<\\/"))
     (ROOT / "index.html").write_text(page, encoding="utf8")
-    (ROOT / "README.md").write_text(readme(items, countries, today), encoding="utf8")
+    (ROOT / "README.md").write_text(readme(items, countries, today, leads), encoding="utf8")
     print(f"{len(items)} entries, {sum(p.get('type') == 'advert' for p in items)} adverts, wrote index.html and README.md")
 
 

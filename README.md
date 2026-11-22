@@ -32,8 +32,23 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 
 | Deadline | Fit | Status | Country | Institution | PI | Position |
 |---|---|---|---|---|---|---|
+| rolling | 9 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Michael Beigl | [PhD or Postdoc, Wearable Computing in Health Technologies (hardware, systems, AI)](https://www.teco.edu/jobs/doktorand-oder-postdoc-informatik-gesundheitstechnologie-und-ki-full-time-e13-payment) |
+| rolling | 7 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Michael Beigl | [PhD position, Toolchain for Wearable Computing and Hardware Development](https://www.teco.edu/jobs/phd-position-toolchain-for-wearable-computing-full-time-e13-payment) |
 
 ## Cold-email targets
 
 | Fit | Status | Country | Institution | PI | Topic |
 |---|---|---|---|---|---|
+| 9 | new | Germany | University of Oldenburg | [Prof. Bernd T. Meyer](https://www.uol.de/en/communication-acoustics) | Deep-learning speech processing, keyword spotting, hearing technology |
+| 8 | new | Germany | University of Oldenburg | [Prof. Simon Doclo](https://www.uol.de/en/mediphysics-acoustics/sigproc) | Model-based and learning-based acoustical signal processing, hearing devices |
+| 7 | new | Germany | University of Kassel | [Prof. Bernhard Sick](https://www.uni-kassel.de/eecs/ies/) | Machine learning for embedded systems, audio classification, time series |
+
+## Check by hand (pages that block automated reading)
+
+| Country | Institution | Lead | What to check |
+|---|---|---|---|
+| Germany | Fraunhofer IIS Erlangen | [Audio and Media Technologies, Smart Sensing and Electronics](https://www.iis.fraunhofer.de/en/jobs/stellen.html) | Job list loads by JavaScript, search for Doktorand or PhD |
+| Germany | DFKI Kaiserslautern, Embedded Intelligence (Prof. Paul Lukowicz) | [Any PhD or researcher post](https://www.dfki.de/en/web/jobs) | Page refuses automated access, check open posts |
+| Germany | Fraunhofer IMS Duisburg (Dr. Hendrik Wöhrle) | [Embedded AI on smart sensors](https://www.ims.fraunhofer.de/en.html) | Fraunhofer search for Doktorand in Duisburg showed 0, consider a cold email |
+| Germany | University of Lübeck, ISIP (Prof. Alfred Mertins) | [AI in biomedical signal processing](https://www.sp.uni-luebeck.de/) | Site timed out, check vacancies |
+| Netherlands | Open Universiteit | [Assistive speech or AI posts](https://www.ou.nl/) | Domain refused by the fetch tool, check vacancies (note NL visa is blocked) |

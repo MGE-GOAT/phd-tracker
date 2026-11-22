@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "country": "Germany",
+  "institution": "Fraunhofer IIS Erlangen",
+  "title": "Audio and Media Technologies, Smart Sensing and Electronics",
+  "url": "https://www.iis.fraunhofer.de/en/jobs/stellen.html",
+  "why_promising": "Exact audio and edge-AI niche",
+  "what_to_check": "Job list loads by JavaScript, search for Doktorand or PhD"
+ },
+ {
+  "country": "Germany",
+  "institution": "DFKI Kaiserslautern, Embedded Intelligence (Prof. Paul Lukowicz)",
+  "title": "Any PhD or researcher post",
+  "url": "https://www.dfki.de/en/web/jobs",
+  "why_promising": "Wearables and edge AI, very international",
+  "what_to_check": "Page refuses automated access, check open posts"
+ },
+ {
+  "country": "Germany",
+  "institution": "Fraunhofer IMS Duisburg (Dr. Hendrik Wöhrle)",
+  "title": "Embedded AI on smart sensors",
+  "url": "https://www.ims.fraunhofer.de/en.html",
+  "why_promising": "Quantization and NAS on sensors, exact match",
+  "what_to_check": "Fraunhofer search for Doktorand in Duisburg showed 0, consider a cold email"
+ },
+ {
+  "country": "Germany",
+  "institution": "University of Lübeck, ISIP (Prof. Alfred Mertins)",
+  "title": "AI in biomedical signal processing",
+  "url": "https://www.sp.uni-luebeck.de/",
+  "why_promising": "Biomedical signal and hearing work",
+  "what_to_check": "Site timed out, check vacancies"
+ },
+ {
+  "country": "Netherlands",
+  "institution": "Open Universiteit",
+  "title": "Assistive speech or AI posts",
+  "url": "https://www.ou.nl/",
+  "why_promising": "Had an assistive speech PhD in August",
+  "what_to_check": "Domain refused by the fetch tool, check vacancies (note NL visa is blocked)"
+ }
+]
