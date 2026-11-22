@@ -53,7 +53,7 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 
 | Fit | Status | Country | Institution | PI | Topic |
 |---|---|---|---|---|---|
-| 10 | new | Italy | Politecnico di Torino, DAUIN | [Prof Daniele Jahier Pagliari](https://openalex.org/A5080843266) | On-device KWS personalisation, DNN optimisation for wearables (PPG), deployment on edge SoCs |
+| 10 | new | Italy | Politecnico di Torino, DAUIN | [Prof Daniele Jahier Pagliari](https://www.polito.it/en/staff?p=daniele.jahier) | On-device KWS personalisation, DNN optimisation for wearables (PPG), deployment on edge SoCs |
 | 9 | new | Germany | University of Oldenburg | [Prof. Bernd T. Meyer](https://www.uol.de/en/communication-acoustics) | Deep-learning speech processing, keyword spotting, hearing technology |
 | 9 | new | Italy | Politecnico di Milano, DEIB | [Prof Manuel Roveri](https://openalex.org/A5035547226) | TinyML, quantization, on-device learning, adaptive edge AI |
 | 8 | new | Germany | University of Oldenburg | [Prof. Simon Doclo](https://www.uol.de/en/mediphysics-acoustics/sigproc) | Model-based and learning-based acoustical signal processing, hearing devices |

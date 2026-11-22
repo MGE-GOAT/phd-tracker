@@ -285,7 +285,7 @@
     "institution": "Politecnico di Torino, DAUIN",
     "group": "EDA / energy-efficient embedded AI (eLiOS lab)",
     "pi": "Prof Daniele Jahier Pagliari",
-    "pi_url": "https://openalex.org/A5080843266",
+    "pi_url": "https://www.polito.it/en/staff?p=daniele.jahier",
     "pi_recent_pubs": [
       "OnDA: On-device Channel Pruning for Efficient Personalized Keyword Spotting, Interspeech 2026",
       "End-to-end Automated Deep Neural Network Optimization for PPG-based Blood Pressure Estimation on Wearables, ACM Transactions on Computing for Healthcare 2026",
@@ -303,8 +303,8 @@
     "english_requirement": "PoliTo PhD in English; language proof per call",
     "apply_url": "https://www.polito.it",
     "verified_on": "2026-11-22",
-    "evidence": "OpenAlex record: affiliation Politecnico di Torino; Interspeech 2026 paper 'OnDA: On-device Channel Pruning for Efficient Personalized Keyword Spotting'.",
-    "red_flags": "No open advert verified today. Email now with the ICEE KWS paper attached and ask about scholarships in the XLIII-cycle call. pi_url is the OpenAlex author record (affiliation checked there); institutional profile page not fetched.",
+    "evidence": "PoliTo staff page (fetched 2026-11-22): 'Associate Professor (L. 240) Department of Control and Computer Engineering (DAUIN)' and teaches PhD course 'Optimized execution of neural networks at the edge' (A.A. 2025/26). OpenAlex record: affiliation Politecnico di Torino; Interspeech 2026 paper 'OnDA: On-device Channel Pruning for Efficient Personalized Keyword Spotting'.",
+    "red_flags": "No open advert verified today. Email now with the ICEE KWS paper attached and ask about scholarships in the XLIII-cycle call.",
     "type": "cold-email"
   },
   {
