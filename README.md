@@ -38,9 +38,9 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | 2026-12-15 | 7 | new | Finland | Tampere University | Professor Alexandros Iosifidis | [Doctoral Researcher (1-2 positions), Deep Learning Theory and Methodology](https://tuni.rekrytointi.com/paikat/?o=A_RJ&jgid=3&jid=3230) |
 | 2026-12-18 | 6 | new | Sweden | Linkoping University (LiU) | Assistant Professor Khac-Hoang Ngo | [PhD student in Communication-Efficient Distributed Inference](https://liu.se/en/work-at-liu/vacancies/30232) |
 | 2027-01-08 | 8 | new | Austria | ISTA (Institute of Science and Technology Austria) | Prof. Dan Alistarh | [ISTA PhD programme 2027 intake](https://phd.ista.ac.at/phd-application-admission/) |
-| rolling | 10 | new | Austria | TU Graz, Institute of Technical Informatics | Assoc. Prof. Olga Saukh | [PhD Student in Embedded Machine Learning (MSCA Doctoral Network, Embedded AI Systems and Applications)](https://tugraz.at/en/institutes/iti/jobs-training/jobs/project-assistant-m-f-x-phd-student-in-embedded-machine-learning) |
 | rolling | 9 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Dr. Michael Beigl | [Wearable Computing in Health Technologies (hardware, systems, AI) (full time, E13 payment)](https://www.teco.kit.edu/jobs/doktorand-oder-postdoc-informatik-gesundheitstechnologie-und-ki-full-time-e13-payment) |
 | rolling | 8 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Dr. Michael Beigl | [Toolchain for Wearable Computing and Hardware Development (full time, E13 payment)](https://www.teco.kit.edu/jobs/phd-position-toolchain-for-wearable-computing-full-time-e13-payment) |
+| rolling | 10 | skip | Austria | TU Graz, Institute of Technical Informatics | Assoc. Prof. Olga Saukh | [PhD Student in Embedded Machine Learning (MSCA Doctoral Network, Embedded AI Systems and Applications)](https://tugraz.at/en/institutes/iti/jobs-training/jobs/project-assistant-m-f-x-phd-student-in-embedded-machine-learning) |
 
 ## Cold-email targets
 
@@ -55,7 +55,7 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | 8 | new | Switzerland | Idiap Research Institute | [Dr. Mathew Magimai Doss](https://www.idiap.ch/en/research/groups/speech-audio-processing) | Speech recognition, pathological speech, audio processing |
 | 8 | new | Netherlands | TU Eindhoven | [Prof. Bert de Vries](https://tue.nl/onderzoek/research-groups/signal-processing-systems/biaslab) | Bayesian hearing agents that personalise audio processing in situ |
 | 7 | new | Germany | University of Kassel | [Prof. Bernhard Sick](https://www.uni-kassel.de/eecs/ies/) | Machine learning for embedded systems, audio classification, time series |
-| 7 | new | Austria | JKU Linz, LIT AI Lab | [LIT AI Lab (recruiting@ai-lab.jku.at)](https://jku.at/en/lit-artificial-intelligence-lab/career/deep-learning) | Deep learning, agentic AI, world models |
+| 7 | new | Austria | JKU Linz, LIT AI Lab | [LIT AI Lab (recruiting@ai-lab.jku.at)](https://jku.at/en/lit-artificial-intelligence-lab/career/) | Deep learning, agentic AI, world models |
 
 ## Check by hand (pages that block automated reading)
 

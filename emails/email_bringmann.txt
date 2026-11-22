@@ -1,4 +1,4 @@
-To: (address on https://embedded.uni-tuebingen.de/team/oliver-bringmann/)
+To: (address on https://www.embedded.uni-tuebingen.de/en/team/oliver-bringmann/)
 Subject: Prospective PhD student in low-power audio AI on embedded hardware (MSc Sharif University)
 
 Dear Prof. Bringmann,
