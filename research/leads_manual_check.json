@@ -94,5 +94,45 @@
   "url": "https://www.kuleuven.be/personeel/jobsite/jobs/phd?lang=en",
   "why_promising": "Hearing research and speech recognition",
   "what_to_check": "Profiles and vacancies not readable automatically"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University College London (UCL), Dept of Electronic and Electrical Engineering",
+  "title": "4-Year Fully Funded Studentship - Efficient and Adaptive AI (Dr Sattar Vakili, with MediaTek Research)",
+  "url": "https://www.ucl.ac.uk/engineering/4-year-fully-funded-studentship-efficient-and-adaptive-ai",
+  "why_promising": "On-device/resource-constrained AI (efficient generative modelling, RL, adaptive data acquisition on smartphones/connected devices), MediaTek-co-supervised with 3+ month industrial placement. Confirmed by direct fetch: deadline 2027-01-08, 4yr home-rate fees with UCL award covering the international fee gap, stipend ~GBP 26,022 for 2026/27 (UELA enhanced rate). Note: more theory/RL-flavoured than embedded-engineering.",
+  "what_to_check": "English-language test requirement (not stated on this page, check UCL EEE general admissions policy), exact application process on the UELA portal, and ATAS clearance requirement for an Iranian national in this EEE/AI subject"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University College London (UCL), Dept of Electronic and Electrical Engineering",
+  "title": "4-Year Fully Funded Studentship - Bee Brain: Unified Neuromorphic Cognitive Architecture",
+  "url": "https://www.ucl.ac.uk/engineering/4-year-fully-funded-studentship-bee-brain-unified-neuromorphic-cognitive-architecture",
+  "why_promising": "One of the same batch of 9 UCL EEE EPSRC (UELA) studentships announced Nov 2026 for 2027/28 intake; neuromorphic/efficient-computing framing could be a strong edge-AI/embedded fit, possibly closer to the applicant's practical background than the Vakili project",
+  "what_to_check": "Page returns HTTP 403 to automated fetch - open directly in a browser. Check: supervisor name, international fee coverage, stipend, deadline, ATAS requirement"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University College London (UCL), Dept of Electronic and Electrical Engineering",
+  "title": "4-Year Fully Funded Studentship - Biomedical Radar Imaging for Localizing Embedded Foreign Bodies",
+  "url": "https://www.ucl.ac.uk/engineering/4-year-fully-funded-studentship-biomedical-radar-imaging-localizing-embedded-foreign-bodies",
+  "why_promising": "Same UCL EEE UELA batch; biomedical sensing/signal-processing angle overlaps with the applicant's biomedical-engineering MSc and embedded sensor work",
+  "what_to_check": "Page returns HTTP 403 to automated fetch - open directly in a browser. Check: supervisor name, international fee coverage, stipend, deadline, ATAS requirement"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "Queen's University Belfast (QUB), School of EEECS",
+  "title": "Neuromorphic Machine Learning for Embedded Devices at the Edge (ref EEECS/26/JMA2)",
+  "url": "https://www.qub.ac.uk/courses/postgraduate-research/phd-opportunities/neuromorphic-machine-learning-for-embedded-devices-at-the-edge.html",
+  "why_promising": "Direct match: novel ML algorithms for embedded software/programmable-logic edge devices. A 2026-entry version of this listing showed a 2026-02-16 deadline (likely closed), but QUB EEECS runs several other current edge/neuromorphic PhD opportunities (e.g. 'Efficient Brain-Inspired LLM Algorithm/Hardware Design', 'Trustworthy Brain-Inspired Computing System Design') that may be 2027-entry replacements",
+  "what_to_check": "Page returns HTTP 403/404 to automated fetch depending on URL variant - open directly in a browser, or browse https://www.qub.ac.uk/courses/postgraduate-research/phd-opportunities/ for a current list. Check: whether this specific listing or a successor is open for 2027 entry, funding (UK home-rate vs international), deadline"
+ },
+ {
+  "country": "United Kingdom",
+  "institution": "University of Surrey, Institute of Sound Recording (IoSR)",
+  "title": "PhD Studentship in Data-Driven Audio and Acoustic Engineering (AURORA3-aligned, Prof Enzo De Sena)",
+  "url": "https://www.surrey.ac.uk/fees-and-funding/studentships/phd-data-driven-audio-and-acoustic-engineering",
+  "why_promising": "Audio/acoustics ML studentship tied to a new EPSRC-funded national audio infrastructure (AURORA3); the 2026-entry round had a 2026-07-03 deadline (now closed), but Surrey runs this as a recurring annual studentship line so a 2027-entry version may appear",
+  "what_to_check": "Page blocks automated reading - open directly in a browser, or check https://www.surrey.ac.uk/fees-and-funding/studentships for a newer listing. Check: whether a new round is open, deadline, international fee coverage, and whether the final project direction leans toward on-device/embedded audio (closer applicant fit) or room-acoustics measurement (less close)"
  }
 ]
