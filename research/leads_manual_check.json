@@ -38,5 +38,13 @@
   "url": "https://www.ou.nl/",
   "why_promising": "Had an assistive speech PhD in August",
   "what_to_check": "Domain refused by the fetch tool, check vacancies (note NL visa is blocked)"
+ },
+ {
+  "country": "Luxembourg",
+  "institution": "University of Luxembourg",
+  "title": "Doctoral researcher in machine learning algorithms efficiency",
+  "url": "https://www.uni.lu/en/jobs/doctoral-researcher-in-machine-learning-algorithms-efficiency",
+  "why_promising": "Efficient ML matches the compact-model work, Luxembourg pays doctoral researchers a full salary",
+  "what_to_check": "Page blocks automated reading, check deadline, supervisor, unit and contract"
  }
 ]

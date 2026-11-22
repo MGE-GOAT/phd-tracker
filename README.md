@@ -52,3 +52,4 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | Germany | Fraunhofer IMS Duisburg (Dr. Hendrik Wöhrle) | [Embedded AI on smart sensors](https://www.ims.fraunhofer.de/en.html) | Fraunhofer search for Doktorand in Duisburg showed 0, consider a cold email |
 | Germany | University of Lübeck, ISIP (Prof. Alfred Mertins) | [AI in biomedical signal processing](https://www.sp.uni-luebeck.de/) | Site timed out, check vacancies |
 | Netherlands | Open Universiteit | [Assistive speech or AI posts](https://www.ou.nl/) | Domain refused by the fetch tool, check vacancies (note NL visa is blocked) |
+| Luxembourg | University of Luxembourg | [Doctoral researcher in machine learning algorithms efficiency](https://www.uni.lu/en/jobs/doctoral-researcher-in-machine-learning-algorithms-efficiency) | Page blocks automated reading, check deadline, supervisor, unit and contract |
