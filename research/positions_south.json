@@ -1,0 +1,125 @@
+[
+  {
+    "country": "United Kingdom",
+    "city": "London",
+    "institution": "University College London (UCL)",
+    "group": "Department of Electronic and Electrical Engineering (EEE), UCL EPSRC Doctoral Landscape Award (UELA)",
+    "pi": "Dr Sattar Vakili",
+    "pi_url": "https://sattar-vakili.github.io/cv",
+    "pi_recent_pubs": [
+      "No-Regret Thompson Sampling for Finite-Horizon Markov Decision Processes with Gaussian Processes, NeurIPS 2025 (candidate paper from MediaTek Research group; author list not individually confirmed)",
+      "Order-optimal regret bounds for kernel-based reinforcement learning, ICML 2024 (candidate paper from MediaTek Research group; author list not individually confirmed)"
+    ],
+    "title": "4-Year Fully Funded Studentship - Efficient and Adaptive AI",
+    "topic": "On-device/resource-constrained AI: efficient generative modelling, reinforcement learning and adaptive data acquisition for AI on smartphones/connected devices; co-supervised with MediaTek Research with 3+ month industrial placement",
+    "fit_1_10": 7,
+    "why_fit": "Directly about learning and inference under compute/memory/energy/data constraints on embedded/connected devices -- the same problem space as the applicant's int8 QAT wake-word work on Raspberry Pi, though framed more mathematically/theoretically (RL, bandits, generative modelling) than as applied embedded engineering.",
+    "overqualified_angle": "Most applicants to a UCL theoretical-ML studentship will have strong math/theory but little or no real deployed-system experience; the applicant's track record shipping an int8-quantized KWS model to a Raspberry Pi device and a production LLM-agent system gives him a concrete systems angle this project explicitly wants (industrial co-supervisor at MediaTek is an edge-AI chip/comms company).",
+    "competition": "high - UCL EEE is a globally top-10-ranked (QS 2026) department, UELA studentships are competitive EPSRC-badged awards, and MediaTek Research co-supervision adds prestige/visibility that will attract strong applicants",
+    "funding": {
+      "type": "UCL EPSRC Doctoral Landscape Award (UELA) studentship",
+      "amount": "4 years home-rate fees, with UCL award covering the international/home fee difference for international students; stipend at UELA enhanced rate, expected GBP 26,022 for 2026/27 (GBP 1,500 above UKRI London-weighted rate of GBP 24,522), rising each year"
+    },
+    "start": "2027-28 academic year (UELA cohort)",
+    "deadline": "2027-01-08",
+    "english_requirement": "Standard UCL PhD entry requirements apply (not stated on this page); check UCL EEE PhD admissions English-language policy, which normally accepts IELTS/TOEFL/PTE and does not list Duolingo",
+    "apply_url": "https://www.ucl.ac.uk/engineering/4-year-fully-funded-studentship-efficient-and-adaptive-ai",
+    "verified_on": "2026-11-22",
+    "evidence": "\"4 years fees (Home rate)... International students will receive a UCL award to cover the home/international fee difference... Maintenance stipend at UELA enhanced rate... Application deadline: 8th January 2027 at 12:00 GMT.\" -- fetched directly from the UCL Engineering page",
+    "red_flags": "ATAS clearance will almost certainly be required for an Iranian national in this EEE/AI subject area at UK visa stage, on top of the PhD admission itself; English test requirement not stated on this specific page, must confirm via UCL EEE general admissions page before applying",
+    "type": "advert"
+  },
+  {
+    "country": "United Kingdom",
+    "city": "Guildford",
+    "institution": "University of Surrey",
+    "group": "Institute of Sound Recording (IoSR)",
+    "pi": "Prof Enzo De Sena",
+    "pi_url": "https://www.surrey.ac.uk/people/enzo-de-sena",
+    "pi_recent_pubs": [
+      "Past, Present, and Future of Spatial Audio (with S. Koyama, P. Samarasinghe, M. R. P. Thomas, F. Antonacci), ICASSP 2025 / arXiv:2503.12948, 2025",
+      "Room acoustic rendering network work (with M. Scerbo, L. Savioja), listed Sept 2025 -- check exact venue before citing",
+      "Data-driven differentiable feedback delay network paper, listed April 2026 -- check exact venue before citing"
+    ],
+    "title": "No current advert verified -- this is a cold-email lead, not an open position",
+    "topic": "Room acoustics modelling, multichannel audio, microphone beamforming, binaural modelling; Director of IoSR; named investigator on a King's College London-led immersive-audio grant",
+    "fit_1_10": 5,
+    "why_fit": "Audio signal processing and machine learning group with active hardware-adjacent work (microphone arrays, real-time rendering), but the group's focus is spatial/room acoustics rather than keyword spotting or embedded/on-device ML specifically, so the topical overlap with the applicant's core wake-word/edge-AI work is partial.",
+    "overqualified_angle": "The applicant's embedded C++/TFLite deployment experience and real-device testing discipline (noise/false-trigger stress testing) would stand out in a group whose PhD students are typically signal-processing/acoustics specialists without production embedded-systems experience.",
+    "competition": "medium - IoSR is a well-regarded but not hyper-elite group; a specific IoSR studentship aligned with the AURORA3 national audio/acoustics infrastructure existed for 2026 entry (deadline 3 July 2026, already closed) and a similar call may recur for a later intake",
+    "funding": {
+      "type": "unknown -- no open advert found; prior AURORA3-aligned studentship was EPSRC-funded, GBP ~2.2M infrastructure investment",
+      "amount": "not applicable, no current advert"
+    },
+    "start": "not applicable",
+    "deadline": "rolling (cold-email; no verified open advert as of 2026-11-22)",
+    "english_requirement": "not checked -- no current advert",
+    "apply_url": "https://www.surrey.ac.uk/people/enzo-de-sena",
+    "verified_on": "2026-11-22",
+    "evidence": "Surrey staff page lists his research interests as 'room acoustics modelling, multichannel audio, microphone beamforming and binaural modelling'; he is Professor and Director of IoSR",
+    "red_flags": "No current funded PhD advert verified on a primary Surrey page; the only concrete studentship found tied to this group/infrastructure (AURORA3-aligned 'Data-Driven Audio and Acoustic Engineering') had a 2026-07-03 deadline that has already passed, so treat this purely as a cold-email PI lead, not an advert",
+    "type": "cold-email"
+  },
+  {
+    "country": "Italy",
+    "city": "Turin",
+    "institution": "Politecnico di Torino",
+    "group": "DAUIN - Department of Control and Computer Engineering, EDA (Electronic Design Automation) research group",
+    "pi": "Prof. Daniele Jahier Pagliari",
+    "pi_url": "https://www.polito.it/en/staff?p=daniele.jahier",
+    "pi_recent_pubs": [
+      "Attention-based TinyML architecture with automated deployment (with A. Burrello et al.), 2024 conference paper",
+      "MATCH: a model-aware TVM-based compiler for heterogeneous edge devices (with A. Burrello et al.), IEEE Transactions on Computer-Aided Design, 2025",
+      "Accelerating depthwise separable convolutions on ultra-low-power devices, SAMOS 2025"
+    ],
+    "title": "No current advert verified -- cold-email lead (Pagliari has previously supervised a MUR-funded PhD topic, 'Advanced Deep Learning Optimization for Extreme Edge Applications')",
+    "topic": "TinyML, deep learning optimization and compilation for extreme-edge/ultra-low-power devices, on-device learning",
+    "fit_1_10": 9,
+    "why_fit": "This is an extremely close topical match: the group's own recent work is literally about optimizing and deploying compressed deep-learning models (attention-based TinyML, ultra-low-power inference) on constrained edge hardware -- the same problem the applicant solved in his thesis with int8 QAT wake-word models on a Raspberry Pi.",
+    "overqualified_angle": "Most PhD candidates in this group come from a compiler/hardware-design or theoretical-ML background; the applicant's demonstrated end-to-end deployment of a quantized model on real embedded hardware with a full product (fall detection, STT, device integration) around it is a differentiator most applicants will not have.",
+    "competition": "medium - Politecnico di Torino is a strong, well-known engineering school (not hyper-elite like Oxbridge/ETH) and this specific TinyML/edge-AI niche is a less crowded subfield than mainstream deep learning",
+    "funding": {
+      "type": "Italian national PhD cycle (dottorato, typically MUR-funded borse di dottorato), amount and availability depend on the specific annual bando",
+      "amount": "standard Italian PhD stipend, approx EUR 1,200-1,650/month net depending on university top-ups; verify current figure on Polito's bando page"
+    },
+    "start": "unknown -- no specific currently-open call verified for this topic",
+    "deadline": "unverified -- the 42nd-cycle (2026/27) Politecnico di Torino admission sessions were running through autumn 2026 (2nd session closed 16 Nov 2026, 3rd session opens 14 Jan 2027 per the general bando calendar), but no topic-specific call naming this PI with a confirmed open deadline was found",
+    "english_requirement": "not checked -- no specific advert verified",
+    "apply_url": "https://www.polito.it/dottorato/futuri-dottorandi/ammissione/bandi-e-posizioni-aperte",
+    "verified_on": "2026-11-22",
+    "evidence": "Polito staff/publication listings show Pagliari as Associate Professor at DAUIN supervising PhD topics including 'Advanced Deep Learning Optimization for Extreme Edge Applications' and co-authoring 2024-2026 TinyML/edge-AI papers",
+    "red_flags": "No single, dated, topic-specific open call was directly verified for this PI as of 2026-11-22; this entry should be treated as a cold-email/direct-contact lead plus 'watch the Polito bandi e posizioni aperte page for the 3rd session (opens 14 Jan 2027)', not as a confirmed advert",
+    "type": "cold-email"
+  },
+  {
+    "country": "Spain",
+    "city": "Barcelona",
+    "institution": "Universitat Pompeu Fabra (UPF)",
+    "group": "Music Technology Group (MTG), DTIC department",
+    "pi": "Prof. Xavier Serra",
+    "pi_url": "https://www.upf.edu/web/xavier-serra",
+    "pi_recent_pubs": [
+      "Green MIR? Investigating Computational Cost of Recent Music-AI Research in ISMIR (with H. Kim), ISMIR 2024",
+      "Enhancing Neural Audio Fingerprint Robustness to Audio Degradation for Music Identification (with R.O. Araz, G. Cortes-Sebastia et al.), ISMIR 2025",
+      "PeakNetFP: Peak Based Neural Audio Fingerprinting Robust to Extreme Time Stretching, ISMIR 2025 (MTG-affiliated; full author list not independently confirmed)"
+    ],
+    "title": "No current advert verified -- cold-email lead; MTG has previously hosted 'la Caixa' INPhINIT PhD fellows (the 2026 Incoming call, deadline 28 Jan 2026, has already closed)",
+    "topic": "Audio/music signal processing, machine learning for sound and music understanding, audio fingerprinting, semantic audio technologies",
+    "fit_1_10": 5,
+    "why_fit": "Strong, well-resourced audio-ML lab with real production-scale systems experience (audio fingerprinting at near-industrial scale), which overlaps with the applicant's audio-ML/signal-processing background, but MTG's focus is music/sound understanding rather than keyword spotting, embedded deployment, or biomedical sensing specifically.",
+    "overqualified_angle": "The applicant's embedded/on-device deployment and real-time systems-engineering experience is a different skill set than MTG's typical focus on large-scale audio retrieval and MIR research; he would bring a practical edge-deployment angle (e.g., efficient on-device audio fingerprinting/KWS) that complements the group's usual academic-MIR profile.",
+    "competition": "high - MTG is one of the most visible and oversubscribed audio-ML groups in Europe; 'la Caixa' INPhINIT fellowships hosted there are internationally competitive (circa 30 fellows selected from ~670+ applicants across all disciplines and host institutions in the 2026 Incoming round)",
+    "funding": {
+      "type": "no current open advert verified; historically via 'la Caixa' INPhINIT Incoming fellowships (open to any nationality, Spain/Portugal host institutions) or UPF's own doctoral contracts",
+      "amount": "INPhINIT fellowship reported at EUR 35,800/year for up to 4 years (third-party aggregator figure, verify on lacaixafoundation.org before relying on it); next 'la Caixa' Incoming call cycle dates for 2027 are not yet confirmed on the official site"
+    },
+    "start": "unknown -- no specific currently-open call verified",
+    "deadline": "unverified for 2027 cycle -- the 2026 INPhINIT Incoming call (deadline 2026-01-28) and Retaining call (deadline 2026-02-18) are both already closed; third-party aggregators give conflicting unconfirmed 2027 dates (12 Jan 2027 or 2 Mar 2027 for Retaining) that could not be confirmed on the official lacaixafoundation.org page",
+    "english_requirement": "not checked -- no specific advert verified",
+    "apply_url": "https://www.upf.edu/web/mtg/about",
+    "verified_on": "2026-11-22",
+    "evidence": "UPF MTG pages and ISMIR 2024/2025 proceedings confirm Serra as group director/co-author on 2024-2025 publications; 'la Caixa' Foundation materials confirm INPhINIT Incoming fellowships are open to any nationality for a PhD hosted in Spain or Portugal",
+    "red_flags": "No currently-open, dated advert verified; treat purely as a cold-email lead and watch for the 'la Caixa' INPhINIT 2027 Incoming call to open (likely autumn/winter 2026-27 based on past pattern) directly on lacaixafoundation.org, not on third-party aggregator pages",
+    "type": "cold-email"
+  }
+]

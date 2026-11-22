@@ -32,6 +32,7 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 
 | Deadline | Fit | Status | Country | Institution | PI | Position |
 |---|---|---|---|---|---|---|
+| 2027-01-08 | 7 | new | United Kingdom | University College London (UCL) | Dr Sattar Vakili | [4-Year Fully Funded Studentship - Efficient and Adaptive AI](https://www.ucl.ac.uk/engineering/4-year-fully-funded-studentship-efficient-and-adaptive-ai) |
 | rolling | 9 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Michael Beigl | [PhD or Postdoc, Wearable Computing in Health Technologies (hardware, systems, AI)](https://www.teco.edu/jobs/doktorand-oder-postdoc-informatik-gesundheitstechnologie-und-ki-full-time-e13-payment) |
 | rolling | 7 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Michael Beigl | [PhD position, Toolchain for Wearable Computing and Hardware Development](https://www.teco.edu/jobs/phd-position-toolchain-for-wearable-computing-full-time-e13-payment) |
 
@@ -40,8 +41,11 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | Fit | Status | Country | Institution | PI | Topic |
 |---|---|---|---|---|---|
 | 9 | new | Germany | University of Oldenburg | [Prof. Bernd T. Meyer](https://www.uol.de/en/communication-acoustics) | Deep-learning speech processing, keyword spotting, hearing technology |
+| 9 | new | Italy | Politecnico di Torino | [Prof. Daniele Jahier Pagliari](https://www.polito.it/en/staff?p=daniele.jahier) | TinyML, deep learning optimization and compilation for extreme-edge/ultra-low-power devices, on-device learning |
 | 8 | new | Germany | University of Oldenburg | [Prof. Simon Doclo](https://www.uol.de/en/mediphysics-acoustics/sigproc) | Model-based and learning-based acoustical signal processing, hearing devices |
 | 7 | new | Germany | University of Kassel | [Prof. Bernhard Sick](https://www.uni-kassel.de/eecs/ies/) | Machine learning for embedded systems, audio classification, time series |
+| 5 | new | United Kingdom | University of Surrey | [Prof Enzo De Sena](https://www.surrey.ac.uk/people/enzo-de-sena) | Room acoustics modelling, multichannel audio, microphone beamforming, binaural modelling; Director of IoSR; named investigator on a King's College London-led immersive-audio grant |
+| 5 | new | Spain | Universitat Pompeu Fabra (UPF) | [Prof. Xavier Serra](https://www.upf.edu/web/xavier-serra) | Audio/music signal processing, machine learning for sound and music understanding, audio fingerprinting, semantic audio technologies |
 
 ## Check by hand (pages that block automated reading)
 
