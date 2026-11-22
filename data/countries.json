@@ -1,1 +1,23 @@
-[]
+[
+  {"rank": 1, "country": "Belgium", "visa": 8, "work": 7, "economy": 7, "note": "Tehran VFS open and scholarship holders skip the interview per August 2026 verified data not rechecked this session"},
+  {"rank": 2, "country": "Finland", "visa": 8, "work": 7, "economy": 6, "note": "Open filing channel from Tehran per August 2026 data but citizenship needs five years and Finnish language B1"},
+  {"rank": 3, "country": "Switzerland", "visa": 6, "work": 7, "economy": 9, "note": "Strongest economy and salaries in the list but this row is domain knowledge not freshly verified"},
+  {"rank": 4, "country": "Norway", "visa": 6, "work": 8, "economy": 8, "note": "PhD positions are salaried employee roles which strengthens work rights but this row is domain knowledge not freshly verified"},
+  {"rank": 5, "country": "Austria", "visa": 7, "work": 7, "economy": 7, "note": "Istanbul workaround and six year citizenship path with B2 German verified in August 2026 not rechecked this session"},
+  {"rank": 6, "country": "Luxembourg", "visa": 5, "work": 7, "economy": 9, "note": "No embassy in Tehran so filing likely routes through Belgium or another Schengen partner and this row is domain knowledge only"},
+  {"rank": 7, "country": "United Kingdom", "visa": 6, "work": 6, "economy": 7, "note": "ATAS screening is a real risk for this applicant's edge AI and biomedical signal processing profile"},
+  {"rank": 8, "country": "Sweden", "visa": 6, "work": 6, "economy": 7, "note": "Sapo security screening at the permanent residence stage is a known trap for Iranian applicants per August 2026 data"},
+  {"rank": 9, "country": "Germany", "visa": 4, "work": 8, "economy": 8, "note": "Tehran visa section frozen with section 16b and 18d waitlists opened mid July 2026 status not rechecked this session"},
+  {"rank": 10, "country": "Poland", "visa": 7, "work": 5, "economy": 5, "note": "Cheapest fully Tehran fileable route verified in August 2026 not rechecked this session"},
+  {"rank": 11, "country": "Canada", "visa": 3, "work": 7, "economy": 8, "note": "One to four year security screening plus a large liquidity requirement with no sponsor waiver"},
+  {"rank": 12, "country": "Italy", "visa": 6, "work": 5, "economy": 5, "note": "Low doctoral stipend and weaker ML job market and this row is domain knowledge only"},
+  {"rank": 13, "country": "Spain", "visa": 6, "work": 5, "economy": 5, "note": "Low doctoral stipend and weaker ML job market and this row is domain knowledge only"},
+  {"rank": 14, "country": "Netherlands", "visa": 2, "work": 8, "economy": 8, "note": "MVV suspended and knowledge security screening for sensitive technology fields per August 2026 data"},
+  {"rank": 15, "country": "Denmark", "visa": 2, "work": 7, "economy": 8, "note": "Cannot file the long stay permit from Iran and PET screening applies per August 2026 data"},
+  {"rank": 16, "country": "Hungary", "visa": 6, "work": 4, "economy": 4, "note": "Schengen access and Stipendium Hungaricum funding but weak salaries and this row is domain knowledge only"},
+  {"rank": 17, "country": "Australia", "visa": 1, "work": 7, "economy": 8, "note": "Visa channel effectively sealed for this nationality per August 2026 data"},
+  {"rank": 18, "country": "Ireland", "visa": 2, "work": 6, "economy": 7, "note": "Roughly seventy six percent refusal rate for this nationality per August 2026 data"},
+  {"rank": 19, "country": "Estonia", "visa": 3, "work": 5, "economy": 5, "note": "Baltic citizenship renunciation requirement is a dealbreaker for keeping Iranian citizenship"},
+  {"rank": 20, "country": "Czechia", "visa": 2, "work": 5, "economy": 5, "note": "Tehran embassy section closed entirely on 19 July 2026 per August 2026 data"},
+  {"rank": 21, "country": "Portugal", "visa": 2, "work": 4, "economy": 4, "note": "Visa section closed and a ten year citizenship timeline per August 2026 data"}
+]
