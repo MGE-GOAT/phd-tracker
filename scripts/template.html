@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhD Tracker</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16202c;--muted:#5d6b7a;--line:#dde3ea;--accent:#1d6f7a;--accent-soft:#e3f1f2;
+--warn:#a4570a;--warn-soft:#fdf1e2;--bad:#a12a2a;--bad-soft:#fbe8e8;--good:#1f7a3f;--good-soft:#e5f5ea;--chip:#eef1f5}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f141a;--card:#171e26;--ink:#e6ebf0;--muted:#94a3b3;--line:#2a3440;
+--accent:#5cc3cf;--accent-soft:#16343a;--warn:#f0a95b;--warn-soft:#3a2a17;--bad:#f08a8a;--bad-soft:#3a1c1c;--good:#7fd69a;--good-soft:#173322;--chip:#222c37}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:28px 16px 10px;max-width:1180px;margin:auto}
+h1{margin:0;font-size:26px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin-top:4px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:120px}
+.stat b{display:block;font-size:22px}
+.stat span{color:var(--muted);font-size:13px}
+nav{max-width:1180px;margin:8px auto 0;padding:0 16px;display:flex;gap:6px;flex-wrap:wrap}
+nav button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer;font:inherit}
+nav button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+main{max-width:1180px;margin:auto;padding:12px 16px 60px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
+.bar input,.bar select{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.bar input{flex:1;min-width:180px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.top{display:grid;grid-template-columns:86px 1fr auto;gap:12px;padding:12px 14px;cursor:pointer;align-items:center}
+.dl{font-weight:600;font-variant-numeric:tabular-nums}
+.dl small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.dl.soon{color:var(--warn)}
+.ttl{font-weight:600}
+.meta{color:var(--muted);font-size:13px}
+.right{display:flex;gap:6px;align-items:center}
+.fit{font-weight:700;border-radius:8px;padding:3px 8px;background:var(--accent-soft);color:var(--accent);font-variant-numeric:tabular-nums}
+.st{font-size:12px;border-radius:999px;padding:3px 9px;background:var(--chip);color:var(--muted);text-transform:capitalize}
+.st.applied,.st.interview,.st.emailed{background:var(--accent-soft);color:var(--accent)}
+.st.offer{background:var(--good-soft);color:var(--good)}
+.st.rejected,.st.expired,.st.skip{background:var(--bad-soft);color:var(--bad)}
+.st.shortlist{background:var(--warn-soft);color:var(--warn)}
+.body{display:none;border-top:1px solid var(--line);padding:12px 14px;font-size:14px}
+.item.open .body{display:block}
+.grid{display:grid;grid-template-columns:150px 1fr;gap:6px 14px}
+.grid dt{color:var(--muted)}
+.grid dd{margin:0}
+.flag{color:var(--bad)}
+a{color:var(--accent)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+th{color:var(--muted);font-weight:600;font-size:13px}
+.score{font-variant-numeric:tabular-nums;font-weight:600}
+.empty{color:var(--muted);padding:30px;text-align:center}
+@media (max-width:640px){.top{grid-template-columns:70px 1fr}.right{grid-column:1/-1}.grid{grid-template-columns:1fr}.grid dt{margin-top:6px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>PhD Tracker</h1>
+  <div class="sub" id="sub"></div>
+  <div class="stats" id="stats"></div>
+</header>
+<nav id="tabs">
+  <button data-t="adverts" class="on">Open positions</button>
+  <button data-t="cold">Cold-email PIs</button>
+  <button data-t="countries">Countries</button>
+</nav>
+<main>
+  <div class="bar" id="bar">
+    <input id="q" placeholder="Search institution, PI, topic">
+    <select id="fc"><option value="">All countries</option></select>
+    <select id="fs"><option value="">Active statuses</option><option value="*">All statuses</option></select>
+    <select id="ff"><option value="0">Any fit</option><option value="7">Fit 7+</option><option value="8">Fit 8+</option><option value="9">Fit 9+</option></select>
+  </div>
+  <div id="list"></div>
+</main>
+<script>
+const D=/*DATA*/null;
+const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const today=D.updated, inactive=new Set(["expired","skip","rejected"]);
+let tab="adverts";
+function days(d){if(!/^\d{4}-\d{2}-\d{2}$/.test(d||""))return null;return Math.round((new Date(d)-new Date(today))/864e5)}
+function init(){
+  $("#sub").textContent=`Fully funded PhD positions, verified on official pages. Last updated ${today}.`;
+  const ad=D.positions.filter(p=>p.type==="advert"&&!inactive.has(p.status));
+  const soon=ad.filter(p=>{const n=days(p.deadline);return n!==null&&n>=0&&n<=30}).length;
+  const act=D.positions.filter(p=>["emailed","applied","interview","offer"].includes(p.status)).length;
+  $("#stats").innerHTML=[[ad.length,"open positions"],[soon,"deadlines in 30 days"],[D.positions.filter(p=>p.type==="cold-email").length,"cold-email PIs"],[act,"in progress"]]
+    .map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+  [...new Set(D.positions.map(p=>p.country))].sort().forEach(c=>$("#fc").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
+  D.statuses.forEach(s=>$("#fs").insertAdjacentHTML("beforeend",`<option value="${s}">${s}</option>`));
+  $("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
+  ["#q","#fc","#fs","#ff"].forEach(s=>$(s).oninput=render);
+  render();
+}
+function filtered(type){
+  const q=$("#q").value.toLowerCase(),c=$("#fc").value,s=$("#fs").value,f=+$("#ff").value;
+  return D.positions.filter(p=>p.type===type&&(!c||p.country===c)&&(s==="*"||(s?p.status===s:!inactive.has(p.status)))&&(+p.fit_1_10||0)>=f&&
+    (!q||[p.institution,p.pi,p.title,p.topic,p.group,p.city].join(" ").toLowerCase().includes(q)));
+}
+function card(p){
+  const n=days(p.deadline), dl=n===null?`<div class="dl">${esc(p.deadline||"rolling")}</div>`:
+    `<div class="dl ${n>=0&&n<=30?"soon":""}">${esc(p.deadline.slice(5))}<small>${n<0?"passed":n+" days"}</small></div>`;
+  const pubs=(p.pi_recent_pubs||[]).map(x=>`<div>${esc(x)}</div>`).join("");
+  const row=(k,v)=>v?`<dt>${k}</dt><dd>${v}</dd>`:"";
+  return `<div class="item"><div class="top">${p.type==="advert"?dl:`<div class="dl">PI</div>`}
+    <div><div class="ttl">${esc(p.title||p.topic)}</div><div class="meta">${esc(p.institution)}${p.group?" · "+esc(p.group):""} · ${esc(p.city||"")}, ${esc(p.country)} · ${esc(p.pi||"")}</div></div>
+    <div class="right"><span class="st ${esc(p.status)}">${esc(p.status)}</span><span class="fit">${esc(p.fit_1_10)}</span></div></div>
+    <div class="body"><dl class="grid">
+      ${row("Topic",esc(p.topic))}${row("Why it fits",esc(p.why_fit))}${row("Your edge",esc(p.overqualified_angle))}
+      ${row("Competition",esc(p.competition))}${row("Funding",esc(p.funding))}${row("Start",esc(p.start))}
+      ${row("English",esc(p.english_requirement))}${row("PI",p.pi_url?`<a href="${esc(p.pi_url)}" target="_blank" rel="noopener">${esc(p.pi)}</a>`:esc(p.pi))}
+      ${row("PI recent work",pubs)}${row("Apply",p.apply_url?`<a href="${esc(p.apply_url)}" target="_blank" rel="noopener">official page</a>`:"")}
+      ${row("Evidence",esc(p.evidence))}${row("Red flags",p.red_flags?`<span class="flag">${esc(p.red_flags)}</span>`:"")}
+      ${row("Verified",esc(p.verified_on))}${row("Notes",esc(p.notes))}
+    </dl></div></div>`;
+}
+function render(){
+  $("#bar").style.display=tab==="countries"?"none":"flex";
+  if(tab==="countries"){
+    const cs=[...D.countries].sort((a,b)=>(a.rank??99)-(b.rank??99));
+    $("#list").innerHTML=cs.length?`<table><tr><th>#</th><th>Country</th><th>Visa from Iran</th><th>Work after PhD</th><th>Economy</th><th>Note</th></tr>${
+      cs.map(c=>`<tr><td>${esc(c.rank)}</td><td><b>${esc(c.country)}</b></td><td class="score">${esc(c.visa)}</td><td class="score">${esc(c.work)}</td><td class="score">${esc(c.economy)}</td><td>${esc(c.note)}</td></tr>`).join("")}</table>`
+      :`<div class="empty">No country data yet.</div>`;
+    return;
+  }
+  const items=filtered(tab==="adverts"?"advert":"cold-email");
+  $("#list").innerHTML=items.length?items.map(card).join(""):`<div class="empty">Nothing matches these filters.</div>`;
+  document.querySelectorAll(".top").forEach(t=>t.onclick=()=>t.parentElement.classList.toggle("open"));
+}
+init();
+</script>
+</body>
+</html>
