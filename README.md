@@ -44,6 +44,8 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | 9 | new | Germany | University of Oldenburg | [Prof. Bernd T. Meyer](https://www.uol.de/en/communication-acoustics) | Deep-learning speech processing, keyword spotting, hearing technology |
 | 9 | new | Italy | Politecnico di Torino | [Prof. Daniele Jahier Pagliari](https://www.polito.it/en/staff?p=daniele.jahier) | TinyML, deep learning optimization and compilation for extreme-edge/ultra-low-power devices, on-device learning |
 | 8 | new | Germany | University of Oldenburg | [Prof. Simon Doclo](https://www.uol.de/en/mediphysics-acoustics/sigproc) | Model-based and learning-based acoustical signal processing, hearing devices |
+| 8 | new | Switzerland | EPFL | [Prof. David Atienza](https://people.epfl.ch/david.atienza) | Wearable health ML, EEG and ECG, embedded AI |
+| 8 | new | Switzerland | Idiap Research Institute | [Dr. Mathew Magimai Doss](https://www.idiap.ch/en/research/groups/speech-audio-processing) | Speech recognition, pathological speech, audio processing |
 | 7 | new | Germany | University of Kassel | [Prof. Bernhard Sick](https://www.uni-kassel.de/eecs/ies/) | Machine learning for embedded systems, audio classification, time series |
 | 5 | new | United Kingdom | University of Surrey | [Prof Enzo De Sena](https://www.surrey.ac.uk/people/enzo-de-sena) | Room acoustics modelling, multichannel audio, microphone beamforming, binaural modelling; Director of IoSR; named investigator on a King's College London-led immersive-audio grant |
 | 5 | new | Spain | Universitat Pompeu Fabra (UPF) | [Prof. Xavier Serra](https://www.upf.edu/web/xavier-serra) | Audio/music signal processing, machine learning for sound and music understanding, audio fingerprinting, semantic audio technologies |
@@ -58,3 +60,9 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | Germany | University of Lübeck, ISIP (Prof. Alfred Mertins) | [AI in biomedical signal processing](https://www.sp.uni-luebeck.de/) | Site timed out, check vacancies |
 | Netherlands | Open Universiteit | [Assistive speech or AI posts](https://www.ou.nl/) | Domain refused by the fetch tool, check vacancies (note NL visa is blocked) |
 | Luxembourg | University of Luxembourg | [Doctoral researcher in machine learning algorithms efficiency](https://www.uni.lu/en/jobs/doctoral-researcher-in-machine-learning-algorithms-efficiency) | Page blocks automated reading, check deadline, supervisor, unit and contract |
+| Austria | TU Graz, SPSC (Prof. Franz Pernkopf) | [Speech and signal processing PhD or cold email](https://www.tugraz.at/) | Vacancy page 404, check group page and open posts |
+| Austria | JKU Linz (Prof. Mario Huemer) | [Signal processing PhD or cold email](https://jobs.jku.at/) | Job portal timed out, check open posts |
+| Switzerland | ETH Zurich, PBL (Prof. Michele Magno) | [TinyML and embedded ML PhD or cold email](https://pbl.ethz.ch/) | Group site timed out, no current ETH advert, check the group page |
+| Switzerland | Institute of Neuroinformatics UZH/ETH (Prof. Shih-Chii Liu) | [Neuromorphic audio and keyword spotting](https://www.ini.uzh.ch/) | Domain refused by the fetch tool, check jobs |
+| Belgium | KU Leuven, ESAT-PSI (Prof. Hugo Van hamme) and ESAT-STADIUS (De Vos, Bertrand) | [Speech and biomedical signal PhDs](https://www.kuleuven.be/personeel/jobsite/jobs/phd?lang=en) | PhD list loads by JavaScript, filter for ESAT |
+| Belgium | KU Leuven ExpORL (Prof. Tom Francart) and UGent IDLab (Prof. Kris Demuynck) | [Hearing and speech PhDs](https://www.kuleuven.be/personeel/jobsite/jobs/phd?lang=en) | Profiles and vacancies not readable automatically |

@@ -46,5 +46,53 @@
   "url": "https://www.uni.lu/en/jobs/doctoral-researcher-in-machine-learning-algorithms-efficiency",
   "why_promising": "Efficient ML matches the compact-model work, Luxembourg pays doctoral researchers a full salary",
   "what_to_check": "Page blocks automated reading, check deadline, supervisor, unit and contract"
+ },
+ {
+  "country": "Austria",
+  "institution": "TU Graz, SPSC (Prof. Franz Pernkopf)",
+  "title": "Speech and signal processing PhD or cold email",
+  "url": "https://www.tugraz.at/",
+  "why_promising": "Strong speech and efficient ML group",
+  "what_to_check": "Vacancy page 404, check group page and open posts"
+ },
+ {
+  "country": "Austria",
+  "institution": "JKU Linz (Prof. Mario Huemer)",
+  "title": "Signal processing PhD or cold email",
+  "url": "https://jobs.jku.at/",
+  "why_promising": "Signal processing institute",
+  "what_to_check": "Job portal timed out, check open posts"
+ },
+ {
+  "country": "Switzerland",
+  "institution": "ETH Zurich, PBL (Prof. Michele Magno)",
+  "title": "TinyML and embedded ML PhD or cold email",
+  "url": "https://pbl.ethz.ch/",
+  "why_promising": "Exact TinyML and wearable match",
+  "what_to_check": "Group site timed out, no current ETH advert, check the group page"
+ },
+ {
+  "country": "Switzerland",
+  "institution": "Institute of Neuroinformatics UZH/ETH (Prof. Shih-Chii Liu)",
+  "title": "Neuromorphic audio and keyword spotting",
+  "url": "https://www.ini.uzh.ch/",
+  "why_promising": "Low-power audio and KWS hardware",
+  "what_to_check": "Domain refused by the fetch tool, check jobs"
+ },
+ {
+  "country": "Belgium",
+  "institution": "KU Leuven, ESAT-PSI (Prof. Hugo Van hamme) and ESAT-STADIUS (De Vos, Bertrand)",
+  "title": "Speech and biomedical signal PhDs",
+  "url": "https://www.kuleuven.be/personeel/jobsite/jobs/phd?lang=en",
+  "why_promising": "Top Belgian speech and biomedical groups",
+  "what_to_check": "PhD list loads by JavaScript, filter for ESAT"
+ },
+ {
+  "country": "Belgium",
+  "institution": "KU Leuven ExpORL (Prof. Tom Francart) and UGent IDLab (Prof. Kris Demuynck)",
+  "title": "Hearing and speech PhDs",
+  "url": "https://www.kuleuven.be/personeel/jobsite/jobs/phd?lang=en",
+  "why_promising": "Hearing research and speech recognition",
+  "what_to_check": "Profiles and vacancies not readable automatically"
  }
 ]
