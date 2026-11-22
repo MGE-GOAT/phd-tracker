@@ -14,7 +14,8 @@
    "email": "email_saukh.txt",
    "note": "Her PhD advert page was taken down on 22 Nov, so that place is probably filled. The email asks about other places in the network.",
    "match": 10,
-   "chance": 5
+   "chance": 5,
+   "address": "saukh@tugraz.at"
   },
   {
    "id": "beigl",
@@ -29,7 +30,8 @@
    "email": "email_beigl.txt",
    "note": "His address is on the TECO website.",
    "match": 9,
-   "chance": 6
+   "chance": 6,
+   "address": "michael.beigl@kit.edu"
   },
   {
    "id": "saeed",
@@ -42,7 +44,8 @@
    "page": "https://tue.nl/en/research/researchers/aaqib-saeed",
    "email": "email_saeed.txt",
    "match": 9,
-   "chance": 4
+   "chance": 4,
+   "address": "a.saeed@tue.nl"
   },
   {
    "id": "devries",
@@ -69,7 +72,8 @@
    "page": "https://informatics.tuwien.ac.at/people/daniel-mueller-gritschneder",
    "email": "email_mueller_gritschneder.txt",
    "match": 9,
-   "chance": 5
+   "chance": 5,
+   "address": "daniel.mueller-gritschneder@tuwien.ac.at"
   },
   {
    "id": "jku",
@@ -96,7 +100,8 @@
    "page": "https://ubi29.informatik.uni-siegen.de/usi/",
    "email": "email_vanlaerhoven.txt",
    "match": 9,
-   "chance": 6
+   "chance": 6,
+   "address": "kvl@eti.uni-siegen.de"
   },
   {
    "id": "meyer",
@@ -109,7 +114,8 @@
    "page": "https://www.uol.de/en/communication-acoustics",
    "email": "email_meyer.txt",
    "match": 9,
-   "chance": 5
+   "chance": 5,
+   "address": "bernd.meyer@uol.de"
   },
   {
    "id": "pernkopf",
@@ -122,7 +128,8 @@
    "page": "https://www.spsc.tugraz.at/people/franz-pernkopf",
    "email": "email_pernkopf.txt",
    "match": 7,
-   "chance": 4
+   "chance": 4,
+   "address": "pernkopf@tugraz.at"
   },
   {
    "id": "ista",
@@ -165,7 +172,8 @@
    "page": "https://www.etit.tu-darmstadt.de/kismed/",
    "email": "email_hoogantink.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "hoogantink@kismed.tu-darmstadt.de"
   },
   {
    "id": "karlen",
@@ -178,7 +186,8 @@
    "page": "https://www.uni-ulm.de/en/in/bmt/institute/open-positions/",
    "email": "email_karlen.txt",
    "match": 8,
-   "chance": 6
+   "chance": 6,
+   "address": "walter.karlen@uni-ulm.de"
   },
   {
    "id": "eskofier",
@@ -191,7 +200,8 @@
    "page": "https://www.mad.tf.fau.de/",
    "email": "email_eskofier.txt",
    "match": 8,
-   "chance": 4
+   "chance": 4,
+   "address": "bjoern.eskofier@helmholtz-munich.de"
   },
   {
    "id": "schiele",
@@ -204,7 +214,8 @@
    "page": "https://www.uni-due.de/es/team.php",
    "email": "email_schiele.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "gregor.schiele@uni-due.de"
   },
   {
    "id": "pryss",
@@ -217,7 +228,8 @@
    "page": "https://med.uni-wuerzburg.de/en/epidemiologie",
    "email": "email_pryss.txt",
    "match": 7,
-   "chance": 6
+   "chance": 6,
+   "address": "ruediger.pryss@uni-wuerzburg.de"
   },
   {
    "id": "hein",
@@ -230,20 +242,9 @@
    "page": "https://uol.de/amt",
    "email": "email_hein.txt",
    "match": 9,
-   "chance": 6
-  },
-  {
-   "id": "offis",
-   "batch": 3,
-   "country": "Germany",
-   "who": "OFFIS Health division",
-   "where": "Oldenburg, PhD with University of Oldenburg",
-   "why": "In-home fall detection with automatic emergency calls, the same product you built.",
-   "kind": "Email",
-   "page": "https://www.offis.de/en/applications/health.html",
-   "email": "email_offis.txt",
-   "match": 9,
-   "chance": 6
+   "chance": 6,
+   "address": "andreas.hein@offis.de",
+   "note": "Prof. Hein also directs OFFIS Health, so this one email covers both. The address is his OFFIS one, his university page shows none."
   },
   {
    "id": "strodthoff",
@@ -256,7 +257,9 @@
    "page": "https://uol.de/en/ai4health",
    "email": "email_strodthoff.txt",
    "match": 8,
-   "chance": 6
+   "chance": 6,
+   "address": "nils.strodthoff@uol.de",
+   "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude."
   },
   {
    "id": "kirste",
@@ -283,7 +286,8 @@
    "page": "https://rob.uni-luebeck.de/institut/mitarbeiter/otte-sebastian",
    "email": "email_otte.txt",
    "match": 8,
-   "chance": 6
+   "chance": 6,
+   "address": "sebastian.otte@uni-luebeck.de"
   },
   {
    "id": "grzegorzek",
@@ -296,7 +300,8 @@
    "page": "https://dfki.de/en/web/about-us/employee/person/magr08",
    "email": "email_grzegorzek.txt",
    "match": 8,
-   "chance": 6
+   "chance": 6,
+   "address": "marcin.grzegorzek@uni-luebeck.de"
   },
   {
    "id": "bringmann",
@@ -309,7 +314,8 @@
    "page": "https://www.embedded.uni-tuebingen.de/en/team/oliver-bringmann/",
    "email": "email_bringmann.txt",
    "match": 9,
-   "chance": 5
+   "chance": 5,
+   "address": "oliver.bringmann@uni-tuebingen.de"
   },
   {
    "id": "froening",
@@ -322,7 +328,9 @@
    "page": "https://hawaii.ziti.uni-heidelberg.de/",
    "email": "email_froening.txt",
    "match": 9,
-   "chance": 5
+   "chance": 5,
+   "address": "holger.froening@ziti.uni-heidelberg.de",
+   "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude."
   },
   {
    "id": "idmt",
@@ -335,7 +343,8 @@
    "page": "https://www.idmt.fraunhofer.de/en/jobs/career_oldenburg.html",
    "email": "email_idmt.txt",
    "match": 9,
-   "chance": 5
+   "chance": 5,
+   "address": "hsa-bewerbung@idmt.fraunhofer.de"
   },
   {
    "id": "maier",
@@ -348,7 +357,8 @@
    "page": "https://lme.tf.fau.de/",
    "email": "email_maier.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "andreas.maier@fau.de"
   },
   {
    "id": "empkins",
@@ -361,7 +371,9 @@
    "page": "https://www.empkins.de/",
    "email": "email_empkins.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "martin.vossiek@fau.de",
+   "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude."
   },
   {
    "id": "arnrich",
@@ -374,7 +386,8 @@
    "page": "https://hpi.de/en/arnrich/",
    "email": "email_arnrich.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "bert.arnrich@hpi.de"
   },
   {
    "id": "lukowicz",
@@ -387,7 +400,9 @@
    "page": "http://ei.dfki.de/en/",
    "email": "email_lukowicz.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "paul.lukowicz@dfki.de",
+   "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude."
   },
   {
    "id": "schuller_tum",
@@ -400,7 +415,8 @@
    "page": "https://kiinformatik.mri.tum.de/en/chair-health-informatics-chi",
    "email": "email_schuller_tum.txt",
    "match": 8,
-   "chance": 4
+   "chance": 4,
+   "address": "schuller@tum.de"
   },
   {
    "id": "martin",
@@ -427,7 +443,8 @@
    "page": "https://www.uni-paderborn.de/en/person/242/",
    "email": "email_haeb.txt",
    "match": 7,
-   "chance": 5
+   "chance": 5,
+   "address": "haeb@nt.uni-paderborn.de"
   },
   {
    "id": "durmaz",
@@ -468,7 +485,8 @@
    "page": "https://www.ru.nl/en/research/research-news/ngf-ained-fellowship-grant-for-research-into-voice-diagnostics",
    "email": "email_tejedor.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "cristian.tejedorgarcia@ru.nl"
   },
   {
    "id": "stuijk",
@@ -481,7 +499,8 @@
    "page": "https://www.tue.nl/onderzoek/researchers/sander-stuijk",
    "email": "email_stuijk.txt",
    "match": 7,
-   "chance": 4
+   "chance": 4,
+   "address": "s.stuijk@tue.nl"
   },
   {
    "id": "rinner",
@@ -508,7 +527,8 @@
    "page": "https://conf.researchr.org/profile/conf/atakanaral",
    "email": "email_aral.txt",
    "match": 8,
-   "chance": 5
+   "chance": 5,
+   "address": "atakan.aral@univie.ac.at"
   },
   {
    "id": "pro2future",
