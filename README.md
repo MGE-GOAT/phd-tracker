@@ -33,6 +33,7 @@ Last updated 2026-11-22. Open `index.html` for the full view with filters.
 | Deadline | Fit | Status | Country | Institution | PI | Position |
 |---|---|---|---|---|---|---|
 | 2027-01-08 | 7 | new | United Kingdom | University College London (UCL) | Dr Sattar Vakili | [4-Year Fully Funded Studentship - Efficient and Adaptive AI](https://www.ucl.ac.uk/engineering/4-year-fully-funded-studentship-efficient-and-adaptive-ai) |
+| 2027-02-12 | 9 | new | United Kingdom | Manchester Metropolitan University | Prof. Liangxiu Han | [Tiny Multimodal Learning Under Resource Constraints (SciEng-LH-2027-28)](https://www.mmu.ac.uk/study/postgraduate/research-study/phd/funding/scholarships/apply) |
 | rolling | 9 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Michael Beigl | [PhD or Postdoc, Wearable Computing in Health Technologies (hardware, systems, AI)](https://www.teco.edu/jobs/doktorand-oder-postdoc-informatik-gesundheitstechnologie-und-ki-full-time-e13-payment) |
 | rolling | 7 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Michael Beigl | [PhD position, Toolchain for Wearable Computing and Hardware Development](https://www.teco.edu/jobs/phd-position-toolchain-for-wearable-computing-full-time-e13-payment) |
 
