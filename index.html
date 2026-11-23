@@ -40,6 +40,7 @@ h3{margin:26px 0 10px;font-size:15px;text-transform:uppercase;letter-spacing:.06
 .tag{font-size:12px;border-radius:999px;padding:2px 9px;background:var(--chip);color:var(--muted)}
 .tag.hot{background:var(--hot-soft);color:var(--hot);font-weight:600}
 .tag.score{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.tag.country{font-weight:600}
 .tag.dl{background:var(--hot-soft);color:var(--hot)}
 .why{margin:2px 0 4px}
 .note{font-size:14px;color:var(--hot);margin:4px 0}
@@ -116,7 +117,7 @@ function planView(){
     const isDone=!!sent[st.id],dl=st.deadline?`<span class="tag dl">Deadline ${esc(st.deadline)}, ${days(st.deadline)} days</span>`:"";
     h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
       <div class="who">${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
-      <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag">${esc(st.kind)}</span>${st.approved?`<span class="tag">Approved list ${esc(st.approved)}</span>`:""}${dl}</div>
+      <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag country">${({Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱"})[st.country]||""} ${esc(st.country)}</span><span class="tag">${esc(st.kind)}</span>${st.approved?`<span class="tag">Approved list ${esc(st.approved)}</span>`:""}${dl}</div>
       <div class="why">${esc(st.why)}</div>${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
         ${apply(st)?`<a class="btn main" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
