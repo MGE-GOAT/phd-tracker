@@ -1112,7 +1112,7 @@
    "page": "https://www.kth.se/lediga-jobb/984498?l=en",
    "email": "cover_kth_wearable.txt",
    "match": 9,
-   "chance": 6,
+   "chance": 4,
    "approved": "check",
    "latest": "wearable biofeedback, cardiac-locomotor coupling and physics-informed data science",
    "note": "Deadline is two days away. This was already in your positions list but never in the plan. Check KTH against the Ministry list before you apply.",
@@ -1171,10 +1171,11 @@
    "email": "email_innsbruck_dc10_mail.txt",
    "address": "daniel.baumgarten@uibk.ac.at",
    "match": 8,
-   "chance": 6,
+   "chance": 3,
    "approved": "A",
    "verified": "2026-11-24",
-   "competition": "Medium"
+   "competition": "High",
+   "note": "Stretch position, not an easy one. It is a Marie Curie network with high pay, so expect many strong applicants. Treat it as a lottery ticket, not a main plan."
   },
   {
    "id": "innsbruck_dc10",
@@ -1189,12 +1190,12 @@
    "page": "https://ignidte.i-med.ac.at/apply",
    "email": "cover_innsbruck_dc10.txt",
    "match": 8,
-   "chance": 6,
+   "chance": 3,
    "approved": "A",
    "latest": "multimodal magnetorelaxometry imaging of magnetic nanoparticles for hyperthermia monitoring",
-   "note": "You must upload a 2-page research proposal for DC10, ask Claude to draft it. You are not allowed more than 12 months in Austria in the last 36, which is fine from Iran. Interviews are 18 to 31 January. The same call has DC2, DC5 and DC6 (AI medical imaging) as other projects.",
+   "note": "You must upload a 2-page research proposal for DC10, ask Claude to draft it. You are not allowed more than 12 months in Austria in the last 36, which is fine from Iran. Interviews are 18 to 31 January. The same call has DC2, DC5 and DC6 (AI medical imaging) as other projects. Stretch position, not an easy one. It is a Marie Curie network with high pay, so expect many strong applicants. Treat it as a lottery ticket, not a main plan.",
    "verified": "2026-11-24",
-   "competition": "Medium"
+   "competition": "High"
   },
   {
    "id": "radboud_usdwi",
