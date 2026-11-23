@@ -1,0 +1,15 @@
+To: Prof. Philipp Rostalski <philipp.rostalski@imte.fraunhofer.de>
+Subject: Prospective PhD student in real-time biosignal processing for medical devices (MSc Sharif University)
+
+Dear Prof. Rostalski,
+
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your recent work on real-time classification of patient-ventilator interaction from surface EMG. It combines real-time signal processing with a clinical problem, which is what I want to work on.
+
+My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
+
+Do you have or expect a funded PhD position in your group? My German is intermediate. My CV is attached and my code is at github.com/MGE-GOAT.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com
