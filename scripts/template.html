@@ -121,6 +121,7 @@ function gmail(st){return "https://mail.google.com/mail/?view=cm&fs=1"+(st.addre
 function apply(st){return st.kind==="Apply online"}
 const FLAG={Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱",Sweden:"🇸🇪",Finland:"🇫🇮",Switzerland:"🇨🇭"};
 function fl(c){return (FLAG[c]||"")+" "}
+function gmailReply(st){return "https://mail.google.com/mail/?view=cm&fs=1&to="+encodeURIComponent(st.address||"")+"&su="+encodeURIComponent("Re: "+(st.subject||""))+"&body="+encodeURIComponent(st.reply_body||"")}
 function days(d){return Math.round((new Date(d)-new Date(D.updated))/864e5)}
 function planView(){
   const steps=[...(D.plan.steps||[])].sort((a,b)=>(a.batch-b.batch)||((b.hot?1:0)-(a.hot?1:0))||((a.deadline||'9999').localeCompare(b.deadline||'9999'))||((b.match||0)+(b.chance||0)-(a.match||0)-(a.chance||0))),done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
@@ -142,7 +143,7 @@ function planView(){
     h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
       <div class="who">${fl(st.country)}${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
       <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag country">${({Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱"})[st.country]||""} ${esc(st.country)}</span><span class="tag">${esc(st.kind)}</span>${st.approved?`<span class="tag">Approved list ${esc(st.approved)}</span>`:""}${dl}</div>
-      <div class="why">${esc(st.why)}</div>${st.reply?`<div class="note">Reply, ${esc(st.reply)}</div>`:""}${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
+      <div class="why">${esc(st.why)}</div>${st.reply?`<div class="note">Reply, ${esc(st.reply)}</div>`:""}${st.reply_body?`<div class="actions"><a class="btn main" href="${gmailReply(st)}" target="_blank" rel="noopener">Reply in Gmail</a><button class="btn" data-copyreply="${st.id}">Copy reply</button></div><details class="preview"><summary>Read my reply</summary><pre>${esc(st.reply_body)}</pre></details>`:""}${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
         ${apply(st)?`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
           :st.body?`<a class="btn main" data-open="${st.id}" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button><a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`
@@ -177,6 +178,7 @@ function render(){
   $("#main").innerHTML=tab==="plan"?planView():tab==="db"?dbView():countryView();
   if(tab==="db"){dbList();$("#q").oninput=dbList;$("#fc").oninput=dbList}
   document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(apply(st)?st.body:`Subject: ${st.subject}\n\n${st.body}`,apply(st)?"Cover letter copied":"Email copied")});
+  document.querySelectorAll("[data-copyreply]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copyreply);copy(st.reply_body,"Reply copied")});
   document.querySelectorAll("[data-sent]").forEach(b=>b.onclick=()=>{const id=b.dataset.sent;sent[id]=!sent[id];save();logEvent("sent",id,!!sent[id]);render()});
   document.querySelectorAll("[data-open]").forEach(a=>a.addEventListener("click",()=>logEvent("opened",a.dataset.open,true)));
 }
