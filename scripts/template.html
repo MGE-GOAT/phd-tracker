@@ -97,10 +97,12 @@ function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setT
 async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg)}catch(e){prompt("Copy this text",t)}}
 function gmail(st){return "https://mail.google.com/mail/?view=cm&fs=1"+(st.address?"&to="+encodeURIComponent(st.address):"")+"&su="+encodeURIComponent(st.subject||"")+"&body="+encodeURIComponent(st.body||"")}
 function apply(st){return st.kind==="Apply online"}
+const FLAG={Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱",Sweden:"🇸🇪",Finland:"🇫🇮",Switzerland:"🇨🇭"};
+function fl(c){return (FLAG[c]||"")+" "}
 function days(d){return Math.round((new Date(d)-new Date(D.updated))/864e5)}
 function planView(){
   const steps=[...(D.plan.steps||[])].sort((a,b)=>(a.batch-b.batch)||((b.hot?1:0)-(a.hot?1:0))||((a.deadline||'9999').localeCompare(b.deadline||'9999'))||((b.match||0)+(b.chance||0)-(a.match||0)-(a.chance||0))),done=steps.filter(s=>sent[s.id]).length,next=steps.find(s=>!sent[s.id]);
-  let h=`<section class="next">${next?`<small>Your next step</small><h2>${esc(next.kind==="Apply online"?"Apply to":"Email")} ${esc(next.who)}, ${esc(next.where)}</h2><p>${esc(next.why)}</p>`
+  let h=`<section class="next">${next?`<small>Your next step</small><h2>${fl(next.country)}${esc(next.kind==="Apply online"?"Apply to":"Email")} ${esc(next.who)}, ${esc(next.where)}</h2><p>${esc(next.why)}</p>`
     :`<small>Batch done</small><h2>All sent. Now wait for replies.</h2><p>When someone answers, paste it to Claude and it will write your reply. If nobody answers in 10 days, ask Claude for follow-ups and batch 2.</p>`}</section>
   <div class="bar"><i style="width:${steps.length?100*done/steps.length:0}%"></i></div><div class="count">${done} of ${steps.length} done</div>
   <div class="how"><b>How each email works</b><ol>
@@ -116,7 +118,7 @@ function planView(){
     if(st.batch!==lastBatch){lastBatch=st.batch;h+=`<h3>${({1:"Batch 1, this week",2:"Batch 2, next week (easier places, more chances)",3:"Batch 3, the week after (broad list, send 3 to 5 a day)"})[st.batch]}</h3>`}
     const isDone=!!sent[st.id],dl=st.deadline?`<span class="tag dl">Deadline ${esc(st.deadline)}, ${days(st.deadline)} days</span>`:"";
     h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
-      <div class="who">${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
+      <div class="who">${fl(st.country)}${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
       <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag country">${({Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱"})[st.country]||""} ${esc(st.country)}</span><span class="tag">${esc(st.kind)}</span>${st.approved?`<span class="tag">Approved list ${esc(st.approved)}</span>`:""}${dl}</div>
       <div class="why">${esc(st.why)}</div>${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
@@ -139,7 +141,7 @@ function dbList(){
   const q=($("#q")?.value||"").toLowerCase(),c=$("#fc")?.value||"";
   const P=D.positions.filter(p=>!["expired","skip"].includes(p.status)&&(!c||p.country===c)&&(!q||JSON.stringify(p).toLowerCase().includes(q)))
     .sort((a,b)=>(+b.fit_1_10||0)-(+a.fit_1_10||0));
-  $("#dbl").innerHTML=P.map(p=>`<div class="item"><b>${esc(p.pi)}</b> <span class="m">· ${esc(p.institution)}, ${esc(p.country)} · fit ${esc(p.fit_1_10)}/10${p.type==="advert"?` · open job, deadline ${esc(p.deadline)}`:" · email"}</span>
+  $("#dbl").innerHTML=P.map(p=>`<div class="item"><b>${fl(p.country)}${esc(p.pi)}</b> <span class="m">· ${esc(p.institution)}, ${esc(p.country)} · fit ${esc(p.fit_1_10)}/10${p.type==="advert"?` · open job, deadline ${esc(p.deadline)}`:" · email"}</span>
     <div>${esc(p.title)}</div><details><summary>Details</summary><div class="m">${esc(p.topic)}</div><div>${esc(p.funding||"")}</div>
     ${p.apply_url?`<div><a href="${esc(p.apply_url)}" target="_blank" rel="noopener">Official page</a></div>`:""}${p.pi_url?`<div><a href="${esc(p.pi_url)}" target="_blank" rel="noopener">Professor</a></div>`:""}
     ${p.red_flags?`<div class="m">Watch out, ${esc(p.red_flags)}</div>`:""}</details></div>`).join("")||`<div class="item">Nothing matches.</div>`;
