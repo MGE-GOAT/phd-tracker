@@ -3,7 +3,7 @@ Subject: Prospective PhD student in on-body audio and low-bit models (MSc Sharif
 
 Dear Prof. Van Laerhoven,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your group's recent work on self-supervised learning for inertial human activity recognition, and on wearable sensing in real settings, is very close to mine.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your group's recent papers on self-supervised learning for activity recognition from inertial sensors. I work on a similar problem with audio, a small model that has to work on real sensor data.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

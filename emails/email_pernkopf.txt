@@ -3,7 +3,7 @@ Subject: Prospective PhD student in efficient speech and audio ML (MSc Sharif Un
 
 Dear Prof. Pernkopf,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your recent work on lightweight streaming speech encoders and on efficient Bayesian neural networks is what I would like to work on next, resource-efficient speech models that stay reliable on real devices.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your recent work on lightweight streaming speech encoders and on efficient Bayesian networks. Speech models that are small and still reliable on real devices are what I want to work on next.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

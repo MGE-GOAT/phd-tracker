@@ -3,7 +3,7 @@ Subject: Prospective PhD student in robust speech recognition (MSc Sharif Univer
 
 Dear Prof. Haeb-Umbach,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your department's recent work on self-supervised room impulse response embeddings for speech enhancement is close to my wake-word research, which also depends on how the room and the microphone change the signal.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your department's recent work on room impulse response embeddings for speech enhancement. My wake-word research also depends on how the room and the microphone change the signal.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

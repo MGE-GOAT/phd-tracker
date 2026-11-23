@@ -3,7 +3,7 @@ Subject: Prospective PhD student in embedded AI (MSc Sharif University)
 
 Dear Pro2Future team,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your PhD position in cognitive products and embedded AI matches my embedded ML background.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I saw your PhD position in cognitive products and embedded AI. It fits my embedded ML background.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

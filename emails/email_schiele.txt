@@ -3,7 +3,7 @@ Subject: Prospective PhD student in tiny ML for health sensors (MSc Sharif Unive
 
 Dear Prof. Schiele,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your group's recent elasticAI.explorer framework for hardware-aware neural architecture search, and your work on compact models for tiny devices, match what I have done on audio.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your group's elasticAI.explorer framework for hardware-aware architecture search. I deploy small audio models on tiny hardware, and I would like to learn this side properly.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

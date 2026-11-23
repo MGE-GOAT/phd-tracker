@@ -3,7 +3,7 @@ Subject: Prospective PhD student in computer audition for health (MSc Sharif Uni
 
 Dear Prof. Schuller,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your recent work on the patient as a multimodal signal, including speech and body sounds, is where I would like to take my audio work.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your recent work on treating the patient as a multimodal signal, including speech and body sounds. I would like to take my audio work in that direction.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

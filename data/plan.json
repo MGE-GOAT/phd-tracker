@@ -36,7 +36,7 @@
    "chance": 6,
    "address": "michael.beigl@kit.edu",
    "approved": "A",
-   "latest": "on-device personalised activity recognition (BayaHAR), earables, on-body AI",
+   "latest": "on-device personalised activity recognition (BayaHAR), ear-worn devices, on-body AI",
    "verified": "2026-11-23"
   },
   {
@@ -515,7 +515,7 @@
    "match": 9,
    "chance": 5,
    "approved": "A",
-   "latest": "LLMs on Raspberry Pi 5 with NPU, earables, WiFi sensing, silent command recognition",
+   "latest": "LLMs on Raspberry Pi 5 with NPU, ear-worn devices, WiFi sensing, silent command recognition",
    "verified": "2026-11-23"
   },
   {

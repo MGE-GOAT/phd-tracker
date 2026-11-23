@@ -3,7 +3,7 @@ Subject: Prospective PhD student in biomedical signal quality and embedded ML (M
 
 Dear Prof. Hoog Antink,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your recent paper on task-specific signal quality indices for ECG and PPG is what my own thesis ran into, because in my case the microphone changed the error rate more than the model did.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your recent paper on signal quality indices for ECG and PPG. In my thesis the microphone changed the error rate more than the model did, so the topic is familiar to me.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

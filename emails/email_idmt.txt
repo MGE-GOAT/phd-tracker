@@ -3,7 +3,7 @@ Subject: Prospective PhD student in speech technology on devices (MSc Sharif Uni
 
 Dear Hearing, Speech and Audio Technology team,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your institute's work on speech recognition and acoustic monitoring for real products is what I have done on a small device.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I know your institute's work on speech recognition and acoustic monitoring for real products. I built something similar on a small device.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 

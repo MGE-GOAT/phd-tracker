@@ -3,7 +3,7 @@ Subject: Prospective PhD student in low-power audio AI on embedded hardware (MSc
 
 Dear Prof. Bringmann,
 
-I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your chair's recent CapsuleMotion work on lightweight real-time prediction for energy-limited capsule endoscopy is the kind of co-design of models and hardware that I want to do next.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. I came across your chair's recent CapsuleMotion work on a light model for energy-limited capsule endoscopy. Designing models together with the hardware they run on is what I want to do next.
 
 My thesis is an always-on voice assistant for older adults, with a 75k-parameter int8 model that runs in real time on a Raspberry Pi.
 
