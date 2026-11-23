@@ -1,0 +1,15 @@
+To: Dr. Veronique Meijborg <V.M.F.Meijborg-2@umcutrecht.nl>
+Subject: Question about the PhD position on cardiac electrophysiology during ex situ heart perfusion
+
+Dear Dr. Meijborg,
+
+I am finishing an MSc in Biomedical Engineering with a bioelectric specialization at Sharif University of Technology, and I would like to apply for the PhD position in the RRESHAPE-HTx project. Monitoring cardiac electrical function to improve donor-heart preservation is a clear problem with a real clinical use.
+
+My coursework covered biomedical signal processing and my thesis was an on-device model built on noisy recordings from real hardware. I have not worked with cardiac recordings yet. Does the project involve building our own analysis methods for the electrograms, and would a candidate who learns the cardiac side on the job be considered?
+
+My CV is attached.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

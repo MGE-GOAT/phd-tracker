@@ -1,0 +1,15 @@
+To: Dr. Jan van den Hurk <jan.vandenhurk@eld.rwth-aachen.de>
+Subject: Question about the doctoral researcher position at the Chair of Electronic Devices
+
+Dear Dr. van den Hurk,
+
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am interested in the doctoral position that combines physics-based modeling and artificial intelligence for devices made from two-dimensional materials. My background is machine learning on small hardware, and my thesis was a voice assistant built around a 75k-parameter model on a Raspberry Pi.
+
+I have not worked on device physics. Would a candidate who comes from the machine learning side and learns the physics in the first year be considered?
+
+My CV is attached.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

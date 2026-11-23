@@ -1,0 +1,15 @@
+To: Prof. Daniel Baumgarten <daniel.baumgarten@uibk.ac.at>
+Subject: Question about DC10 in the IGNIDTE doctoral network
+
+Dear Prof. Baumgarten,
+
+I am finishing an MSc in Biomedical Engineering (bioelectric) at Sharif University of Technology and I plan to apply for DC10. Your multimodal MR and MRX project for monitoring hyperthermia is what drew me to it, and the inverse problem is the part I would most like to work on.
+
+My thesis was a voice assistant for older adults on a Raspberry Pi, mostly measuring real hardware and processing its signals. I have not worked with magnetic sensing or nanoparticles. Would that background be enough to be considered, and should the 2-page proposal lean towards reconstruction or the measurement setup?
+
+My CV is attached and I will apply before 10 December.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

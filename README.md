@@ -1,6 +1,6 @@
 # PhD tracker
 
-Last updated 2026-11-23. Open `index.html` for the full view with filters.
+Last updated 2026-11-24. Open `index.html` for the full view with filters.
 
 ## Countries
 

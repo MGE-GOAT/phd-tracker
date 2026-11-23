@@ -1,0 +1,15 @@
+To: Uppsala University recruitment portal (questions to Hui Chen, hui.chen@angstrom.uu.se, and Prof. Subhrakanti Dey, subhrakanti.dey@angstrom.uu.se)
+Subject: Application, PhD position in Electrical Engineering with specialization in Signal Processing
+
+Dear selection committee,
+
+I am applying for the PhD position on multi-modal environment modeling for wireless spatial intelligence in the Division of Signals and Systems. I completed the requirements for my MSc in Biomedical Engineering, with a bioelectric specialization, at Sharif University of Technology on 23 September 2026.
+
+The project combines model-based and learning-based methods with measurements from several sources. That mix is what my thesis was built on. I designed an always-on voice assistant for older adults around a 75k-parameter int8 model that runs in real time on a Raspberry Pi, with a streaming signal processing front end written in C++. I measured how the device's sensor changed the signal and used that to retrain, which cut false activations from 60 to 3 in a 388-hour test. My thesis led to an ICBME 2026 paper (IEEE) and two more submissions.
+
+I have not worked in wireless localization or integrated sensing and communication, so I would be learning the field. I would start from the signal processing side, comparing a classical estimator with a small learned model on the same measurements and asking when the second source of information actually helps. My CV and transcripts are in the application.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com
