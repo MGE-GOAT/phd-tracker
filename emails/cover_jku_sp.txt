@@ -1,0 +1,17 @@
+To: JKU job portal (content questions to Prof. Michael Lunglmayr, michael.lunglmayr@jku.at)
+Subject: Cover letter, doctoral position PURE/NEUROSKIN+, advert 38200-2026-002208
+
+Dear Prof. Lunglmayr,
+
+I am applying for the doctoral position on an embedded spiking neural network system for pressure ulcer prevention in the PURE/NEUROSKIN+ project at the Institute of Signal Processing. I have just completed my MSc in Biomedical Engineering at Sharif University of Technology, with the requirements completed on 23 September 2026.
+
+The project needs efficient signal acquisition, preprocessing and a small model on embedded hardware. This is close to my thesis. I built an always-on voice assistant for older adults around a 75k-parameter int8 model that runs in real time on a Raspberry Pi. The pipeline is written in C++ with TensorFlow Lite, and I checked that its features match the Python version to within one millionth. On real hardware the microphone changed the false alarm rate more than the model did, and retraining on device data cut false activations from 60 to 3 in a 388-hour test. I expect a similar gap between lab data and real sensors with pressure mats.
+
+I have not worked with spiking neural networks, FPGAs or neuromorphic hardware yet. I know signal processing, small neural networks and microcontroller-level deployment, and I want to learn spiking networks in this project.
+
+My thesis led to an ICBME 2026 paper (IEEE) and two more submissions. German is not required for the position, and mine is intermediate. My CV, transcripts and references are in the application.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

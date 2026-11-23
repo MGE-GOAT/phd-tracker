@@ -1,0 +1,13 @@
+To: Dr. Ramona Leenings <ramona.leenings@jku.at>
+Subject: Question about the PhD position AI in neuroscience (advert 61140-2026-002205)
+
+Dear Dr. Leenings,
+
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I plan to apply for the PhD position in AI in neuroscience in your group. I have not worked with EEG or imaging yet, but my thesis was about validating a small model on noisy data from real hardware, which the advert describes. Is prior experience with EEG or MRI needed, or can it be learned in the first year?
+
+I will send my application through the portal before the deadline. My CV is attached.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

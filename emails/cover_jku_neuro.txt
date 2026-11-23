@@ -1,0 +1,17 @@
+To: JKU job portal (content questions to Dr. Ramona Leenings, ramona.leenings@jku.at)
+Subject: Cover letter, PhD position AI in neuroscience, advert 61140-2026-002205
+
+Dear Dr. Leenings,
+
+I am applying for the PhD position in AI in neuroscience in your group Transformative Healthcare with AI. I have just completed my MSc in Biomedical Engineering at Sharif University of Technology, with the requirements completed on 23 September 2026.
+
+The advert asks for clean validation, noisy and incomplete data, and software that runs reliably in a clinical setting. That is what my thesis was about. I built an always-on voice assistant for older adults around a 75k-parameter int8 model that runs in real time on a Raspberry Pi. It was the most accurate of seven models on every fold of a five-fold cross-validation. On the device's own microphone, though, false alarms tripled even though the scores barely moved. Retraining on data recorded on the device cut false activations from 60 to 3 in a 388-hour test. I learned to test a model on the data it will really see and to say where it stops working, which I understand is central to your work with clinical data.
+
+I also write production software. My pipeline is in C++ and Python with version control, automated checks and services that run for weeks, and I work as an applied AI scientist building tool-using LLM agents. I have not yet worked with MRI, CT or EEG, and I would like to learn them with your group.
+
+My thesis led to an ICBME 2026 paper (IEEE) and two more submissions. My German is intermediate and I am ready to reach B1. My CV, transcripts and references are in the application.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com
