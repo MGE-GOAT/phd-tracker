@@ -1,0 +1,22 @@
+To: University of Stavanger recruitment portal (questions to rekruttering@uis.no)
+Subject: Motivation letter, PhD Fellow in Signal Processing for Medical Simulation
+
+Dear selection committee,
+
+I am applying for the PhD fellowship in signal processing for medical simulation in the Cardiac Arrest Physiology Simulation project. I completed the requirements for my MSc in Biomedical Engineering, with a bioelectric specialization, at Sharif University of Technology on 23 September 2026.
+
+Why this position
+I want to do signal processing and statistics on a real medical problem. Your project builds a patient model from real resuscitation recordings, so that training simulators reflect how hard a cardiac arrest really is. That is a clear problem with a direct use, and it will run inside Laerdal's simulators, which means the model has to work in real time. Building small models that run reliably on real devices is what my thesis was about.
+
+How my qualifications match
+My thesis was an always-on voice assistant for older adults. I designed a 75k-parameter int8 model that runs in real time on a Raspberry Pi, with a streaming signal processing front end written in C++ and checked against the Python version to within one millionth. Offline scores looked good, but on the device's own microphone the false alarms tripled. Careful analysis of that difference and retraining on device data cut false activations from 60 to 3 in a 388-hour test. I know how to work with noisy recordings, how to separate the effect of the signal from the effect of the model, and how to validate honestly. My thesis led to an ICBME 2026 paper (IEEE) and two more submissions. I program in Python, MATLAB-style numerical code and C++.
+
+My research ideas
+First, I would estimate how a rhythm changes from one state to the next, for example from asystole to ventricular fibrillation to a shock, using a model in which the chance of each change depends on measured treatment quality such as compression depth and pauses. Second, I would check this model against held-out recordings and measure whether its probabilities are well calibrated, since a simulator that is overconfident is not useful for training. Third, I would keep the model light enough to run in real time inside the simulator and test it there.
+
+I have not yet worked with cardiac arrest recordings or ECG rhythm analysis, and I would like to learn them in a group that has done this for years. I attach my full master's thesis, CV, transcripts and a note on how the Iranian 0 to 20 grade scale converts to the Norwegian scale.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com

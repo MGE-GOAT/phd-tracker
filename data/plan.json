@@ -18,7 +18,8 @@
    "address": "saukh@tugraz.at",
    "approved": "A",
    "latest": "model compression with test-time adaptation, TinyML on smart glasses, diffusion model distillation",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "beigl",
@@ -37,7 +38,8 @@
    "address": "michael.beigl@kit.edu",
    "approved": "A",
    "latest": "on-device personalised activity recognition (BayaHAR), ear-worn devices, on-body AI",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "saeed",
@@ -54,7 +56,8 @@
    "address": "a.saeed@tue.nl",
    "approved": "A",
    "latest": "audio-language models for medical audio, federated and decentralised clinical AI, PPG foundation data",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "mueller",
@@ -73,7 +76,8 @@
    "latest": "ML compilers for edge accelerators, LLM compression, end-to-end driving models",
    "verified": "2026-11-23",
    "reply": "Replied 23 Nov, no funded PhD now, will keep your application in mind",
-   "reply_body": "Dear Prof. Müller-Gritschneder,\n\nThank you for your quick answer. Yes, I would be glad if you keep my application in mind. I will send you a short update in spring in case anything has changed.\n\nBest regards,\nMahrad Ghazli"
+   "reply_body": "Dear Prof. Müller-Gritschneder,\n\nThank you for your quick answer. Yes, I would be glad if you keep my application in mind. I will send you a short update in spring in case anything has changed.\n\nBest regards,\nMahrad Ghazli",
+   "competition": "High"
   },
   {
    "id": "jku",
@@ -89,7 +93,8 @@
    "match": 7,
    "chance": 4,
    "approved": "A",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "vanlaerhoven",
@@ -106,7 +111,8 @@
    "address": "kvl@eti.uni-siegen.de",
    "approved": "C",
    "latest": "self-supervised inertial activity recognition, wearables, human-agent interaction",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "meyer",
@@ -123,7 +129,8 @@
    "address": "bernd.meyer@uol.de",
    "approved": "C",
    "latest": "deep learning models of listening effort and speech perception for hearing research",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "pernkopf",
@@ -140,7 +147,8 @@
    "address": "pernkopf@tugraz.at",
    "approved": "A",
    "latest": "streaming speech encoders for pathological speech, efficient Bayesian networks, UWB radar",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "ista",
@@ -157,7 +165,8 @@
    "chance": 3,
    "approved": "B",
    "latest": "Dan Alistarh's group, LLM quantization, pruning and quantization-aware training",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "knowcenter",
@@ -175,7 +184,8 @@
    "match": 8,
    "chance": 6,
    "approved": "A",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "hoogantink",
@@ -192,7 +202,8 @@
    "address": "hoogantink@kismed.tu-darmstadt.de",
    "approved": "A",
    "latest": "signal quality for ECG and PPG, blood pressure and noise, medical time series",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "karlen",
@@ -209,7 +220,8 @@
    "address": "walter.karlen@uni-ulm.de",
    "approved": "A",
    "latest": "sleep EEG, artifact detection in mobile EEG, REM sleep disorder screening",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "eskofier",
@@ -226,7 +238,8 @@
    "address": "bjoern.eskofier@helmholtz-munich.de",
    "approved": "A",
    "latest": "radar sensing across devices, cognitive driving datasets, agentic AI for oncology (now at LMU)",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "schiele",
@@ -243,7 +256,8 @@
    "address": "gregor.schiele@uni-due.de",
    "approved": "A",
    "latest": "hardware-aware neural architecture search (elasticAI.explorer), compact models, edge monitoring",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "pryss",
@@ -260,7 +274,8 @@
    "address": "ruediger.pryss@uni-wuerzburg.de",
    "approved": "B",
    "latest": "digital interventions for patients (JITAI), eHealth privacy, routine health data",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "hein",
@@ -278,7 +293,8 @@
    "note": "Prof. Hein also directs OFFIS Health, so this one email covers both. The address is his OFFIS one, his university page shows none.",
    "approved": "C",
    "latest": "ML assessment of older adults' movement, neurofeedback, assistive robots",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "strodthoff",
@@ -298,7 +314,8 @@
    "latest": "foundation models for health data, explainable ML, ECG and movement",
    "verified": "2026-11-23",
    "reply": "Replied 23 Nov, no open positions",
-   "reply_body": "Dear Prof. Strodthoff,\n\nThank you for letting me know.\n\nBest regards,\nMahrad Ghazli"
+   "reply_body": "Dear Prof. Strodthoff,\n\nThank you for letting me know.\n\nBest regards,\nMahrad Ghazli",
+   "competition": "Medium"
   },
   {
    "id": "kirste",
@@ -315,7 +332,8 @@
    "chance": 6,
    "approved": "B",
    "latest": "AI for cytometry and medical devices, EEG monitoring of cognitive status, LLM consensus",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "otte",
@@ -332,7 +350,8 @@
    "address": "sebastian.otte@uni-luebeck.de",
    "approved": "B",
    "latest": "neuromorphic radar on Loihi 2, physical neural networks, reservoir computing",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "grzegorzek",
@@ -349,7 +368,8 @@
    "address": "marcin.grzegorzek@uni-luebeck.de",
    "approved": "B",
    "latest": "wearable glucose estimation, multimodal medical AI, hand tracking",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "bringmann",
@@ -366,7 +386,8 @@
    "address": "oliver.bringmann@uni-tuebingen.de",
    "approved": "A",
    "latest": "capsule endoscopy models, ML and hardware co-design, RISC-V, autonomous systems",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "froening",
@@ -384,7 +405,8 @@
    "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude.",
    "approved": "A",
    "latest": "Bayesian networks on accelerators, analog and photonic inference, LLM inference systems",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "idmt",
@@ -400,7 +422,8 @@
    "chance": 5,
    "address": "hsa-bewerbung@idmt.fraunhofer.de",
    "approved": "C",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "maier",
@@ -417,7 +440,8 @@
    "address": "andreas.maier@fau.de",
    "approved": "A",
    "latest": "speech in health (depression, dysarthria, child speech), medical imaging, ML theory",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "arnrich",
@@ -434,7 +458,8 @@
    "address": "bert.arnrich@hpi.de",
    "approved": "A (degree from University of Potsdam)",
    "latest": "vision wearables, digital health, foundation models for patient data",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "lukowicz",
@@ -452,7 +477,8 @@
    "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude.",
    "approved": "C (degree from RPTU Kaiserslautern)",
    "latest": "lightweight wearable activity recognition (LITEWAY), textile sensing, LLM energy cost",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "schuller_tum",
@@ -469,7 +495,8 @@
    "address": "schuller@tum.de",
    "approved": "A",
    "latest": "multimodal health signals, large language models for mental health, affective computing",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "martin",
@@ -486,7 +513,8 @@
    "chance": 5,
    "approved": "A",
    "latest": "cochlear implant auditory models, spatial hearing, voice anonymisation",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "haeb",
@@ -503,7 +531,8 @@
    "address": "haeb@nt.uni-paderborn.de",
    "approved": "C",
    "latest": "speech enhancement, voice editing for speech therapy, diarization, acoustic sensor networks",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "durmaz",
@@ -522,7 +551,8 @@
    "latest": "LLMs on Raspberry Pi 5 with NPU, ear-worn devices, WiFi sensing, silent command recognition",
    "verified": "2026-11-23",
    "reply": "Replied 23 Nov, no openings now but openings in 2027, watch their vacancy page",
-   "reply_body": "Dear Dr. Durmaz Incel,\n\nThank you for your answer and for the link. I will follow the vacancies and apply as soon as a position opens in 2027. If it is possible, I would be grateful if you let me know when the call is published.\n\nBest regards,\nMahrad Ghazli"
+   "reply_body": "Dear Dr. Durmaz Incel,\n\nThank you for your answer and for the link. I will follow the vacancies and apply as soon as a position opens in 2027. If it is possible, I would be grateful if you let me know when the call is published.\n\nBest regards,\nMahrad Ghazli",
+   "competition": "Medium"
   },
   {
    "id": "qingwang",
@@ -539,7 +569,8 @@
    "chance": 4,
    "approved": "A",
    "latest": "split CNN inference on microcontrollers, TinyML positioning, acoustic and light sensing attacks",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "tejedor",
@@ -556,7 +587,8 @@
    "address": "cristian.tejedorgarcia@ru.nl",
    "approved": "A",
    "latest": "privacy-preserving speech data for Parkinson's, reading diagnostics, L2 speech LLMs",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "stuijk",
@@ -573,7 +605,8 @@
    "address": "s.stuijk@tue.nl",
    "approved": "A",
    "latest": "video-based vital signs in intensive care, spiking processors, depth estimation hardware",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "rinner",
@@ -590,7 +623,8 @@
    "chance": 5,
    "approved": "A",
    "latest": "lightweight radar tracking, UAV perception and 3D reconstruction",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "aral",
@@ -606,7 +640,8 @@
    "chance": 5,
    "address": "atakan.aral@univie.ac.at",
    "approved": "A",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "pro2future",
@@ -623,7 +658,8 @@
    "chance": 5,
    "approved": "ask which university gives the degree",
    "note": "Pro2Future gives no degree. Ask which university (TU Graz, JKU or Uni Graz are all group A) would enrol you.",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
   },
   {
    "id": "ulm_just",
@@ -642,7 +678,8 @@
    "note": "Apply through the Ulm job portal, not by email. Cover letter max 2 pages. German B1 is expected within the first year. Same institute as Prof. Karlen in batch 2, that email can still go.",
    "approved": "A",
    "latest": "sensorised and motorised knee orthosis with ROS2, EMG movement-effort detection",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "mcml",
@@ -658,7 +695,8 @@
    "chance": 3,
    "note": "Long shot, very competitive. The portal closes at 09:00 Munich time, not midnight.",
    "approved": "A",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "csmaxplanck",
@@ -674,7 +712,8 @@
    "chance": 3,
    "note": "The Max Planck institutes give no degree. The degree comes from a partner university the program page does not name. Saarland University is group C on the approved list. Ask the program office which university would give your degree before applying. Long shot. References are only asked after a first review.",
    "approved": "ask which university gives the degree (Saarland is C)",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "acta_su",
@@ -692,7 +731,8 @@
    "note": "Reviewed on a rolling basis, so apply in December, not March. Emailed applications are not considered.",
    "approved": "A",
    "latest": "randomised trials of AI in oral healthcare, oral health screening tools",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "jku_sp",
@@ -711,7 +751,8 @@
    "approved": "A",
    "latest": "neuromorphic computing and spike-based sampling, embedded SNN for pressure mats",
    "note": "In the JKU job portal look for advert number 38200-2026-002208. Spiking networks are new to you, the letter says so honestly.",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "jku_sp_mail",
@@ -727,7 +768,8 @@
    "match": 7,
    "chance": 5,
    "approved": "A",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "jku_neuro",
@@ -746,7 +788,8 @@
    "approved": "A",
    "latest": "foundation models and normative models for EEG, polysomnography and MRI, clinical deployment",
    "note": "In the JKU job portal look for advert number 61140-2026-002205. You have not worked with EEG or MRI, the letter says so honestly.",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "jku_neuro_mail",
@@ -762,7 +805,8 @@
    "match": 8,
    "chance": 5,
    "approved": "A",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Medium"
   },
   {
    "id": "tuwien_edge_doc",
@@ -781,7 +825,8 @@
    "approved": "A",
    "latest": "running LLM and vision-language models on embedded devices, edge and cloud placement for drone inspection",
    "note": "Deadline 2 Dec 23:59 Vienna time. 30 h a week, 36 months, about €2,832 gross x14, start 1 Jan 2027. Degree certificate pending, say so. Optional. This is about language models on drones, not biomedical, so it is a weaker fit for you.",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "tuwien_edge",
@@ -801,7 +846,8 @@
    "approved": "A",
    "latest": "LLM and vision-language model inference on drones, edge servers and cloud",
    "note": "Attach the single PDF from step 1. Send it before 2 Dec. Optional. This is about language models on drones, not biomedical, so it is a weaker fit for you.",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "High"
   },
   {
    "id": "vullings",
@@ -819,7 +865,8 @@
    "approved": "A",
    "latest": "fetal ECG with generative models, cardiorespiratory signals, heart failure modelling",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
   },
   {
    "id": "overeem",
@@ -837,7 +884,8 @@
    "approved": "A",
    "latest": "wearable sleep data standards, sleep disorders, orexin research",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Low"
   },
   {
    "id": "hunyadi",
@@ -855,7 +903,8 @@
    "approved": "A",
    "latest": "transfer learning for EEG seizure detection, data augmentation for non-stationary time series, EEG-MRI integration",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
   },
   {
    "id": "veltink",
@@ -873,7 +922,8 @@
    "approved": "A",
    "latest": "wearable skin conductance and HRV in daily life, FES exoskeletons, inertial motion estimation",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Low"
   },
   {
    "id": "mullerputz",
@@ -891,7 +941,8 @@
    "approved": "A",
    "latest": "EEG decoding of movement kinematics, brain-computer interfaces, BNCI datasets",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
   },
   {
    "id": "grossewentrup",
@@ -909,7 +960,8 @@
    "approved": "A",
    "latest": "brain-AI interfaces, methods for brain-computer interfacing",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
   },
   {
    "id": "amft",
@@ -927,7 +979,8 @@
    "approved": "A",
    "latest": "edge-AI activity recognition circuits for wearables, multi-modal patient-state representations",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
   },
   {
    "id": "rostalski",
@@ -945,7 +998,8 @@
    "approved": "B",
    "latest": "real-time sEMG classification for ventilation, in silico clinical trials, medical device models",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
   },
   {
    "id": "vonluhmann",
@@ -963,7 +1017,8 @@
    "approved": "A",
    "latest": "wearable fNIRS and attention decoding, DOT reconstruction, wearable neurotech",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "High"
   },
   {
    "id": "deserno",
@@ -981,7 +1036,8 @@
    "approved": "A",
    "latest": "in-vehicle heartbeat detection from ECG, PPG and camera, early warning scores",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Low"
   },
   {
    "id": "mertins",
@@ -999,7 +1055,8 @@
    "approved": "B",
    "latest": "auditory attention decoding from EEG, hearing aid testing in virtual scenes",
    "verified": "2026-11-23",
-   "note": "Biomedical engineering fit. No advert is open, this is a cold email."
+   "note": "Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Low"
   },
   {
    "id": "uis_har",
@@ -1018,7 +1075,66 @@
    "approved": "B",
    "latest": "lifelong and federated learning for activity recognition, the Smart Objects for Smart Care household sensing system",
    "note": "Apply through the University of Stavanger portal, link on the EURAXESS page. Upload the full master's thesis, CV, transcripts, the 2-page motivation letter and a grade-conversion note. The advert also says English proficiency documentation 'if required', ask rekruttering@uis.no whether your English-free MSc needs a test, and ask early. Grades must convert to B or better.",
-   "verified": "2026-11-23"
+   "verified": "2026-11-23",
+   "competition": "Low"
+  },
+  {
+   "id": "hyttinen",
+   "batch": 1,
+   "country": "Finland",
+   "who": "Prof. Jari Hyttinen",
+   "where": "Tampere University, Computational Medicine and BME",
+   "why": "EEG and BME in a mid-size Finnish university, less competitive than the elite programs.",
+   "kind": "Email",
+   "page": "",
+   "email": "email_hyttinen.txt",
+   "address": "jari.hyttinen@tuni.fi",
+   "match": 7,
+   "chance": 5,
+   "approved": "A",
+   "latest": "EEG signatures of brain stimulation, cardiac safety frameworks, micro-CT imaging",
+   "verified": "2026-11-23",
+   "note": "Backup country. Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Low"
+  },
+  {
+   "id": "sandberg",
+   "batch": 1,
+   "country": "Sweden",
+   "who": "Prof. Frida Sandberg",
+   "where": "Lund University, Biomedical Engineering",
+   "why": "ECG signal processing for atrial fibrillation at Lund.",
+   "kind": "Email",
+   "page": "",
+   "email": "email_sandberg.txt",
+   "address": "frida.sandberg@bme.lth.se",
+   "match": 7,
+   "chance": 4,
+   "approved": "A",
+   "latest": "ECG f-wave indices in atrial fibrillation, brief AF in stroke, autonomic responses",
+   "verified": "2026-11-23",
+   "note": "Backup country. Biomedical engineering fit. No advert is open, this is a cold email.",
+   "competition": "Medium"
+  },
+  {
+   "id": "uis_sim",
+   "batch": 1,
+   "country": "Norway",
+   "who": "PhD Fellow, Signal Processing for Medical Simulation",
+   "where": "University of Stavanger, Electrical Engineering and Computer Science",
+   "why": "Open PhD on a cardiac arrest patient model built from real resuscitation recordings, with Laerdal Medical. Signal processing and statistics, a salaried job, NOK 580,000 a year, from spring 2027.",
+   "kind": "Apply online",
+   "hot": true,
+   "deadline": "2026-12-11",
+   "page": "https://euraxess.ec.europa.eu/jobs/481914",
+   "email": "cover_uis_sim.txt",
+   "match": 8,
+   "chance": 6,
+   "approved": "B",
+   "latest": "cardiac arrest physiology simulation, signal processing and statistical models of rhythm transitions",
+   "note": "Same documents as the other Stavanger post. Master's grades must convert to B or better. Ask rekruttering@uis.no early whether an English proficiency document is needed. Do not apply to both on the same day without a different letter, the two letters are already different.",
+   "verified": "2026-11-23",
+   "competition": "Low"
   }
  ]
 }
