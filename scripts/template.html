@@ -92,6 +92,10 @@ const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>(
 const KEY="phdplan-sent-v1";
 let sent={};try{sent=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(sent))}catch(e){}};
+const LOCAL=location.hostname==="localhost"||location.hostname==="127.0.0.1";
+function logEvent(kind,id,on){if(!LOCAL)return;fetch("/api/event",{method:"POST",headers:{"Content-Type":"application/json","X-Tracker":"1"},body:JSON.stringify({kind,id,on})}).catch(()=>{})}
+async function loadProgress(){try{const r=await fetch("data/progress.json?"+Date.now());if(!r.ok)return;const p=await r.json();let ch=false;for(const k in (p.sent||{}))if(sent[k]===undefined){sent[k]=p.sent[k];ch=true}if(ch){save();render()}}catch(e){}}
+function importHash(){const m=location.hash.match(/^#import=(.+)$/);if(!m||!LOCAL)return;try{const o=JSON.parse(atob(decodeURIComponent(m[1])));for(const k in o)if(o[k]&&!sent[k]){sent[k]=true;logEvent("sent",k,true)}save()}catch(e){}history.replaceState(null,"",location.pathname)}
 let tab="plan";
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1600)}
 async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg)}catch(e){prompt("Copy this text",t)}}
@@ -122,9 +126,9 @@ function planView(){
       <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}<span class="tag country">${({Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱"})[st.country]||""} ${esc(st.country)}</span><span class="tag">${esc(st.kind)}</span>${st.approved?`<span class="tag">Approved list ${esc(st.approved)}</span>`:""}${dl}</div>
       <div class="why">${esc(st.why)}</div>${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
-        ${apply(st)?`<a class="btn main" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
-          :st.body?`<a class="btn main" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button><a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`
-          :`<a class="btn main" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>`}
+        ${apply(st)?`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
+          :st.body?`<a class="btn main" data-open="${st.id}" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button><a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`
+          :`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>`}
         <button class="btn ${isDone?"ok":""}" data-sent="${st.id}">${isDone?"Sent ✓":"Mark as sent"}</button>
       </div>
       ${st.body?`<details class="preview"><summary>${apply(st)?"Read the cover letter":"Read the email"}</summary><pre>${apply(st)?"":`Subject: ${esc(st.subject)}\n\n`}${esc(st.body)}</pre></details>`:""}
@@ -155,12 +159,16 @@ function render(){
   $("#main").innerHTML=tab==="plan"?planView():tab==="db"?dbView():countryView();
   if(tab==="db"){dbList();$("#q").oninput=dbList;$("#fc").oninput=dbList}
   document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(apply(st)?st.body:`Subject: ${st.subject}\n\n${st.body}`,apply(st)?"Cover letter copied":"Email copied")});
-  document.querySelectorAll("[data-sent]").forEach(b=>b.onclick=()=>{const id=b.dataset.sent;sent[id]=!sent[id];save();render()});
+  document.querySelectorAll("[data-sent]").forEach(b=>b.onclick=()=>{const id=b.dataset.sent;sent[id]=!sent[id];save();logEvent("sent",id,!!sent[id]);render()});
+  document.querySelectorAll("[data-open]").forEach(a=>a.addEventListener("click",()=>logEvent("opened",a.dataset.open,true)));
 }
 $("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;
-$("#foot").textContent="Your 'sent' ticks are saved in this browser only. Tell Claude who you emailed so the plan stays up to date.";
+if(LOCAL){$("#foot").textContent="Saving to the repo on this computer. Claude can see every email you open and mark as sent."}
+else{$("#foot").innerHTML='Ticks here are saved in this browser only. To save them for Claude, run <code>python3 ~/Documents/phd-tracker/scripts/serve.py</code> and <a id="imp" href="#">send my ticks to the local tracker</a>.';const a=document.getElementById("imp");if(a)a.onclick=e=>{e.preventDefault();window.open("http://localhost:8765/#import="+encodeURIComponent(btoa(JSON.stringify(sent))))}}
 $("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
+importHash();
 render();
+loadProgress();
 </script>
 </body>
 </html>
