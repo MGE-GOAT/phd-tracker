@@ -92,10 +92,28 @@ const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>(
 const KEY="phdplan-sent-v1";
 let sent={};try{sent=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(sent))}catch(e){}};
-const LOCAL=location.hostname==="localhost"||location.hostname==="127.0.0.1";
-function logEvent(kind,id,on){if(!LOCAL)return;fetch("/api/event",{method:"POST",headers:{"Content-Type":"application/json","X-Tracker":"1"},body:JSON.stringify({kind,id,on})}).catch(()=>{})}
-async function loadProgress(){try{const r=await fetch("data/progress.json?"+Date.now());if(!r.ok)return;const p=await r.json();let ch=false;for(const k in (p.sent||{}))if(sent[k]===undefined){sent[k]=p.sent[k];ch=true}if(ch){save();render()}}catch(e){}}
-function importHash(){const m=location.hash.match(/^#import=(.+)$/);if(!m||!LOCAL)return;try{const o=JSON.parse(atob(decodeURIComponent(m[1])));for(const k in o)if(o[k]&&!sent[k]){sent[k]=true;logEvent("sent",k,true)}save()}catch(e){}history.replaceState(null,"",location.pathname)}
+const TK="phdplan-gh-token",REPO="MGE-GOAT/phd-tracker",PFILE="data/progress.json";
+const tok=()=>{try{return localStorage.getItem(TK)||""}catch(e){return""}};
+const gst=m=>{const e=document.getElementById("gst");if(e)e.textContent=m};
+const b64d=s=>decodeURIComponent(escape(atob(s.replace(/\n/g,""))));
+const b64e=s=>btoa(unescape(encodeURIComponent(s)));
+const gh=(method,body)=>fetch(`https://api.github.com/repos/${REPO}/contents/${PFILE}`+(method==="GET"?"?ref=main&t="+Date.now():""),{method,headers:{Authorization:"Bearer "+tok(),Accept:"application/vnd.github+json"},body:body?JSON.stringify(body):undefined});
+let q=[],qt=null;
+function logEvent(kind,id,on){if(!tok())return;q.push({kind,id,on,at:new Date().toISOString()});clearTimeout(qt);qt=setTimeout(()=>flush(0),2500)}
+async function flush(n){if(!q.length)return;const batch=q.splice(0);try{const g=await gh("GET");let p={sent:{},opened:{},log:[],updated:""},sha;if(g.ok){const j=await g.json();sha=j.sha;p=JSON.parse(b64d(j.content))}
+ for(const e of batch){const bk=p[e.kind]=p[e.kind]||{};if(e.on){if(e.kind==="sent")bk[e.id]=bk[e.id]||e.at;else bk[e.id]=e.at}else delete bk[e.id];(p.log=p.log||[]).push(e)}
+ p.log=p.log.slice(-400);p.updated=new Date().toISOString();
+ const r=await gh("PUT",{message:"Progress update",content:b64e(JSON.stringify(p,null,1)+"\n"),sha,branch:"main"});
+ if(r.status===409&&n<2){q.unshift(...batch);return flush(n+1)}
+ if(!r.ok)throw new Error(r.status);gst("Saved to GitHub")}catch(e){q.unshift(...batch);gst("Could not save, will retry on the next click")}}
+async function loadProgress(){try{let p;if(tok()){const g=await gh("GET");if(g.ok)p=JSON.parse(b64d((await g.json()).content))}
+ if(!p){const r=await fetch("data/progress.json?"+Date.now());if(r.ok)p=await r.json()}
+ if(!p)return;let ch=false;for(const k in (p.sent||{}))if(sent[k]===undefined){sent[k]=p.sent[k];ch=true}
+ if(tok()){for(const k in sent)if(sent[k]&&!(p.sent||{})[k]){logEvent("sent",k,true)}}
+ if(ch){save();render()}}catch(e){}}
+function footer(){const f=$("#foot");if(tok()){f.innerHTML='Saving to GitHub automatically, Claude can see it. <span id="gst"></span> <a href="#" id="disc">Disconnect</a>';$("#disc").onclick=e=>{e.preventDefault();try{localStorage.removeItem(TK)}catch(x){}footer()}}
+ else{f.innerHTML='<b>Save my progress for Claude.</b> Create a token that can only edit this one repo, paste it once, and every email you open or mark as sent is saved to GitHub. <a target="_blank" rel="noopener" href="https://github.com/settings/personal-access-tokens/new">Create the token</a> (Repository access: only phd-tracker. Permissions: Contents, Read and write). <input id="tkin" type="password" placeholder="paste token here" style="width:230px"> <button class="btn" id="tksave">Connect</button> <span id="gst"></span>';
+  $("#tksave").onclick=async()=>{const v=$("#tkin").value.trim();if(!v)return;try{localStorage.setItem(TK,v)}catch(e){}const g=await gh("GET");if(g.ok){gst("");footer();gst("Connected");loadProgress()}else{try{localStorage.removeItem(TK)}catch(e){}gst("That token did not work. Check it is only for phd-tracker with Contents read and write.")}}}}
 let tab="plan";
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1600)}
 async function copy(t,msg){try{await navigator.clipboard.writeText(t);toast(msg)}catch(e){prompt("Copy this text",t)}}
@@ -163,10 +181,8 @@ function render(){
   document.querySelectorAll("[data-open]").forEach(a=>a.addEventListener("click",()=>logEvent("opened",a.dataset.open,true)));
 }
 $("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;
-if(LOCAL){$("#foot").textContent="Saving to the repo on this computer. Claude can see every email you open and mark as sent."}
-else{$("#foot").innerHTML='Ticks here are saved in this browser only. To save them for Claude, run <code>python3 ~/Documents/phd-tracker/scripts/serve.py</code> and <a id="imp" href="#">send my ticks to the local tracker</a>.';const a=document.getElementById("imp");if(a)a.onclick=e=>{e.preventDefault();window.open("http://localhost:8765/#import="+encodeURIComponent(btoa(JSON.stringify(sent))))}}
+footer();
 $("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
-importHash();
 render();
 loadProgress();
 </script>
