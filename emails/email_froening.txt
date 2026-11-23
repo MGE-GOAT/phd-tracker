@@ -3,13 +3,11 @@ Subject: Prospective PhD student in quantised embedded inference (MSc Sharif Uni
 
 Dear Prof. Fröning,
 
-I am finishing my MSc in Biomedical Engineering at Sharif University of Technology, and I would like to ask whether you have or expect a funded PhD position in your group.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your lab's recent work on running Bayesian neural networks efficiently with code generation, and on analog and photonic inference, is the hardware side of what I did with int8 quantization on a Raspberry Pi.
 
-Your lab's recent work on running Bayesian neural networks efficiently with code generation, and on analog and photonic inference, is the hardware side of what I did with int8 quantization on a Raspberry Pi. My thesis is an always-on voice assistant for older adults. I designed a 75k-parameter wake-word model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi. Under five-fold cross-validation on held-out recordings and unseen speakers it was the most accurate model on every fold against DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute. In deployment the device microphone tripled false alarms while AUC barely moved, and retraining on hard negatives recorded on the device cut false activations from 60 to 3 in a 388-hour test.
+My thesis is an always-on voice assistant for older adults, built around a 75k-parameter int8 model that runs in real time on a Raspberry Pi. On the device's own microphone the false alarms tripled, and retraining on device-recorded data cut them from 60 to 3 in a 388-hour test. It led to an ICBME 2026 paper (IEEE) and two more submissions.
 
-This work has produced a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I also work as an embedded and ML systems engineer. My CV is attached and my code is at github.com/MGE-GOAT.
-
-If a position might open, I would be glad to apply.
+Do you have or expect an open PhD position in your group? My German is intermediate. My CV is attached and my code is at github.com/MGE-GOAT.
 
 Kind regards,
 Mahrad Ghazli

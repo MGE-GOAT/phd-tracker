@@ -3,13 +3,11 @@ Subject: Prospective PhD student in TinyML and embedded ML (MSc Sharif Universit
 
 Dear Prof. Müller-Gritschneder,
 
-I am finishing my MSc in Biomedical Engineering at Sharif University of Technology, and I would like to ask whether you have a funded PhD position in Embedded Computing Systems, for example within the DOMINO project on a green and safe edge AI lifecycle.
+I am finishing an MSc in Biomedical Engineering at Sharif University of Technology and I am looking for a funded PhD position. Your recent work on generating kernels so ML compilers can target edge accelerators, and on compressing models for efficient inference, matches what I have been building.
 
-Your recent work on generating kernels so ML compilers can target edge accelerators, and on compressing models for efficient inference, matches what I have been building. My thesis is an always-on voice assistant for older adults. I designed a 75k-parameter wake-word model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi with C++ and TFLite. Under five-fold cross-validation it beat DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute on every fold. I also measured what happens after deployment, where the device microphone tripled false alarms while AUC barely moved, and retraining on device-recorded hard negatives cut false activations from 60 to 3 in a 388-hour test. Keeping an edge model correct and efficient through its life on the device is the part I want to study.
+My thesis is an always-on voice assistant for older adults, built around a 75k-parameter int8 model that runs in real time on a Raspberry Pi. On the device's own microphone the false alarms tripled, and retraining on device-recorded data cut them from 60 to 3 in a 388-hour test. It led to an ICBME 2026 paper (IEEE) and two more submissions.
 
-The work has led to a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I work as an embedded and ML systems engineer as well.
-
-If there is an opening now or later in 2027, I would be glad to apply. My CV is attached and my code is at github.com/MGE-GOAT. My German is intermediate.
+Do you have a funded PhD position in Embedded Computing Systems, for example within the DOMINO project on a green and safe edge AI lifecycle? My German is intermediate. My CV is attached and my code is at github.com/MGE-GOAT.
 
 Kind regards,
 Mahrad Ghazli
