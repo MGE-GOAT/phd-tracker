@@ -1,6 +1,85 @@
 {
- "sent": {},
+ "sent": {
+  "beigl": "2026-11-23T09:31:35.127Z",
+  "saukh": "2026-11-23T09:31:35.127Z",
+  "vanlaerhoven": "2026-11-23T09:31:35.127Z",
+  "mueller": "2026-11-23T09:31:35.127Z",
+  "meyer": "2026-11-23T09:31:35.127Z",
+  "saeed": "2026-11-23T09:31:35.127Z",
+  "jku": "2026-11-23T09:31:35.127Z",
+  "pernkopf": "2026-11-23T09:31:35.127Z",
+  "knowcenter": "2026-11-23T09:31:35.127Z",
+  "karlen": "2026-11-23T09:31:35.127Z",
+  "hoogantink": "2026-11-23T09:31:35.127Z"
+ },
  "opened": {},
- "updated": "",
- "log": []
+ "updated": "2026-11-23T09:31:38.174Z",
+ "log": [
+  {
+   "kind": "sent",
+   "id": "beigl",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "saukh",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "vanlaerhoven",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "mueller",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "meyer",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "saeed",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "jku",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "pernkopf",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "knowcenter",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "karlen",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  },
+  {
+   "kind": "sent",
+   "id": "hoogantink",
+   "on": true,
+   "at": "2026-11-23T09:31:35.127Z"
+  }
+ ]
 }
