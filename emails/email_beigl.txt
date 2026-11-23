@@ -1,4 +1,4 @@
-To: (Prof. Beigl's address from https://www.teco.kit.edu/)
+To: Prof. Michael Beigl <michael.beigl@kit.edu>
 Subject: Application, PhD position in Wearable Computing in Health Technologies (tiny AI)
 
 Dear Prof. Beigl,
@@ -7,7 +7,7 @@ I would like to apply for the PhD position in Wearable Computing in Health Techn
 
 I am finishing my MSc in Biomedical Engineering at Sharif University of Technology. My thesis is a home device for older adults that listens for a wake word and detects falls. I designed a 75k-parameter wake-word model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi, with the whole stack in C++ and TFLite. The model beat DS-CNN, TC-ResNet8, BC-ResNet and size-matched and compute-matched baselines on every fold of a five-fold cross-validation. Retraining on hard negatives recorded through the device microphone cut false activations from 60 to 3 in a 388-hour streaming test, and the device ran for five weeks in two real rooms with no false activations in everyday use.
 
-Your group's work on on-device activity recognition and on earable physiological sensing is close to what I want to do next, tiny AI for health sensing that runs on the device and is tested with real users. I have shipped this kind of system end to end, from sensor and firmware to model and app.
+Your group's recent work on lightweight on-device personalisation of activity recognition (BayaHAR) and on earable sensing is close to what I want to do next, tiny AI for health sensing that runs on the device and is tested with real users. I have shipped this kind of system end to end, from sensor and firmware to model and app.
 
 My CV, transcripts and a motivation letter can follow immediately. My German is intermediate and I am working towards B1. Papers: system paper accepted at ICBME 2026 (IEEE), compact-model paper submitted to ICEE 2027, journal paper submitted to IEEE Sensors Journal. Code at github.com/MGE-GOAT.
 

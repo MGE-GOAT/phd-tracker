@@ -1,4 +1,4 @@
-To: recruiting@ai-lab.jku.at
+To: LIT AI Lab <recruiting@ai-lab.jku.at>
 Subject: ML-PhD application, Mahrad Ghazli (MSc Sharif University)
 
 Dear LIT AI Lab team,

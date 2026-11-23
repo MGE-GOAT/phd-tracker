@@ -1,11 +1,11 @@
-To: Assoc. Prof. Olga Saukh (address on https://tugraz.at/arbeitsgruppen/iti-teams/elss)
+To: Prof. Olga Saukh <saukh@tugraz.at>
 Subject: Prospective PhD student in embedded machine learning (MSc Sharif University)
 
 Dear Prof. Saukh,
 
 I am finishing my MSc in Biomedical Engineering at Sharif University of Technology, and I would like to ask whether there is still a PhD place in your Embedded Learning and Sensing Systems group, for example in the MSCA Doctoral Network "Embedded AI Systems and Applications" or in another project.
 
-Running deep learning on very constrained devices with attention to energy and privacy is exactly what my MSc thesis did. I built a voice assistant for older adults that keeps all listening on the device. I designed a 75k-parameter wake-word model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi, with the full pipeline in C++ and TFLite. Under five-fold cross-validation it beat DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute on every fold, and int8 conversion cost 0.1 points or less. In deployment the device microphone tripled false alarms while AUC barely moved, and retraining on hard negatives recorded on the device cut false activations from 60 to 3 in a 388-hour test.
+Your recent work on how model compression interacts with test-time adaptation, and on deploying TinyML on smart glasses, is close to my thesis, because a compressed model also has to keep working when the data shifts. I built a voice assistant for older adults that keeps all listening on the device. I designed a 75k-parameter wake-word model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi, with the full pipeline in C++ and TFLite. Under five-fold cross-validation it beat DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute on every fold, and int8 conversion cost 0.1 points or less. In deployment the device microphone tripled false alarms while AUC barely moved, and retraining on hard negatives recorded on the device cut false activations from 60 to 3 in a 388-hour test.
 
 The work has produced a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I also work as an embedded and ML systems engineer, so I can take a model from training all the way to firmware. I have never lived in Austria, so I meet the MSCA mobility rule.
 

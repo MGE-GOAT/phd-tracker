@@ -1,11 +1,11 @@
-To: Prof. Kristof Van Laerhoven (address on https://ubi29.informatik.uni-siegen.de/usi/)
+To: Prof. Kristof Van Laerhoven <kvl@eti.uni-siegen.de>
 Subject: Prospective PhD student in on-body audio and low-bit models (MSc Sharif University)
 
 Dear Prof. Van Laerhoven,
 
 I am finishing my MSc in Biomedical Engineering at Sharif University of Technology, and I would like to ask whether you have or expect a funded PhD position in your Ubiquitous Computing group. I would also be grateful to know whether the doctorate would be a Dr.-Ing. or a Dr. rer. nat.
 
-Your group's recent work on learnable low-bit quantization and on on-body acoustic event detection is very close to mine. I built a home device for older adults that listens for a wake word on the device. I designed a 75k-parameter model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi. Under five-fold cross-validation it beat DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute on every fold. In deployment I found that the microphone itself changes the false-alarm rate while AUC barely moves, and retraining on hard negatives recorded on the device cut false activations from 60 to 3 in a 388-hour test. Models trained on audio from one set of microphones and used on another is a problem your audio work will meet as well.
+Your group's recent work on self-supervised learning for inertial human activity recognition, and on wearable sensing in real settings, is very close to mine. I built a home device for older adults that listens for a wake word on the device. I designed a 75k-parameter model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi. Under five-fold cross-validation it beat DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute on every fold. In deployment I found that the microphone itself changes the false-alarm rate while AUC barely moves, and retraining on hard negatives recorded on the device cut false activations from 60 to 3 in a 388-hour test. Models trained on audio from one set of microphones and used on another is a problem your audio work will meet as well.
 
 The work has led to a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I build and field-deploy my own hardware and datasets, which I understand your group does too.
 

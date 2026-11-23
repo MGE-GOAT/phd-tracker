@@ -1,11 +1,11 @@
-To: Prof. Franz Pernkopf (address on https://www.spsc.tugraz.at/people/franz-pernkopf)
+To: Prof. Franz Pernkopf <pernkopf@tugraz.at>
 Subject: Prospective PhD student in efficient speech and audio ML (MSc Sharif University)
 
 Dear Prof. Pernkopf,
 
 I am finishing my MSc in Biomedical Engineering at Sharif University of Technology, and I am writing to ask whether you expect a PhD position in your group in the coming year.
 
-My thesis is an always-on wake-word system for older adults. I designed a 75k-parameter model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi. Under five-fold cross-validation on held-out recordings and unseen speakers it was the most accurate model on every fold against DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute. In deployment the device microphone tripled false alarms while AUC barely moved, and retraining on device-recorded hard negatives cut false activations from 60 to 3 in a 388-hour test. Resource-efficient speech models and their robustness on real devices are what I would like to work on next, which is why your group is my first choice in Graz.
+My thesis is an always-on wake-word system for older adults. I designed a 75k-parameter model, trained it with int8 quantization-aware training and run it in real time on a Raspberry Pi. Under five-fold cross-validation on held-out recordings and unseen speakers it was the most accurate model on every fold against DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute. In deployment the device microphone tripled false alarms while AUC barely moved, and retraining on device-recorded hard negatives cut false activations from 60 to 3 in a 388-hour test. Resource-efficient speech models and their robustness on real devices are what I would like to work on next, which is why your recent work on lightweight streaming speech encoders and on efficient Bayesian neural networks interests me.
 
 The work has led to a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I also work as an embedded and ML systems engineer.
 

@@ -1,11 +1,11 @@
-To: (Prof. Meyer's address from https://www.uol.de/en/communication-acoustics)
+To: Prof. Bernd Meyer <bernd.meyer@uol.de>
 Subject: Prospective PhD student in keyword spotting and speech processing (MSc Sharif University)
 
 Dear Prof. Meyer,
 
 I am finishing my MSc in Biomedical Engineering at Sharif University of Technology and I am writing to ask whether you expect an open PhD position in your group, for example through Hearing4all or a project grant.
 
-Your work on multilingual query-by-example keyword spotting and on speech processing for hearing research is close to my thesis. I built an always-on Persian wake-word system for older adults with a 75k-parameter model that runs in int8 on a Raspberry Pi. Under five-fold cross-validation on held-out recordings and unseen speakers it was the most accurate model on every fold against DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute. In deployment I found that the device microphone tripled false alarms while AUC barely moved, and retraining on device-recorded hard negatives cut false activations from 60 to 3 in a 388-hour test.
+Your group's recent work on deep learning models that predict listening effort and speech intelligibility for hearing research is close to my thesis, because I also work on speech models that have to hold up on real microphones. I built an always-on Persian wake-word system for older adults with a 75k-parameter model that runs in int8 on a Raspberry Pi. Under five-fold cross-validation on held-out recordings and unseen speakers it was the most accurate model on every fold against DS-CNN, TC-ResNet8, BC-ResNet and DS-CNNs matched to its size and compute. In deployment I found that the device microphone tripled false alarms while AUC barely moved, and retraining on device-recorded hard negatives cut false activations from 60 to 3 in a 388-hour test.
 
 The work has led to a system paper accepted at ICBME 2026 (IEEE), a compact-model paper submitted to ICEE 2027 and a journal paper submitted to IEEE Sensors Journal. I also work as an embedded and ML systems engineer.
 

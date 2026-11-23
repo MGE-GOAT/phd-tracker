@@ -16,7 +16,9 @@
    "match": 10,
    "chance": 5,
    "address": "saukh@tugraz.at",
-   "approved": "A"
+   "approved": "A",
+   "latest": "model compression with test-time adaptation, TinyML on smart glasses, diffusion model distillation",
+   "verified": "2026-11-23"
   },
   {
    "id": "beigl",
@@ -33,7 +35,9 @@
    "match": 9,
    "chance": 6,
    "address": "michael.beigl@kit.edu",
-   "approved": "A"
+   "approved": "A",
+   "latest": "on-device personalised activity recognition (BayaHAR), earables, on-body AI",
+   "verified": "2026-11-23"
   },
   {
    "id": "saeed",
@@ -48,22 +52,9 @@
    "match": 9,
    "chance": 4,
    "address": "a.saeed@tue.nl",
-   "approved": "A"
-  },
-  {
-   "id": "devries",
-   "batch": 1,
-   "country": "Netherlands",
-   "who": "Prof. Bert de Vries",
-   "where": "TU Eindhoven",
-   "why": "Hearing aids that adapt to the user.",
-   "kind": "Email",
-   "page": "https://tue.nl/onderzoek/research-groups/signal-processing-systems/biaslab",
-   "email": "email_devries.txt",
-   "address": "bert.de.vries@tue.nl",
-   "match": 8,
-   "chance": 4,
-   "approved": "A"
+   "approved": "A",
+   "latest": "audio-language models for medical audio, federated and decentralised clinical AI, PPG foundation data",
+   "verified": "2026-11-23"
   },
   {
    "id": "mueller",
@@ -78,7 +69,9 @@
    "match": 9,
    "chance": 5,
    "address": "daniel.mueller-gritschneder@tuwien.ac.at",
-   "approved": "A"
+   "approved": "A",
+   "latest": "ML compilers for edge accelerators, LLM compression, end-to-end driving models",
+   "verified": "2026-11-23"
   },
   {
    "id": "jku",
@@ -93,7 +86,8 @@
    "address": "recruiting@ai-lab.jku.at",
    "match": 7,
    "chance": 4,
-   "approved": "A"
+   "approved": "A",
+   "verified": "2026-11-23"
   },
   {
    "id": "vanlaerhoven",
@@ -108,7 +102,9 @@
    "match": 9,
    "chance": 6,
    "address": "kvl@eti.uni-siegen.de",
-   "approved": "C"
+   "approved": "C",
+   "latest": "self-supervised inertial activity recognition, wearables, human-agent interaction",
+   "verified": "2026-11-23"
   },
   {
    "id": "meyer",
@@ -123,7 +119,9 @@
    "match": 9,
    "chance": 5,
    "address": "bernd.meyer@uol.de",
-   "approved": "C"
+   "approved": "C",
+   "latest": "deep learning models of listening effort and speech perception for hearing research",
+   "verified": "2026-11-23"
   },
   {
    "id": "pernkopf",
@@ -138,7 +136,9 @@
    "match": 7,
    "chance": 4,
    "address": "pernkopf@tugraz.at",
-   "approved": "A"
+   "approved": "A",
+   "latest": "streaming speech encoders for pathological speech, efficient Bayesian networks, UWB radar",
+   "verified": "2026-11-23"
   },
   {
    "id": "ista",
@@ -153,7 +153,9 @@
    "note": "Ask Dr. Mohammadzadeh for a reference letter now, letters are due 12 Jan.",
    "match": 8,
    "chance": 3,
-   "approved": "B"
+   "approved": "B",
+   "latest": "Dan Alistarh's group, LLM quantization, pruning and quantization-aware training",
+   "verified": "2026-11-23"
   },
   {
    "id": "knowcenter",
@@ -170,7 +172,8 @@
    "note": "Posted Oct 2025, some places are filled, the email asks which are still open.",
    "match": 8,
    "chance": 6,
-   "approved": "A"
+   "approved": "A",
+   "verified": "2026-11-23"
   },
   {
    "id": "hoogantink",
@@ -185,7 +188,9 @@
    "match": 8,
    "chance": 5,
    "address": "hoogantink@kismed.tu-darmstadt.de",
-   "approved": "A"
+   "approved": "A",
+   "latest": "signal quality for ECG and PPG, blood pressure and noise, medical time series",
+   "verified": "2026-11-23"
   },
   {
    "id": "karlen",
@@ -200,7 +205,9 @@
    "match": 8,
    "chance": 6,
    "address": "walter.karlen@uni-ulm.de",
-   "approved": "A"
+   "approved": "A",
+   "latest": "sleep EEG, artifact detection in mobile EEG, REM sleep disorder screening",
+   "verified": "2026-11-23"
   },
   {
    "id": "eskofier",
@@ -215,7 +222,9 @@
    "match": 8,
    "chance": 4,
    "address": "bjoern.eskofier@helmholtz-munich.de",
-   "approved": "A"
+   "approved": "A",
+   "latest": "radar sensing across devices, cognitive driving datasets, agentic AI for oncology (now at LMU)",
+   "verified": "2026-11-23"
   },
   {
    "id": "schiele",
@@ -230,7 +239,9 @@
    "match": 8,
    "chance": 5,
    "address": "gregor.schiele@uni-due.de",
-   "approved": "A"
+   "approved": "A",
+   "latest": "hardware-aware neural architecture search (elasticAI.explorer), compact models, edge monitoring",
+   "verified": "2026-11-23"
   },
   {
    "id": "pryss",
@@ -242,10 +253,12 @@
    "kind": "Email",
    "page": "https://med.uni-wuerzburg.de/en/epidemiologie",
    "email": "email_pryss.txt",
-   "match": 7,
+   "match": 5,
    "chance": 6,
    "address": "ruediger.pryss@uni-wuerzburg.de",
-   "approved": "B"
+   "approved": "B",
+   "latest": "digital interventions for patients (JITAI), eHealth privacy, routine health data",
+   "verified": "2026-11-23"
   },
   {
    "id": "hein",
@@ -261,7 +274,9 @@
    "chance": 6,
    "address": "andreas.hein@offis.de",
    "note": "Prof. Hein also directs OFFIS Health, so this one email covers both. The address is his OFFIS one, his university page shows none.",
-   "approved": "C"
+   "approved": "C",
+   "latest": "ML assessment of older adults' movement, neurofeedback, assistive robots",
+   "verified": "2026-11-23"
   },
   {
    "id": "strodthoff",
@@ -277,7 +292,9 @@
    "chance": 6,
    "address": "nils.strodthoff@uol.de",
    "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude.",
-   "approved": "C"
+   "approved": "C",
+   "latest": "foundation models for health data, explainable ML, ECG and movement",
+   "verified": "2026-11-23"
   },
   {
    "id": "kirste",
@@ -292,7 +309,9 @@
    "address": "thomas.kirste@uni-rostock.de",
    "match": 8,
    "chance": 6,
-   "approved": "B"
+   "approved": "B",
+   "latest": "AI for cytometry and medical devices, EEG monitoring of cognitive status, LLM consensus",
+   "verified": "2026-11-23"
   },
   {
    "id": "otte",
@@ -307,7 +326,9 @@
    "match": 8,
    "chance": 6,
    "address": "sebastian.otte@uni-luebeck.de",
-   "approved": "B"
+   "approved": "B",
+   "latest": "neuromorphic radar on Loihi 2, physical neural networks, reservoir computing",
+   "verified": "2026-11-23"
   },
   {
    "id": "grzegorzek",
@@ -322,7 +343,9 @@
    "match": 8,
    "chance": 6,
    "address": "marcin.grzegorzek@uni-luebeck.de",
-   "approved": "B"
+   "approved": "B",
+   "latest": "wearable glucose estimation, multimodal medical AI, hand tracking",
+   "verified": "2026-11-23"
   },
   {
    "id": "bringmann",
@@ -337,7 +360,9 @@
    "match": 9,
    "chance": 5,
    "address": "oliver.bringmann@uni-tuebingen.de",
-   "approved": "A"
+   "approved": "A",
+   "latest": "capsule endoscopy models, ML and hardware co-design, RISC-V, autonomous systems",
+   "verified": "2026-11-23"
   },
   {
    "id": "froening",
@@ -349,11 +374,13 @@
    "kind": "Email",
    "page": "https://hawaii.ziti.uni-heidelberg.de/",
    "email": "email_froening.txt",
-   "match": 9,
+   "match": 5,
    "chance": 5,
    "address": "holger.froening@ziti.uni-heidelberg.de",
    "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude.",
-   "approved": "A"
+   "approved": "A",
+   "latest": "Bayesian networks on accelerators, analog and photonic inference, LLM inference systems",
+   "verified": "2026-11-23"
   },
   {
    "id": "idmt",
@@ -368,7 +395,8 @@
    "match": 9,
    "chance": 5,
    "address": "hsa-bewerbung@idmt.fraunhofer.de",
-   "approved": "C"
+   "approved": "C",
+   "verified": "2026-11-23"
   },
   {
    "id": "maier",
@@ -383,23 +411,9 @@
    "match": 8,
    "chance": 5,
    "address": "andreas.maier@fau.de",
-   "approved": "A"
-  },
-  {
-   "id": "empkins",
-   "batch": 3,
-   "country": "Germany",
-   "who": "EmpkinS research centre (Prof. Martin Vossiek)",
-   "where": "FAU Erlangen",
-   "why": "Getting human health state out of imperfect physical sensors.",
-   "kind": "Email",
-   "page": "https://www.empkins.de/",
-   "email": "email_empkins.txt",
-   "match": 8,
-   "chance": 5,
-   "address": "martin.vossiek@fau.de",
-   "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude.",
-   "approved": "A"
+   "approved": "A",
+   "latest": "speech in health (depression, dysarthria, child speech), medical imaging, ML theory",
+   "verified": "2026-11-23"
   },
   {
    "id": "arnrich",
@@ -414,7 +428,9 @@
    "match": 8,
    "chance": 5,
    "address": "bert.arnrich@hpi.de",
-   "approved": "A (degree from University of Potsdam)"
+   "approved": "A (degree from University of Potsdam)",
+   "latest": "vision wearables, digital health, foundation models for patient data",
+   "verified": "2026-11-23"
   },
   {
    "id": "lukowicz",
@@ -430,7 +446,9 @@
    "chance": 5,
    "address": "paul.lukowicz@dfki.de",
    "note": "Address follows the university's standard format, it is not printed on the page. If it bounces, tell Claude.",
-   "approved": "C (degree from RPTU Kaiserslautern)"
+   "approved": "C (degree from RPTU Kaiserslautern)",
+   "latest": "lightweight wearable activity recognition (LITEWAY), textile sensing, LLM energy cost",
+   "verified": "2026-11-23"
   },
   {
    "id": "schuller_tum",
@@ -445,7 +463,9 @@
    "match": 8,
    "chance": 4,
    "address": "schuller@tum.de",
-   "approved": "A"
+   "approved": "A",
+   "latest": "multimodal health signals, large language models for mental health, affective computing",
+   "verified": "2026-11-23"
   },
   {
    "id": "martin",
@@ -457,10 +477,12 @@
    "kind": "Email",
    "page": "https://etit.ruhr-uni-bochum.de/en/person/prof-dr-ing-rainer-martin/",
    "email": "email_martin.txt",
-   "address": "ika-office@ruhr-uni-bochum.de",
+   "address": "rainer.martin@rub.de",
    "match": 7,
    "chance": 5,
-   "approved": "A"
+   "approved": "A",
+   "latest": "cochlear implant auditory models, spatial hearing, voice anonymisation",
+   "verified": "2026-11-23"
   },
   {
    "id": "haeb",
@@ -475,7 +497,9 @@
    "match": 7,
    "chance": 5,
    "address": "haeb@nt.uni-paderborn.de",
-   "approved": "C"
+   "approved": "C",
+   "latest": "speech enhancement, voice editing for speech therapy, diarization, acoustic sensor networks",
+   "verified": "2026-11-23"
   },
   {
    "id": "durmaz",
@@ -490,7 +514,9 @@
    "address": "ozlem.durmaz@utwente.nl",
    "match": 9,
    "chance": 5,
-   "approved": "A"
+   "approved": "A",
+   "latest": "LLMs on Raspberry Pi 5 with NPU, earables, WiFi sensing, silent command recognition",
+   "verified": "2026-11-23"
   },
   {
    "id": "qingwang",
@@ -505,7 +531,9 @@
    "address": "qing.wang@tudelft.nl",
    "match": 9,
    "chance": 4,
-   "approved": "A"
+   "approved": "A",
+   "latest": "split CNN inference on microcontrollers, TinyML positioning, acoustic and light sensing attacks",
+   "verified": "2026-11-23"
   },
   {
    "id": "tejedor",
@@ -520,7 +548,9 @@
    "match": 8,
    "chance": 5,
    "address": "cristian.tejedorgarcia@ru.nl",
-   "approved": "A"
+   "approved": "A",
+   "latest": "privacy-preserving speech data for Parkinson's, reading diagnostics, L2 speech LLMs",
+   "verified": "2026-11-23"
   },
   {
    "id": "stuijk",
@@ -532,10 +562,12 @@
    "kind": "Email",
    "page": "https://www.tue.nl/onderzoek/researchers/sander-stuijk",
    "email": "email_stuijk.txt",
-   "match": 7,
+   "match": 5,
    "chance": 4,
    "address": "s.stuijk@tue.nl",
-   "approved": "A"
+   "approved": "A",
+   "latest": "video-based vital signs in intensive care, spiking processors, depth estimation hardware",
+   "verified": "2026-11-23"
   },
   {
    "id": "rinner",
@@ -548,9 +580,11 @@
    "page": "https://nes.aau.at/",
    "email": "email_rinner.txt",
    "address": "bernhard.rinner@aau.at",
-   "match": 7,
+   "match": 4,
    "chance": 5,
-   "approved": "A"
+   "approved": "A",
+   "latest": "lightweight radar tracking, UAV perception and 3D reconstruction",
+   "verified": "2026-11-23"
   },
   {
    "id": "aral",
@@ -565,7 +599,8 @@
    "match": 8,
    "chance": 5,
    "address": "atakan.aral@univie.ac.at",
-   "approved": "A"
+   "approved": "A",
+   "verified": "2026-11-23"
   },
   {
    "id": "pro2future",
@@ -581,7 +616,8 @@
    "match": 7,
    "chance": 5,
    "approved": "ask which university gives the degree",
-   "note": "Pro2Future gives no degree. Ask which university (TU Graz, JKU or Uni Graz are all group A) would enrol you."
+   "note": "Pro2Future gives no degree. Ask which university (TU Graz, JKU or Uni Graz are all group A) would enrol you.",
+   "verified": "2026-11-23"
   },
   {
    "id": "ulm_just",
@@ -598,7 +634,9 @@
    "match": 9,
    "chance": 7,
    "note": "Apply through the Ulm job portal, not by email. Cover letter max 2 pages. German B1 is expected within the first year. Same institute as Prof. Karlen in batch 2, that email can still go.",
-   "approved": "A"
+   "approved": "A",
+   "latest": "sensorised and motorised knee orthosis with ROS2, EMG movement-effort detection",
+   "verified": "2026-11-23"
   },
   {
    "id": "mcml",
@@ -613,7 +651,8 @@
    "match": 6,
    "chance": 3,
    "note": "Long shot, very competitive. The portal closes at 09:00 Munich time, not midnight.",
-   "approved": "A"
+   "approved": "A",
+   "verified": "2026-11-23"
   },
   {
    "id": "csmaxplanck",
@@ -628,7 +667,8 @@
    "match": 6,
    "chance": 3,
    "note": "The Max Planck institutes give no degree. The degree comes from a partner university the program page does not name. Saarland University is group C on the approved list. Ask the program office which university would give your degree before applying. Long shot. References are only asked after a first review.",
-   "approved": "ask which university gives the degree (Saarland is C)"
+   "approved": "ask which university gives the degree (Saarland is C)",
+   "verified": "2026-11-23"
   },
   {
    "id": "acta_su",
@@ -644,7 +684,9 @@
    "match": 6,
    "chance": 5,
    "note": "Reviewed on a rolling basis, so apply in December, not March. Emailed applications are not considered.",
-   "approved": "A"
+   "approved": "A",
+   "latest": "randomised trials of AI in oral healthcare, oral health screening tools",
+   "verified": "2026-11-23"
   }
  ]
 }
