@@ -1,0 +1,22 @@
+To: University of Stavanger recruitment portal (questions to rekruttering@uis.no)
+Subject: Motivation letter, PhD Fellow in Lifelong Machine Learning for Human Activity Recognition
+
+Dear selection committee,
+
+I am applying for the PhD fellowship in lifelong machine learning for human activity recognition. I completed the requirements for my MSc in Biomedical Engineering at Sharif University of Technology on 23 September 2026.
+
+Why this position
+My thesis was a home system for older adults. It is an always-on voice assistant built around a 75k-parameter int8 model that runs in real time on a Raspberry Pi, and it ran for five weeks in real rooms. Your group works with the same kind of setting. Smart Objects for Smart Care collects wearable and physiological data in real households, and you ask how a system can keep learning without sending personal data to a central server. That question came straight out of my own work.
+
+How my qualifications match
+The most important thing I learned is that a model that scores well offline can fail on real hardware. On the device's own microphone, false alarms tripled although the offline scores barely changed. I recorded hard negatives on the device and retrained, and false activations fell from 60 to 3 in a 388-hour test. I know how to measure this kind of shift, how to build a cross-validation that matches real use, and how to ship a model in C++ and Python. I also build production software and tool-using LLM agents in my work as an applied AI scientist. My thesis led to an ICBME 2026 paper (IEEE) and two more submissions.
+
+My research ideas
+First, activity recognition systems fail when a sensor, a person or a home changes, so I would study how to detect this change without labels. A device could notice that its own confidence drops and mark the samples it is unsure about. Second, my hard-negative retraining was done by hand. I would like to automate it, so that a system collects its own difficult cases and adapts, while forgetting as little as possible. Third, I would test this under federated learning, where homes share only model updates, and measure how much accuracy is lost against the privacy gained.
+
+I have not yet worked on continual learning or federated learning in depth, and I would like to build that knowledge in your group. I attach my full master's thesis, CV, transcripts and a note on how the Iranian 0 to 20 grade scale converts to the Norwegian scale.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com
