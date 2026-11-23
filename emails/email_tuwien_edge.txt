@@ -1,0 +1,13 @@
+To: Dr. Reza Farahani <r.farahani@dsg.tuwien.ac.at>
+Subject: Application for the PhD position Distributed Edge AI for Autonomous Drone Inspection
+
+Dear Dr. Farahani,
+
+I would like to apply for the pre-doc position in the EdgeAI-Drone project, advertised on EURAXESS with the deadline of 2 December 2026. As requested, I attach one PDF with a short research statement, my CV, a summary of my thesis, my transcripts and my degree status. I completed my MSc requirements on 23 September 2026 and the certificate is pending.
+
+My thesis was an always-on voice assistant with a 75k-parameter int8 model that runs in real time on a Raspberry Pi, so running models on constrained devices is what I know best. I would be glad to answer any question.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com
