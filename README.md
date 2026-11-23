@@ -33,6 +33,7 @@ Last updated 2026-11-23. Open `index.html` for the full view with filters.
 | Deadline | Fit | Status | Country | Institution | PI | Position |
 |---|---|---|---|---|---|---|
 | 2026-11-26 | 9 | new | Sweden | KTH Royal Institute of Technology | Associate Professor Seraina Dual (KTH), co-supervised with Associate Professor Eric Rullman (Karolinska Institute) | [Doctoral student in Wearable Biofeedback Systems for Cardiovascular Health](https://www.kth.se/lediga-jobb/984498?l=en) |
+| 2026-11-30 | 7 | new | Switzerland | University of Bern | Group not named in the advert | [PhD in Machine Learning in Medicine](https://jobs.unibe.ch/job-vacancies/phd-in-machine-learning-in-medicine/6a1bff95-646a-4364-bcbc-44573750bc5f) |
 | 2026-12-01 | 6 | new | Germany | Max Planck School of Biomedical AI (BMAI) | Program (choose up to 3 BMAI Fellows) | [25 PhD Positions (m/f/d), first BMAI cohort](https://biomedicalai.maxplanckschools.org/4056/application-process) |
 | 2026-12-02 | 8 | new | Austria | TU Wien | Dr. Reza Farahani | [PhD position in Distributed Edge AI for Autonomous Drone Inspection (pre-doc project assistant)](https://euraxess.ec.europa.eu/jobs/480730) |
 | 2026-12-06 | 9 | new | Germany | Ulm University | Prof. Dr. Fabian Just | [Doctoral student, Wearable Knee Orthosis for Personalized Rehabilitation](https://www.uni-ulm.de/in/bmt/institut/stellenangebote/wearable-knee-orthosis/) |
@@ -68,6 +69,7 @@ Last updated 2026-11-23. Open `index.html` for the full view with filters.
 | 8 | new | Netherlands | TU Eindhoven | [Prof. Bert de Vries](https://tue.nl/onderzoek/research-groups/signal-processing-systems/biaslab) | Bayesian hearing agents that personalise audio processing in situ |
 | 7 | new | Germany | University of Kassel | [Prof. Bernhard Sick](https://www.uni-kassel.de/eecs/ies/) | Machine learning for embedded systems, audio classification, time series |
 | 7 | new | Austria | JKU Linz, LIT AI Lab | [LIT AI Lab (recruiting@ai-lab.jku.at)](https://jku.at/en/lit-artificial-intelligence-lab/career/) | Deep learning, agentic AI, world models |
+| 7 | new | Austria | Medical University of Vienna | [Call with many projects](https://oc10.meduniwien.ac.at/en/open-phd-positions) | About 30 funded PhDs in biomedical research and engineering, including AI and machine learning |
 
 ## Check by hand (pages that block automated reading)
 

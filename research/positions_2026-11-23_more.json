@@ -1,0 +1,42 @@
+[
+ {
+  "country": "Switzerland",
+  "city": "Bern",
+  "institution": "University of Bern",
+  "group": "Machine learning in medicine",
+  "pi": "Group not named in the advert",
+  "pi_url": "https://jobs.unibe.ch/job-vacancies/phd-in-machine-learning-in-medicine/6a1bff95-646a-4364-bcbc-44573750bc5f",
+  "title": "PhD in Machine Learning in Medicine",
+  "topic": "Multimodal health data (imaging, wearable sensors, clinical), disease progression models",
+  "fit_1_10": 7,
+  "funding": "100%, 3 years plus 1 year option",
+  "start": "on appointment",
+  "deadline": "2026-11-30",
+  "english_requirement": "English advert",
+  "apply_url": "https://jobs.unibe.ch/job-vacancies/phd-in-machine-learning-in-medicine/6a1bff95-646a-4364-bcbc-44573750bc5f",
+  "verified_on": "2026-11-23",
+  "evidence": "Full consideration for applications by 30 Nov 2026, reviewed after that until filled. Portal only, CV, full BSc and MSc transcripts, 1-page cover letter.",
+  "red_flags": "Backup country and probably high competition. Needs the bachelor's transcript.",
+  "type": "advert"
+ },
+ {
+  "country": "Austria",
+  "city": "Vienna",
+  "institution": "Medical University of Vienna",
+  "group": "Open PhD call in biomedical research and engineering (AI/ML projects included)",
+  "pi": "Call with many projects",
+  "pi_url": "https://oc10.meduniwien.ac.at/en/open-phd-positions",
+  "title": "MedUni Wien open PhD positions, next call expected spring 2027",
+  "topic": "About 30 funded PhDs in biomedical research and engineering, including AI and machine learning",
+  "fit_1_10": 7,
+  "funding": "Funded, 4 year contracts in earlier calls",
+  "start": "autumn",
+  "deadline": "rolling",
+  "english_requirement": "English",
+  "apply_url": "https://oc10.meduniwien.ac.at/en/open-phd-positions",
+  "verified_on": "2026-11-23",
+  "evidence": "Earlier calls closed 26 Apr 2026 and 3 Jun 2026, the page lists future calls.",
+  "red_flags": "No call is open now. MedUni Wien is group B on the approved list and only for fields related to the Ministry. Check this page every few weeks.",
+  "type": "cold-email"
+ }
+]
