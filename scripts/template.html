@@ -230,6 +230,7 @@ function render(){
 $("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;
 footer();
 $("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;if(location.hash){history.replaceState(null,"",location.pathname+location.search)}[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
+(function(){const m=location.hash.match(/^#setup=([\w\-+/=]+)/);if(!m)return;try{const o=JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g,"+").replace(/_/g,"/")))));for(const k in (o.v||{}))if(/^phdkit-/.test(k))localStorage.setItem(k,String(o.v[k]));history.replaceState(null,"",location.pathname+location.search);if(o.go)location.hash="#kit="+o.go;setTimeout(()=>toast("Saved in this browser"),400)}catch(e){}})();
 render();
 loadProgress();
 </script>
