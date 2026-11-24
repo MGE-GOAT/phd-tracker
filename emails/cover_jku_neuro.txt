@@ -5,11 +5,11 @@ Dear Dr. Leenings,
 
 I am applying for the PhD position in AI in neuroscience in your group Transformative Healthcare with AI. I have just completed my MSc in Biomedical Engineering at Sharif University of Technology, with the requirements completed on 23 September 2026.
 
-The advert asks for clean validation, noisy and incomplete data, and software that runs reliably in a clinical setting. That is what my thesis was about. I built an always-on voice assistant for older adults around a 75k-parameter int8 model that runs in real time on a Raspberry Pi. It was the most accurate of seven models on every fold of a five-fold cross-validation. On the device's own microphone, though, false alarms tripled even though the scores barely moved. Retraining on data recorded on the device cut false activations from 60 to 3 in a 388-hour test. I learned to test a model on the data it will really see and to say where it stops working, which I understand is central to your work with clinical data.
+The advert asks for clean validation, noisy and incomplete data, and software that runs reliably in a clinical setting. That is what my thesis was about. I built an always-on voice assistant for older adults that runs on a small device. I compared several models fairly, tested the system in real rooms, and studied why a model that works well in testing can fail on real hardware. I learned to test on the data a model will really see and to say where it stops working, which I understand is central to your work with clinical data.
 
-I also write production software. My pipeline is in C++ and Python with version control, automated checks and services that run for weeks, and I work as an applied AI scientist building tool-using LLM agents. I have not yet worked with MRI, CT or EEG, and I would like to learn them with your group.
+I also write production software in C++ and Python, and I work as an applied AI scientist building tool-using LLM agents. I have not yet worked with MRI, CT or EEG, and I would like to learn them with your group.
 
-My thesis led to an ICBME 2026 paper (IEEE) and two more submissions. My German is intermediate and I am ready to reach B1. My CV, transcripts and references are in the application.
+My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. My German is intermediate and I am ready to reach B1. My CV, transcripts and references are in the application.
 
 Kind regards,
 Mahrad Ghazli
