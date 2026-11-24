@@ -114,9 +114,10 @@
   "ref_mohammadzadeh": "2026-11-24T09:41:47.464Z",
   "ref_jahed": "2026-11-24T09:56:15.444Z",
   "ref_vosoughi": "2026-11-24T09:59:05.326Z",
-  "ref_hassanzadeh": "2026-11-24T10:00:12.603Z"
+  "ref_hassanzadeh": "2026-11-24T10:00:12.603Z",
+  "ref_javanmardi": "2026-11-24T10:00:33.605Z"
  },
- "updated": "2026-11-24T10:00:33.203Z",
+ "updated": "2026-11-24T10:00:36.780Z",
  "log": [
   {
    "kind": "sent",
@@ -873,6 +874,12 @@
    "id": "ref_hassanzadeh",
    "on": true,
    "at": "2026-11-24T10:00:29.989Z"
+  },
+  {
+   "kind": "opened",
+   "id": "ref_javanmardi",
+   "on": true,
+   "at": "2026-11-24T10:00:33.605Z"
   }
  ]
 }
