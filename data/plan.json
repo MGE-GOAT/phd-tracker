@@ -77,7 +77,8 @@
    "verified": "2026-11-23",
    "reply": "Replied 23 Nov, no funded PhD now, will keep your application in mind",
    "reply_body": "Dear Prof. Müller-Gritschneder,\n\nThank you for your quick answer. Yes, I would be glad if you keep my application in mind. I will send you a short update in spring in case anything has changed.\n\nBest regards,\nMahrad Ghazli",
-   "competition": "High"
+   "competition": "High",
+   "reply_kind": "later"
   },
   {
    "id": "jku",
@@ -315,7 +316,8 @@
    "verified": "2026-11-23",
    "reply": "Replied 23 Nov, no open positions",
    "reply_body": "Dear Prof. Strodthoff,\n\nThank you for letting me know.\n\nBest regards,\nMahrad Ghazli",
-   "competition": "Medium"
+   "competition": "Medium",
+   "reply_kind": "closed"
   },
   {
    "id": "kirste",
@@ -516,7 +518,8 @@
    "verified": "2026-11-23",
    "competition": "Low",
    "reply": "Replied 23 Nov, no open positions now, suggested watching the EURAXESS portal for EU-funded projects",
-   "reply_body": "Dear Prof. Martin,\n\nThank you for your answer and for the advice about EURAXESS. I will follow the ads there.\n\nBest regards,\nMahrad Ghazli"
+   "reply_body": "Dear Prof. Martin,\n\nThank you for your answer and for the advice about EURAXESS. I will follow the ads there.\n\nBest regards,\nMahrad Ghazli",
+   "reply_kind": "closed"
   },
   {
    "id": "haeb",
@@ -554,7 +557,8 @@
    "verified": "2026-11-23",
    "reply": "Replied 23 Nov, no openings now but openings in 2027, watch their vacancy page",
    "reply_body": "Dear Dr. Durmaz Incel,\n\nThank you for your answer and for the link. I will follow the vacancies and apply as soon as a position opens in 2027. If it is possible, I would be grateful if you let me know when the call is published.\n\nBest regards,\nMahrad Ghazli",
-   "competition": "Medium"
+   "competition": "Medium",
+   "reply_kind": "later"
   },
   {
    "id": "qingwang",
@@ -592,7 +596,8 @@
    "verified": "2026-11-23",
    "competition": "Low",
    "reply": "Replied 23 Nov, no funding for new PhD candidates now, asked whether you have your own funding, suggested LinkedIn",
-   "reply_body": "Dear Dr. Tejedor Garcia,\n\nThank you for your honest and quick answer. I do not have my own funding, so I am looking for positions that are already funded. I will add you on LinkedIn and keep an eye on your group for future openings.\n\nKind regards,\nMahrad Ghazli"
+   "reply_body": "Dear Dr. Tejedor Garcia,\n\nThank you for your honest and quick answer. I do not have my own funding, so I am looking for positions that are already funded. I will add you on LinkedIn and keep an eye on your group for future openings.\n\nKind regards,\nMahrad Ghazli",
+   "reply_kind": "later"
   },
   {
    "id": "stuijk",
@@ -1414,7 +1419,8 @@
    "verified": "2026-11-24",
    "competition": "High",
    "note": "Closed. It was outside your field (device physics), so this was expected.",
-   "reply": "Dr. van den Hurk answered \"the short answer is: no.\" No reply needed."
+   "reply": "Dr. van den Hurk answered \"the short answer is: no.\" No reply needed.",
+   "reply_kind": "closed"
   },
   {
    "id": "ref_mohammadzadeh",

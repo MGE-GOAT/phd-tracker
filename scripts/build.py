@@ -129,7 +129,9 @@ def main():
             st["to_hint"] = lines[0].replace("To:", "").strip()
             st["subject"] = lines[1].replace("Subject:", "").strip()
             st["body"] = "\n".join(lines[2:]).strip()
-    payload = json.dumps({"positions": items, "countries": countries, "updated": today, "statuses": STATUSES, "leads": leads, "plan": plan}, ensure_ascii=False)
+    prog = load(ROOT / "data" / "progress.json", {})
+    snapshot = {k: prog.get(k, {}) for k in ("sent", "replied", "followed")}
+    payload = json.dumps({"progress": snapshot, "positions": items, "countries": countries, "updated": today, "statuses": STATUSES, "leads": leads, "plan": plan}, ensure_ascii=False)
     page = TEMPLATE.read_text(encoding="utf8").replace("/*DATA*/null", payload.replace("</", "<\\/"))
     (ROOT / "index.html").write_text(page, encoding="utf8")
     (ROOT / "README.md").write_text(readme(items, countries, today, leads), encoding="utf8")

@@ -91,6 +91,7 @@ footer{color:var(--muted);font-size:13px;margin:30px 0 40px}
   <div class="sub" id="sub"></div>
   <nav id="tabs">
     <button data-t="plan" class="on">What to do</button>
+    <button data-t="fu">Follow-up</button>
     <button data-t="db">All positions</button>
     <button data-t="countries">Countries</button>
   </nav>
@@ -104,7 +105,8 @@ const D=/*DATA*/null;
 const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const KEY="phdplan-sent-v1";
 let sent={};try{sent=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(sent))}catch(e){}};
+let replied={},followed={};try{replied=JSON.parse(localStorage.getItem("phdplan-replied-v1")||"{}");followed=JSON.parse(localStorage.getItem("phdplan-followed-v1")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(sent));localStorage.setItem("phdplan-replied-v1",JSON.stringify(replied));localStorage.setItem("phdplan-followed-v1",JSON.stringify(followed))}catch(e){}};
 const TK="phdplan-gh-token",REPO="MGE-GOAT/phd-tracker",PFILE="data/progress.json";
 const tok=()=>{try{return localStorage.getItem(TK)||""}catch(e){return""}};
 const gst=m=>{const e=document.getElementById("gst");if(e)e.textContent=m};
@@ -123,6 +125,8 @@ async function loadProgress(){try{let p;if(tok()){const g=await gh("GET");if(g.o
  if(!p){const r=await fetch("data/progress.json?"+Date.now());if(r.ok)p=await r.json()}
  if(!p)return;let ch=false;for(const k in (p.sent||{}))if(sent[k]===undefined){sent[k]=p.sent[k];ch=true}
  if(tok()){for(const k in sent)if(sent[k]&&!(p.sent||{})[k]){logEvent("sent",k,true)}}
+ for(const k in (p.replied||{}))if(replied[k]===undefined){replied[k]=p.replied[k];ch=true}
+ for(const k in (p.followed||{}))if(followed[k]===undefined){followed[k]=p.followed[k];ch=true}
  if(ch){save();render()}}catch(e){}}
 function footer(){const f=$("#foot");if(tok()){f.innerHTML='Saving to GitHub automatically, Claude can see it. <span id="gst"></span> <a href="#" id="disc">Disconnect</a>';$("#disc").onclick=e=>{e.preventDefault();try{localStorage.removeItem(TK)}catch(x){}footer()}}
  else{f.innerHTML='<b>Save my progress for Claude.</b> Create a token that can only edit this one repo, paste it once, and every email you open or mark as sent is saved to GitHub. <a target="_blank" rel="noopener" href="https://github.com/settings/personal-access-tokens/new">Create the token</a> (Repository access: only phd-tracker. Permissions: Contents, Read and write). <input id="tkin" type="password" placeholder="paste token here" style="width:230px"> <button class="btn" id="tksave">Connect</button> <span id="gst"></span>';
@@ -217,19 +221,51 @@ function kitWire(){
   document.querySelectorAll("[data-open]").forEach(a=>a.addEventListener("click",()=>logEvent("opened",a.dataset.open,true)));
 }
 window.addEventListener("hashchange",()=>{render();window.scrollTo(0,0)});
+
+const DAY=864e5,isFa=s=>/[؀-ۿ]/.test(s||"");
+const sentAt=id=>{const v=typeof sent[id]==="string"?sent[id]:(D.progress&&D.progress.sent&&D.progress.sent[id]);return v&&typeof v==="string"?new Date(v):null};
+const fuDays=st=>st.id.startsWith("ref_")?3:8;
+function fuGmail(st,sa){
+  const fa=st.id.startsWith("ref_"),d=sa?sa.toISOString().slice(0,10):"";
+  const su=fa?("پیگیری: "+(st.subject||"")):("Re: "+(st.subject||""));
+  const body=fa?"سلام و وقت بخیر، استاد گرامی،\n\nپیرو ایمیل قبلی بنده درباره معرف بودن برای درخواست دکتری در دانشگاه بازل، مهلت درخواست ۷ آذر است. ممنون می‌شوم اگر فرصت کردید پاسخ کوتاهی بدهید، حتی اگر نمی‌توانید.\n\nبا سپاس\nمهراد قازلی\nmge.goat@gmail.com"
+   :"Dear Professor,\n\nI am writing to follow up on my email"+(d?" of "+d:"")+" about a PhD position in your group. I know you are busy, so even a one-line answer about whether you have openings or plan to recruit in 2027 would help me a lot.\n\nThank you for your time.\nKind regards,\nMahrad Ghazli\nMSc Biomedical Engineering, Sharif University of Technology\nmge.goat@gmail.com";
+  return "https://mail.google.com/mail/?view=cm&fs=1"+(st.address?"&to="+encodeURIComponent(st.address):"")+"&su="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);
+}
+function fuView(){
+  const now=Date.now(),rows=(D.plan.steps||[]).filter(s=>s.kind==="Email"&&(sent[s.id]||(D.progress&&D.progress.sent&&D.progress.sent[s.id])));
+  const info=rows.map(st=>{const sa=sentAt(st.id),got=replied[st.id]||st.reply,fu=followed[st.id];
+    let due=null;if(sa){due=new Date(sa.getTime()+fuDays(st)*DAY);if(typeof fu==="string")due=new Date(Math.max(due.getTime(),new Date(fu).getTime()+7*DAY))}
+    return {st,sa,got,fu,due,dleft:due?Math.ceil((due.getTime()-now)/DAY):null,ago:sa?Math.floor((now-sa.getTime())/DAY):null}});
+  const closed=info.filter(x=>x.st.reply_kind==="closed"),later=info.filter(x=>x.got&&x.st.reply_kind!=="closed"),waiting=info.filter(x=>!x.got);
+  const dueNow=waiting.filter(x=>x.dleft!==null&&x.dleft<=0),soon=waiting.filter(x=>!(x.dleft!==null&&x.dleft<=0)).sort((a,b)=>(a.dleft??99)-(b.dleft??99));
+  const item=x=>{const st=x.st;return `<article class="step"><div class="num">${x.got?"✉":"·"}</div><div>
+    <div class="who">${fl(st.country)}${esc(st.who)}</div><div class="where">${esc(st.where)}</div>
+    <div class="tags">${x.sa?`<span class="tag">Sent ${x.ago===0?"today":x.ago+" day"+(x.ago===1?"":"s")+" ago"}</span>`:`<span class="tag">Sent date unknown</span>`}${!x.got&&x.due?`<span class="tag ${x.dleft<=0?"dl":""}">${x.dleft<=0?"Follow up now":"Follow up in "+x.dleft+" day"+(x.dleft===1?"":"s")}</span>`:""}${x.fu?`<span class="tag">Followed up</span>`:""}</div>
+    ${st.reply?`<div class="why"><b>Reply</b> ${esc(st.reply)}</div>`:""}
+    <div class="actions">${!x.got?`<a class="btn main" href="${fuGmail(st,x.sa)}" target="_blank" rel="noopener">Follow-up in Gmail</a>`:""}
+      <button class="btn ${x.got&&!st.reply?"ok":""}" data-fureply="${st.id}">${x.got?"Replied ✓":"Got a reply"}</button>
+      ${!x.got?`<button class="btn ${x.fu?"ok":""}" data-fufollow="${st.id}">${x.fu?"Followed up ✓":"I followed up"}</button>`:""}</div></div></article>`};
+  const sec=(t,a,empty)=>`<h3>${t} (${a.length})</h3>`+(a.length?a.map(item).join(""):`<div class="m" style="margin-bottom:8px">${empty}</div>`);
+  return `<section class="next"><small>Follow-up</small><h2>${dueNow.length?dueNow.length+" to follow up now":"Nobody is due yet"}</h2><p>${waiting.length} waiting for an answer, ${later.length} replied, ${closed.length} said no. Referees get a follow-up after 3 days, professors after 8.</p></section>`
+   +sec("Follow up now",dueNow,"Nobody is due for a follow-up yet.")+sec("Waiting for an answer",soon,"No emails are waiting.")+sec("Replied, check again later",later,"No replies to keep an eye on.")+sec("Said no, nothing to do",closed,"None.");
+}
 function render(){
   const ks=kitStep();
   if(ks){$("#main").innerHTML=kitView(ks);kitWire();return}
-  $("#main").innerHTML=tab==="plan"?planView():tab==="db"?dbView():countryView();
+  $("#main").innerHTML=tab==="plan"?planView():tab==="fu"?fuView():tab==="db"?dbView():countryView();
   if(tab==="db"){dbList();$("#q").oninput=dbList;$("#fc").oninput=dbList}
   document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(apply(st)?st.body:`Subject: ${st.subject}\n\n${st.body}`,apply(st)?"Cover letter copied":"Email copied")});
   document.querySelectorAll("[data-copyreply]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copyreply);copy(st.reply_body,"Reply copied")});
+  document.querySelectorAll("[data-fureply]").forEach(b=>b.onclick=()=>{const id=b.dataset.fureply;replied[id]=replied[id]?false:new Date().toISOString();save();logEvent("replied",id,!!replied[id]);render()});
+  document.querySelectorAll("[data-fufollow]").forEach(b=>b.onclick=()=>{const id=b.dataset.fufollow;followed[id]=followed[id]?false:new Date().toISOString();save();logEvent("followed",id,!!followed[id]);render()});
   document.querySelectorAll("[data-sent]").forEach(b=>b.onclick=()=>{const id=b.dataset.sent;sent[id]=!sent[id];save();logEvent("sent",id,!!sent[id]);render()});
   document.querySelectorAll("[data-open]").forEach(a=>a.addEventListener("click",()=>logEvent("opened",a.dataset.open,true)));
 }
 $("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;
 footer();
 $("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;if(location.hash){history.replaceState(null,"",location.pathname+location.search)}[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
+if(location.hash==="#followup"){tab="fu";[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b.dataset.t==="fu"))}
 (function(){const m=location.hash.match(/^#setup=([\w\-+/=]+)/);if(!m)return;try{const o=JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g,"+").replace(/_/g,"/")))));for(const k in (o.v||{}))if(/^phdkit-/.test(k))localStorage.setItem(k,String(o.v[k]));history.replaceState(null,"",location.pathname+location.search);if(o.go)location.hash="#kit="+o.go;setTimeout(()=>toast("Saved in this browser"),400)}catch(e){}})();
 render();
 loadProgress();
