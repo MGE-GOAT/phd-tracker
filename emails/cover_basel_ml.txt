@@ -5,9 +5,9 @@ Dear selection committee,
 
 I am applying for the PhD position in machine learning for preterm lung health in the Analytics and Informatics for Child Health group. I completed the requirements for my MSc in Biomedical Engineering, with a bioelectric specialization, at Sharif University of Technology on 23 September 2026.
 
-The advert asks for Python, PyTorch and scikit-learn, careful validation, and interest in small clinical datasets. My thesis was about exactly that validation problem. I built an always-on voice assistant for older adults around a 75k-parameter model. It was the most accurate of seven models on every fold of a five-fold cross-validation, yet on the real device the false alarms tripled. I learned to test a model on the data it will really see, to check it on a second source, and to say where it stops generalising. That is the part of your project that asks for external validation in cohorts from Italy and Australia. I also work as an applied AI scientist and write production Python, and my thesis led to an ICBME 2026 paper (IEEE) and two more submissions.
+The advert asks for Python, PyTorch and scikit-learn, careful validation, and interest in small clinical datasets. Validation is what my thesis was about. I built an always-on voice assistant for older adults, compared several models fairly, and studied why a model that scores well in testing can behave differently on real data. That is close to the part of your project that checks results in cohorts from Italy and Australia. I also work as an applied AI scientist writing production Python, and my thesis led to three papers, one accepted at ICBME 2026 and two submitted.
 
-I have not worked with clinical or respiratory data, breath metabolomics or trajectory models. I would start with the lung function trajectories, comparing a simple mixed-effects baseline against a sequence model on held-out children, so that any gain is honest. My CV and transcripts are in the application.
+I have not worked with clinical or respiratory data and I would learn it with your group. I would start with the lung function trajectories, comparing a simple baseline with a sequence model on held-out children. My CV and transcripts are in the application.
 
 Kind regards,
 Mahrad Ghazli
