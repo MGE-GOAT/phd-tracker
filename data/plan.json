@@ -1318,28 +1318,46 @@
      },
      {
       "heading": "References, 2 to 3 contacts",
-      "note": "Ask each person first and wait for a yes before you list them. Basel only wants contact details.",
+      "note": "Keep only the people who said yes. Ask each one first, then paste their line into the form or the last page of the single file. Basel only wants contact details, not letters.",
       "fields": [
        {
         "label": "Referee 1, your thesis advisor",
         "value": "Dr. Hoda Mohammadzadeh, Department of Electrical Engineering, Sharif University of Technology, hoda@sharif.edu",
         "multiline": true,
-        "rows": 3,
-        "hint": "Ask her first"
+        "rows": 3
        },
        {
         "label": "Referee 2",
-        "value": "",
+        "value": "Dr. Bijan Vosoughi Vahdat, Associate Professor, Department of Electrical Engineering, Sharif University of Technology, vahdat@sharif.edu",
         "multiline": true,
         "rows": 3,
-        "hint": "Name, role, organisation and email"
+        "hint": "Or use Dr. Jahed below, you do not need both"
        },
        {
         "label": "Referee 3, optional",
-        "value": "",
+        "value": "Dr. Neda Attaran, Department of Medical Nanotechnology, Applied Biophotonics Research Center, Science and Research Branch, Islamic Azad University, neda.attaran@srbiau.ac.ir",
         "multiline": true,
         "rows": 3,
-        "hint": "Name, role, organisation and email"
+        "hint": "Knows your bachelor years and the alginate paper"
+       },
+       {
+        "label": "If someone says no, Dr. Mehran Jahed",
+        "value": "Dr. Mehran Jahed, Associate Professor, Department of Electrical Engineering, Sharif University of Technology, jahed@sharif.edu",
+        "multiline": true,
+        "rows": 3
+       },
+       {
+        "label": "If someone says no, Dr. Nahid Hassanzadeh Nemati",
+        "value": "Dr. Nahid Hassanzadeh Nemati, Department of Biomedical Engineering, Science and Research Branch, Islamic Azad University, Hasanzadeh@srbiau.ac.ir",
+        "multiline": true,
+        "rows": 3,
+        "hint": "The address has one s in Hasanzadeh, as she published it"
+       },
+       {
+        "label": "If someone says no, Dr. Hadi Baharifar",
+        "value": "Dr. Hadi Baharifar, Department of Biomedical Engineering, Science and Research Branch, Islamic Azad University, baharifar.h@gmail.com",
+        "multiline": true,
+        "rows": 3
        }
       ]
      }
