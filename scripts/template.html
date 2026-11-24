@@ -159,12 +159,12 @@ function planView(){
       <div class="why">${esc(st.why)}</div>${st.reply?`<div class="note">Reply, ${esc(st.reply)}</div>`:""}${st.reply_body?`<div class="actions"><a class="btn main" href="${gmailReply(st)}" target="_blank" rel="noopener">Reply in Gmail</a><button class="btn" data-copyreply="${st.id}">Copy reply</button></div><details class="preview"><summary>Read my reply</summary><pre>${esc(st.reply_body)}</pre></details>`:""}${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
         ${apply(st)?`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
-          :st.body?`<a class="btn main" data-open="${st.id}" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button><a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`
+          :st.body?`<a class="btn main" data-open="${st.id}" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button>${st.page?`<a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`:""}`
           :`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>`}
         ${st.kit?`<a class="btn main" href="#kit=${st.id}">Copy-paste page</a>`:""}
         <button class="btn ${isDone?"ok":""}" data-sent="${st.id}">${isDone?"Sent ✓":"Mark as sent"}</button>
       </div>
-      ${st.body?`<details class="preview"><summary>${apply(st)?"Read the cover letter":"Read the email"}</summary><pre>${apply(st)?"":`Subject: ${esc(st.subject)}\n\n`}${esc(st.body)}</pre></details>`:""}
+      ${st.body?`<details class="preview"><summary>${apply(st)?"Read the cover letter":"Read the email"}</summary><pre${/[؀-ۿ]/.test(st.body)?' dir="rtl" style="text-align:right"':''}>${apply(st)?"":`Subject: ${esc(st.subject)}\n\n`}${esc(st.body)}</pre></details>`:""}
     </div></article>`;
   });
   h+=`<h3>Visa, in one line each</h3><div class="how visa"><b>Austria</b> is the easiest, you can file via Istanbul. <b>Germany</b>, register on the embassy waitlist as soon as you have any offer. <b>Netherlands</b>, the entry visa for Iranians was suspended in August, ask the university early.</div>`;

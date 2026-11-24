@@ -1397,6 +1397,60 @@
    "competition": "High",
    "note": "Closed. It was outside your field (device physics), so this was expected.",
    "reply": "Dr. van den Hurk answered \"the short answer is: no.\" No reply needed."
+  },
+  {
+   "id": "ref_mohammadzadeh",
+   "batch": 1,
+   "country": "Iran",
+   "who": "Referee request, Dr. Hoda Mohammadzadeh",
+   "where": "Sharif University of Technology, your thesis advisor",
+   "why": "Basel needs two or three referees. Ask your advisor first, she is your strongest one. The message is in Persian.",
+   "kind": "Email",
+   "deadline": "2026-11-27",
+   "email": "email_ref_mohammadzadeh.txt",
+   "note": "Attach your CV, Downloads/Basel-upload/1_CV_Mahrad_Ghazli.pdf, before you send.",
+   "verified": "2026-11-25",
+   "address": "hoda@sharif.edu"
+  },
+  {
+   "id": "ref_attaran",
+   "batch": 1,
+   "country": "Iran",
+   "who": "Referee request, Dr. Neda Attaran",
+   "where": "Islamic Azad University, Science and Research Branch",
+   "why": "She is your bachelor-years professor and co-author of the hydrogel paper. Her email comes from that paper. The message is in Persian.",
+   "kind": "Email",
+   "deadline": "2026-11-27",
+   "email": "email_ref_attaran.txt",
+   "note": "Attach your CV, Downloads/Basel-upload/1_CV_Mahrad_Ghazli.pdf, before you send.",
+   "verified": "2026-11-25",
+   "address": "neda.attaran@srbiau.ac.ir"
+  },
+  {
+   "id": "ref_jahed",
+   "batch": 1,
+   "country": "Iran",
+   "who": "Referee request, Dr. Jahed",
+   "where": "Sharif University of Technology",
+   "why": "Optional second Sharif referee. Fill the course or project in the brackets and type their email in the To box. The message is in Persian.",
+   "kind": "Email",
+   "deadline": "2026-11-27",
+   "email": "email_ref_jahed.txt",
+   "note": "Fill the part in square brackets, type their email in the To box and attach your CV before you send.",
+   "verified": "2026-11-25"
+  },
+  {
+   "id": "ref_vosoughi",
+   "batch": 1,
+   "country": "Iran",
+   "who": "Referee request, Dr. Vosoughi Vahdat",
+   "where": "Sharif University of Technology",
+   "why": "Optional second Sharif referee. Send to either this one or Dr. Jahed, you do not need both. Fill the brackets and type their email in the To box.",
+   "kind": "Email",
+   "deadline": "2026-11-27",
+   "email": "email_ref_vosoughi.txt",
+   "note": "Fill the part in square brackets, type their email in the To box and attach your CV before you send.",
+   "verified": "2026-11-25"
   }
  ]
 }
