@@ -1117,7 +1117,106 @@
    "latest": "wearable biofeedback, cardiac-locomotor coupling and physics-informed data science",
    "note": "Deadline is two days away. This was already in your positions list but never in the plan. Check KTH against the Ministry list before you apply.",
    "verified": "2026-11-24",
-   "competition": "High"
+   "competition": "High",
+   "kit": {
+    "title": "KTH, Wearable Biofeedback Systems for Cardiovascular Health",
+    "intro": "Deadline 26 November. Open the form, then copy each box below into it, from top to bottom. The two questions are optional in the form but worth filling in.",
+    "blocks": [
+     {
+      "heading": "Contact fields",
+      "note": "Your address, postal code and phone are private. Paste each one into its box once. It stays in this browser only and is never saved on the public site.",
+      "fields": [
+       {
+        "label": "First name",
+        "value": "Mahrad"
+       },
+       {
+        "label": "Surname",
+        "value": "Ghazli"
+       },
+       {
+        "label": "Address",
+        "private": true,
+        "hint": "Street address, one line"
+       },
+       {
+        "label": "C/O",
+        "value": "",
+        "hint": "Leave blank"
+       },
+       {
+        "label": "Postal code",
+        "private": true,
+        "hint": "Ten digits"
+       },
+       {
+        "label": "City",
+        "value": "Tehran"
+       },
+       {
+        "label": "Country",
+        "value": "Iran"
+       },
+       {
+        "label": "Mobile",
+        "private": true,
+        "hint": "No leading zero. Keep IR (+98) selected in the form."
+       }
+      ]
+     },
+     {
+      "heading": "Question 1, why this position (500 characters at most)",
+      "fields": [
+       {
+        "label": "Why are you interested in this position and project?",
+        "value": "I want to work on heart signals that matter for patients and make them run on small wearable devices. This project joins biosignal processing, embedded systems and physiology, with real participants and clinicians at Karolinska. My thesis was a small on-device model for older adults, so a wearable for the heart is a natural next step, and I would like to learn the cardiovascular side from a group that has done it for years.",
+        "max": 500,
+        "rows": 6
+       }
+      ]
+     },
+     {
+      "heading": "Question 2, what you can contribute (500 characters at most)",
+      "fields": [
+       {
+        "label": "What can you contribute to the project and the research group?",
+        "value": "I bring embedded and signal processing experience. I built a real-time int8 model on a Raspberry Pi with a C++ front end, and I traced a sensor mismatch that tripled false alarms and fixed it, from 60 to 3 in a 388-hour test. I test on data the model has never seen and report where it fails, which matters for studies with human participants. I write Python, C++ and PyTorch. I have not worked with heart recordings yet and I would learn them quickly.",
+        "max": 500,
+        "rows": 6
+       }
+      ]
+     }
+    ],
+    "files": [
+     {
+      "slot": "Attach a CV (required)",
+      "file": "01_CV.pdf",
+      "note": "your academic CV, with the LinkedIn link"
+     },
+     {
+      "slot": "Attach a cover letter",
+      "file": "KTH_wearable_application_letter.pdf",
+      "note": "one page, or paste the text below with Enter"
+     },
+     {
+      "slot": "Other files",
+      "file": "04_English_paper_ICBME2026.pdf",
+      "note": "the representative publication"
+     },
+     {
+      "slot": "Other files",
+      "file": "02_MSc_transcript_unofficial_English.pdf",
+      "note": "grades"
+     },
+     {
+      "slot": "Other files",
+      "file": "your Persian degree and transcript scans",
+      "note": "if you have them"
+     }
+    ],
+    "filesNote": "On your computer the files are in Documents/phd-applications/2026-11/UPLOAD. The advert asks for certified copies of diplomas and grades. Upload what you have before the deadline, and they will ask if they need more.",
+    "letter": true
+   }
   },
   {
    "id": "basel_ml",

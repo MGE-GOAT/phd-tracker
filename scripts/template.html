@@ -55,6 +55,19 @@ pre{white-space:pre-wrap;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monosp
 .toast.on{opacity:1}
 .visa{font-size:14px;color:var(--muted)}
 .visa b{color:var(--ink)}
+/* copy-paste kit page */
+.kf{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.kf label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+.kf input,.kf textarea{width:100%;font:inherit;font-size:15px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.kf textarea{resize:vertical;line-height:1.5}
+.kact{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.cnt{font-weight:400;color:var(--muted);font-size:13px}
+.cnt.over{color:#b3261e;font-weight:700}
+.m{color:var(--muted);font-size:13px}
+a.whol{color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px;cursor:pointer}
+.fl{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;padding:7px 0;border-bottom:1px solid var(--line)}
+.fl:last-child{border-bottom:0}
+.fl b{min-width:150px}
 /* database view */
 .dbbar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
 .dbbar input,.dbbar select{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
@@ -141,13 +154,14 @@ function planView(){
     if(st.batch!==lastBatch){lastBatch=st.batch;h+=`<h3>${({1:"Batch 1, this week",2:"Batch 2, next week (easier places, more chances)",3:"Batch 3, the week after (broad list, send 3 to 5 a day)"})[st.batch]}</h3>`}
     const isDone=!!sent[st.id],dl=st.deadline?`<span class="tag dl">Deadline ${esc(st.deadline)}, ${days(st.deadline)} days</span>`:"";
     h+=`<article class="step ${st.hot?"hot":""} ${isDone?"done":""}"><div class="num">${isDone?"✓":i+1}</div><div>
-      <div class="who">${fl(st.country)}${esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
+      <div class="who">${fl(st.country)}${st.kit?`<a class="whol" href="#kit=${st.id}" title="Open the copy-paste page">${esc(st.who)}</a>`:esc(st.who)}</div><div class="where">${esc(st.where)}, ${esc(st.country)}</div>
       <div class="tags">${st.hot?`<span class="tag hot">Open position</span>`:""}${st.match?`<span class="tag score">Match ${st.match}/10</span><span class="tag score">Chance ${st.chance}/10</span>`:""}${st.competition?`<span class="tag">Competition ${esc(st.competition)}</span>`:""}<span class="tag country">${({Germany:"🇩🇪",Austria:"🇦🇹",Netherlands:"🇳🇱"})[st.country]||""} ${esc(st.country)}</span><span class="tag">${esc(st.kind)}</span>${st.approved?`<span class="tag">Approved list ${esc(st.approved)}</span>`:""}${dl}</div>
       <div class="why">${esc(st.why)}</div>${st.reply?`<div class="note">Reply, ${esc(st.reply)}</div>`:""}${st.reply_body?`<div class="actions"><a class="btn main" href="${gmailReply(st)}" target="_blank" rel="noopener">Reply in Gmail</a><button class="btn" data-copyreply="${st.id}">Copy reply</button></div><details class="preview"><summary>Read my reply</summary><pre>${esc(st.reply_body)}</pre></details>`:""}${st.latest?`<div class="why"><b>Latest work, 2026</b> ${esc(st.latest)}</div>`:""}${st.note?`<div class="note">${esc(st.note)}</div>`:""}
       <div class="actions">
         ${apply(st)?`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>${st.body?`<button class="btn" data-copy="${st.id}">Copy cover letter</button>`:""}`
           :st.body?`<a class="btn main" data-open="${st.id}" href="${gmail(st)}" target="_blank" rel="noopener">Open in Gmail</a><button class="btn" data-copy="${st.id}">Copy email text</button><a class="btn" href="${esc(st.page)}" target="_blank" rel="noopener">Professor's page</a>`
           :`<a class="btn main" data-open="${st.id}" href="${esc(st.page)}" target="_blank" rel="noopener">Open application</a>`}
+        ${st.kit?`<a class="btn main" href="#kit=${st.id}">Copy-paste page</a>`:""}
         <button class="btn ${isDone?"ok":""}" data-sent="${st.id}">${isDone?"Sent ✓":"Mark as sent"}</button>
       </div>
       ${st.body?`<details class="preview"><summary>${apply(st)?"Read the cover letter":"Read the email"}</summary><pre>${apply(st)?"":`Subject: ${esc(st.subject)}\n\n`}${esc(st.body)}</pre></details>`:""}
@@ -174,7 +188,38 @@ function countryView(){
   return `<p class="sub">Your priority is the Netherlands, Austria and Germany. This table is background on visas and work after the PhD.</p><table><tr><th>Country</th><th>Visa from Iran</th><th>Work after</th><th>Economy</th><th>Note</th></tr>${
     cs.map(c=>`<tr><td><b>${esc(c.country)}</b></td><td>${esc(c.visa)}/10</td><td>${esc(c.work)}/10</td><td>${esc(c.economy)}/10</td><td>${esc(c.note)}</td></tr>`).join("")}</table>`;
 }
+const kitStep=()=>{const m=location.hash.match(/^#kit=([\w-]+)/);return m?(D.plan.steps||[]).find(s=>s.id===m[1]&&s.kit):null};
+const kget=k=>{try{return localStorage.getItem(k)||""}catch(e){return""}};
+function kitView(st){
+  const k=st.kit;
+  let h=`<p><a href="#" id="kback">&larr; Back to the plan</a></p><section class="next"><small>Copy-paste page</small><h2>${esc(k.title)}</h2><p>${esc(k.intro||"")}</p></section>`;
+  if(st.page)h+=`<div class="actions"><a class="btn main" data-open="${esc(st.id)}" href="${esc(st.page)}" target="_blank" rel="noopener">Open the application form</a></div>`;
+  (k.blocks||[]).forEach((b,i)=>{
+    h+=`<h3>${esc(b.heading)}</h3>${b.note?`<div class="m" style="margin:-4px 0 8px">${esc(b.note)}</div>`:""}`;
+    (b.fields||[]).forEach((f,j)=>{
+      const key=`phdkit-${st.id}-${i}-${j}`,val=f.private?kget(key):(f.value||"");
+      const long=f.max>120||f.multiline;
+      h+=`<div class="kf"><label for="${key}">${esc(f.label)}${f.max?` <span class="cnt" data-cnt="${key}"></span>`:""}</label>`
+        +(long?`<textarea id="${key}" rows="${f.rows||6}" data-max="${f.max||0}" ${f.private?'data-private="1"':""} placeholder="${esc(f.hint||"")}">${esc(val)}</textarea>`
+               :`<input id="${key}" data-max="${f.max||0}" ${f.private?'data-private="1"':""} value="${esc(val)}" placeholder="${esc(f.hint||"")}">`)
+        +`<div class="kact"><button class="btn main" data-kcopy="${key}">Copy</button>${f.private?`<span class="m">Paste it once. It is saved only in this browser, never on the public site.</span>`:(f.hint?`<span class="m">${esc(f.hint)}</span>`:"")}</div></div>`;
+    });
+  });
+  if(k.files&&k.files.length)h+=`<h3>Files to upload</h3><div class="kf">${k.files.map(f=>`<div class="fl"><b>${esc(f.slot)}</b><span><code>${esc(f.file)}</code>${f.note?` <span class="m">${esc(f.note)}</span>`:""}</span></div>`).join("")}<div class="m" style="margin-top:8px">${esc(k.filesNote||"")}</div></div>`;
+  if(k.letter&&st.body)h+=`<h3>Cover letter text</h3><div class="kf"><textarea id="phdkit-${st.id}-letter" rows="14" readonly>${esc(st.body)}</textarea><div class="kact"><button class="btn main" data-kcopy="phdkit-${st.id}-letter">Copy letter</button></div></div>`;
+  return h;
+}
+function kitWire(){
+  const upd=el=>{const c=document.querySelector(`[data-cnt="${el.id}"]`);const mx=+el.dataset.max;if(c&&mx){c.textContent=`${el.value.length} / ${mx}`;c.classList.toggle("over",el.value.length>mx)}};
+  document.querySelectorAll(".kf textarea,.kf input").forEach(el=>{upd(el);el.addEventListener("input",()=>{upd(el);if(el.dataset.private){try{localStorage.setItem(el.id,el.value)}catch(e){}}})});
+  document.querySelectorAll("[data-kcopy]").forEach(b=>b.onclick=()=>{const el=document.getElementById(b.dataset.kcopy);if(!el||!el.value){toast("Nothing to copy yet, paste it into the box first");return}copy(el.value,"Copied")});
+  const bk=document.getElementById("kback");if(bk)bk.onclick=e=>{e.preventDefault();location.hash=""};
+  document.querySelectorAll("[data-open]").forEach(a=>a.addEventListener("click",()=>logEvent("opened",a.dataset.open,true)));
+}
+window.addEventListener("hashchange",()=>{render();window.scrollTo(0,0)});
 function render(){
+  const ks=kitStep();
+  if(ks){$("#main").innerHTML=kitView(ks);kitWire();return}
   $("#main").innerHTML=tab==="plan"?planView():tab==="db"?dbView():countryView();
   if(tab==="db"){dbList();$("#q").oninput=dbList;$("#fc").oninput=dbList}
   document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const st=D.plan.steps.find(s=>s.id===b.dataset.copy);copy(apply(st)?st.body:`Subject: ${st.subject}\n\n${st.body}`,apply(st)?"Cover letter copied":"Email copied")});
@@ -184,7 +229,7 @@ function render(){
 }
 $("#sub").textContent=`Fully funded PhDs in the Netherlands, Austria and Germany. Updated ${D.updated}.`;
 footer();
-$("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
+$("#tabs").onclick=e=>{if(!e.target.dataset.t)return;tab=e.target.dataset.t;if(location.hash){history.replaceState(null,"",location.pathname+location.search)}[...$("#tabs").children].forEach(b=>b.classList.toggle("on",b===e.target));render()};
 render();
 loadProgress();
 </script>
