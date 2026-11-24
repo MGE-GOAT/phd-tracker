@@ -1451,6 +1451,34 @@
    "email": "email_ref_vosoughi.txt",
    "note": "Fill the part in square brackets, type their email in the To box and attach your CV before you send.",
    "verified": "2026-11-25"
+  },
+  {
+   "id": "ref_hassanzadeh",
+   "batch": 1,
+   "country": "Iran",
+   "who": "Referee request, Dr. Nahid Hassanzadeh Nemati",
+   "where": "Islamic Azad University, Science and Research Branch, Biomedical Engineering",
+   "why": "Co-author of the alginate hydrogel paper and a Biomedical Engineering professor at your bachelor university. Her email is from her 2022 paper where she is the corresponding author. The message is in Persian.",
+   "kind": "Email",
+   "deadline": "2026-11-27",
+   "email": "email_ref_hassanzadeh.txt",
+   "address": "Hasanzadeh@srbiau.ac.ir",
+   "note": "The address is spelled \"Hasanzadeh\" with one s, exactly as she published it. Attach your CV, Downloads/Basel-upload/1_CV_Mahrad_Ghazli.pdf, before you send.",
+   "verified": "2026-11-25"
+  },
+  {
+   "id": "ref_baharifar",
+   "batch": 1,
+   "country": "Iran",
+   "who": "Referee request, Dr. Hadi Baharifar",
+   "where": "Islamic Azad University, Science and Research Branch, Biomedical Engineering",
+   "why": "Optional Azad referee. His email is the correspondence address in his 2025 and 2023 papers, a Gmail address. Fill the brackets with the course or project he knows you from. The message is in Persian.",
+   "kind": "Email",
+   "deadline": "2026-11-27",
+   "email": "email_ref_baharifar.txt",
+   "address": "baharifar.h@gmail.com",
+   "note": "Fill the part in square brackets and attach your CV before you send.",
+   "verified": "2026-11-25"
   }
  ]
 }
