@@ -1430,27 +1430,29 @@
    "id": "ref_jahed",
    "batch": 1,
    "country": "Iran",
-   "who": "Referee request, Dr. Jahed",
+   "who": "Referee request, Dr. Mehran Jahed",
    "where": "Sharif University of Technology",
-   "why": "Optional second Sharif referee. Fill the course or project in the brackets and type their email in the To box. The message is in Persian.",
+   "why": "Optional second Sharif referee, Associate Professor in Electrical Engineering. His email is from the official Sharif EE faculty page. Fill the brackets with the course or project he knows you from. The message is in Persian.",
    "kind": "Email",
    "deadline": "2026-11-27",
    "email": "email_ref_jahed.txt",
-   "note": "Fill the part in square brackets, type their email in the To box and attach your CV before you send.",
-   "verified": "2026-11-25"
+   "note": "Fill the part in square brackets and attach your CV before you send.",
+   "verified": "2026-11-25",
+   "address": "jahed@sharif.edu"
   },
   {
    "id": "ref_vosoughi",
    "batch": 1,
    "country": "Iran",
-   "who": "Referee request, Dr. Vosoughi Vahdat",
+   "who": "Referee request, Dr. Bijan Vosoughi Vahdat",
    "where": "Sharif University of Technology",
-   "why": "Optional second Sharif referee. Send to either this one or Dr. Jahed, you do not need both. Fill the brackets and type their email in the To box.",
+   "why": "Optional second Sharif referee, Associate Professor in Electrical Engineering. His email is from the official Sharif EE faculty page. Send to him or Dr. Jahed, you do not need both. Fill the brackets with the course or project he knows you from.",
    "kind": "Email",
    "deadline": "2026-11-27",
    "email": "email_ref_vosoughi.txt",
-   "note": "Fill the part in square brackets, type their email in the To box and attach your CV before you send.",
-   "verified": "2026-11-25"
+   "note": "Fill the part in square brackets and attach your CV before you send.",
+   "verified": "2026-11-25",
+   "address": "vahdat@sharif.edu"
   },
   {
    "id": "ref_hassanzadeh",
