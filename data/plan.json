@@ -1326,19 +1326,14 @@
       "note": "unofficial English, the official one can follow"
      },
      {
-      "slot": "Master's thesis",
-      "file": "4_MSc_thesis.pdf",
-      "note": "Persian, 5.4 MB"
-     },
-     {
       "slot": "Grade conversion note",
       "file": "5_Grade_conversion_note.pdf",
       "note": "the Stavanger table for Iran, your average is a B"
      },
      {
-      "slot": "Extra, if there is a box",
+      "slot": "Publications or research work",
       "file": "6_Paper_ICBME2026.pdf",
-      "note": "your accepted paper, English"
+      "note": "your accepted paper, in English"
      },
      {
       "slot": "Extra, if there is a box",
@@ -1346,7 +1341,7 @@
       "note": "only if the form has a slot for it"
      }
     ],
-    "filesNote": "On your computer these are in Downloads/Stavanger-upload/activity-recognition-15Dec. If the portal says a file has active content, flatten it the way we did for Basel and tell Claude."
+    "filesNote": "On your computer these are in Downloads/Stavanger-upload/activity-recognition-15Dec. If the portal says a file has active content, flatten it the way we did for Basel and tell Claude. The advert says all documents must be in English or a Scandinavian language, so the Persian thesis stays out. The ICBME paper is your English research work."
    }
   },
   {
@@ -1684,19 +1679,14 @@
       "note": "unofficial English, the official one can follow"
      },
      {
-      "slot": "Master's thesis",
-      "file": "4_MSc_thesis.pdf",
-      "note": "Persian, 5.4 MB"
-     },
-     {
       "slot": "Grade conversion note",
       "file": "5_Grade_conversion_note.pdf",
       "note": "the Stavanger table for Iran, your average is a B"
      },
      {
-      "slot": "Extra, if there is a box",
+      "slot": "Publications or research work",
       "file": "6_Paper_ICBME2026.pdf",
-      "note": "your accepted paper, English"
+      "note": "your accepted paper, in English"
      },
      {
       "slot": "Extra, if there is a box",
@@ -1704,7 +1694,7 @@
       "note": "only if the form has a slot for it"
      }
     ],
-    "filesNote": "On your computer these are in Downloads/Stavanger-upload/medical-simulation-11Dec. If the portal says a file has active content, flatten it the way we did for Basel and tell Claude."
+    "filesNote": "On your computer these are in Downloads/Stavanger-upload/medical-simulation-11Dec. If the portal says a file has active content, flatten it the way we did for Basel and tell Claude. The advert says all documents must be in English or a Scandinavian language, so the Persian thesis stays out. The ICBME paper is your English research work."
    }
   },
   {
