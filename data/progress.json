@@ -53,7 +53,8 @@
   "vullings": "2026-11-23T21:32:04.509Z",
   "jku_neuro_mail": "2026-11-23T21:32:05.801Z",
   "kth_wearable": "2026-11-24T06:55:40.456Z",
-  "ref_mohammadzadeh": "2026-11-24T09:42:26.206Z"
+  "ref_mohammadzadeh": "2026-11-24T09:42:26.206Z",
+  "ref_attaran": "2026-11-24T09:49:56.622Z"
  },
  "opened": {
   "schiele": "2026-11-23T09:33:36.851Z",
@@ -107,9 +108,10 @@
   "uis_har": "2026-11-24T07:24:50.544Z",
   "jku_sp": "2026-11-24T07:29:29.208Z",
   "ref_attaran": "2026-11-24T09:48:39.574Z",
-  "ref_mohammadzadeh": "2026-11-24T09:41:47.464Z"
+  "ref_mohammadzadeh": "2026-11-24T09:41:47.464Z",
+  "ref_jahed": "2026-11-24T09:49:58.964Z"
  },
- "updated": "2026-11-24T09:48:42.684Z",
+ "updated": "2026-11-24T09:50:02.761Z",
  "log": [
   {
    "kind": "sent",
@@ -806,6 +808,18 @@
    "id": "ref_attaran",
    "on": true,
    "at": "2026-11-24T09:48:39.574Z"
+  },
+  {
+   "kind": "sent",
+   "id": "ref_attaran",
+   "on": true,
+   "at": "2026-11-24T09:49:56.622Z"
+  },
+  {
+   "kind": "opened",
+   "id": "ref_jahed",
+   "on": true,
+   "at": "2026-11-24T09:49:58.964Z"
   }
  ]
 }
