@@ -1220,6 +1220,11 @@
      },
      {
       "slot": "Other files",
+      "file": "7_BSc_transcript_English_unofficial.pdf",
+      "note": "bachelor grades, unofficial translation"
+     },
+     {
+      "slot": "Other files",
       "file": "your Persian degree and transcript scans",
       "note": "if you have them"
      }
@@ -1249,7 +1254,7 @@
    "competition": "Medium",
    "kit": {
     "title": "Basel, Machine Learning for Preterm Lung Health",
-    "intro": "Deadline 28 November. The Basel form is short, it has two upload boxes and a personal details section. Date of birth, email password and the privacy tick are for you to enter.",
+    "intro": "Deadline 28 November. The Basel form is short, it has two upload boxes and a personal details section. Date of birth, email password and the privacy tick are for you to enter. All files are ready, only the references are still open.",
     "blocks": [
      {
       "heading": "Form fields, top to bottom",
@@ -1348,10 +1353,10 @@
      {
       "slot": "Cover letter, letter of recommendation and degree certificates in a single file",
       "file": "2_Cover_letter_and_transcripts_SINGLE_FILE.pdf",
-      "note": "the cover letter and your MSc transcript in one PDF. Add the BSc transcript to it when you have it"
+      "note": "cover letter, MSc transcript and BSc transcript in one PDF, 6 pages. Add the references page when you have them"
      }
     ],
-    "filesNote": "On your computer these are in Downloads/Basel-upload. The box takes only one file, so everything goes into that one PDF. The advert also asks for 2 to 3 references. Put their name, role and email on a last page of that file, or in the form if it asks for them later.",
+    "filesNote": "On your computer these are in Downloads/Basel-upload. The BSc transcript in the file is an unofficial English translation of your Azad record, and it says so on its first page. Send the official one later if Basel asks.",
     "letter": true
    }
   },
