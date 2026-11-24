@@ -1499,19 +1499,6 @@
    "address": "baharifar.h@gmail.com",
    "note": "Ready to send as it is. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25"
-  },
-  {
-   "id": "ref_javanmardi",
-   "batch": 1,
-   "country": "Iran",
-   "who": "Referee request, Dr. Masoud Javanmardi",
-   "where": "Islamic Azad University, Science and Research Branch, biomaterials course",
-   "why": "Optional Azad referee who taught you biomaterials. I could not find a published email for him, so type the one you have in the To box. The message is in Persian.",
-   "kind": "Email",
-   "deadline": "2026-11-27",
-   "email": "email_ref_javanmardi.txt",
-   "note": "Type his email in the To box. Ready to send as it is. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
-   "verified": "2026-11-25"
   }
  ]
 }
