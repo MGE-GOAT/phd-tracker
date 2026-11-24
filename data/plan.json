@@ -1440,7 +1440,7 @@
    "kind": "Email",
    "deadline": "2026-11-27",
    "email": "email_ref_attaran.txt",
-   "note": "Attaching your CV is optional, the email says you will send it if they need it.",
+   "note": "Ready to send as it is. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25",
    "address": "neda.attaran@srbiau.ac.ir"
   },
@@ -1450,11 +1450,11 @@
    "country": "Iran",
    "who": "Referee request, Dr. Mehran Jahed",
    "where": "Sharif University of Technology",
-   "why": "Optional second Sharif referee, Associate Professor in Electrical Engineering. His email is from the official Sharif EE faculty page. Fill the brackets with the course or project he knows you from. The message is in Persian.",
+   "why": "Optional second Sharif referee, Associate Professor in Electrical Engineering. His email is from the official Sharif EE faculty page. The message is in Persian.",
    "kind": "Email",
    "deadline": "2026-11-27",
    "email": "email_ref_jahed.txt",
-   "note": "Fill the part in square brackets before you send. Attaching your CV is optional.",
+   "note": "Ready to send as it is, you can add a course or project you shared with him. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25",
    "address": "jahed@sharif.edu"
   },
@@ -1464,11 +1464,11 @@
    "country": "Iran",
    "who": "Referee request, Dr. Bijan Vosoughi Vahdat",
    "where": "Sharif University of Technology",
-   "why": "Optional second Sharif referee, Associate Professor in Electrical Engineering. His email is from the official Sharif EE faculty page. Send to him or Dr. Jahed, you do not need both. Fill the brackets with the course or project he knows you from.",
+   "why": "Optional second Sharif referee, Associate Professor in Electrical Engineering. His email is from the official Sharif EE faculty page. Send to him or Dr. Jahed, you do not need both.",
    "kind": "Email",
    "deadline": "2026-11-27",
    "email": "email_ref_vosoughi.txt",
-   "note": "Fill the part in square brackets before you send. Attaching your CV is optional.",
+   "note": "Ready to send as it is, you can add a course or project you shared with him. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25",
    "address": "vahdat@sharif.edu"
   },
@@ -1483,7 +1483,7 @@
    "deadline": "2026-11-27",
    "email": "email_ref_hassanzadeh.txt",
    "address": "Hasanzadeh@srbiau.ac.ir",
-   "note": "The address is spelled \"Hasanzadeh\" with one s, exactly as she published it. Attaching your CV is optional, the email says you will send it if they need it.",
+   "note": "The address is spelled \"Hasanzadeh\" with one s, exactly as she published it. Ready to send as it is. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25"
   },
   {
@@ -1497,7 +1497,7 @@
    "deadline": "2026-11-27",
    "email": "email_ref_baharifar.txt",
    "address": "baharifar.h@gmail.com",
-   "note": "Fill the part in square brackets before you send. Attaching your CV is optional.",
+   "note": "Ready to send as it is. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25"
   },
   {
@@ -1510,7 +1510,7 @@
    "kind": "Email",
    "deadline": "2026-11-27",
    "email": "email_ref_javanmardi.txt",
-   "note": "Type his email in the To box before you send. Attaching your CV is optional.",
+   "note": "Type his email in the To box. Ready to send as it is. If Gmail cuts the message short, press Copy email text and paste it. Attaching your CV is optional.",
    "verified": "2026-11-25"
   }
  ]
