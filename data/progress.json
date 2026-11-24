@@ -54,7 +54,8 @@
   "jku_neuro_mail": "2026-11-23T21:32:05.801Z",
   "kth_wearable": "2026-11-24T06:55:40.456Z",
   "ref_mohammadzadeh": "2026-11-24T09:42:26.206Z",
-  "ref_attaran": "2026-11-24T09:49:56.622Z"
+  "ref_attaran": "2026-11-24T09:49:56.622Z",
+  "ref_jahed": "2026-11-24T09:59:04.538Z"
  },
  "opened": {
   "schiele": "2026-11-23T09:33:36.851Z",
@@ -110,9 +111,9 @@
   "ref_attaran": "2026-11-24T09:48:39.574Z",
   "ref_mohammadzadeh": "2026-11-24T09:41:47.464Z",
   "ref_jahed": "2026-11-24T09:56:15.444Z",
-  "ref_vosoughi": "2026-11-24T09:50:04.611Z"
+  "ref_vosoughi": "2026-11-24T09:59:05.326Z"
  },
- "updated": "2026-11-24T09:56:18.783Z",
+ "updated": "2026-11-24T09:59:08.828Z",
  "log": [
   {
    "kind": "sent",
@@ -839,6 +840,18 @@
    "id": "ref_jahed",
    "on": true,
    "at": "2026-11-24T09:56:15.444Z"
+  },
+  {
+   "kind": "sent",
+   "id": "ref_jahed",
+   "on": true,
+   "at": "2026-11-24T09:59:04.538Z"
+  },
+  {
+   "kind": "opened",
+   "id": "ref_vosoughi",
+   "on": true,
+   "at": "2026-11-24T09:59:05.326Z"
   }
  ]
 }
