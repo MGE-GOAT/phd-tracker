@@ -1390,7 +1390,8 @@
    "approved": "A",
    "verified": "2026-11-24",
    "competition": "High",
-   "note": "Already sent. It is outside your field (device physics), so do not chase it. Only watch for a reply."
+   "note": "Closed. It was outside your field (device physics), so this was expected.",
+   "reply": "Dr. van den Hurk answered \"the short answer is: no.\" No reply needed."
   }
  ]
 }
