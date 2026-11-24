@@ -1180,7 +1180,7 @@
       "fields": [
        {
         "label": "What can you contribute to the project and the research group?",
-        "value": "I bring embedded and signal processing experience. I built a real-time int8 model on a Raspberry Pi with a C++ front end, and I traced a sensor mismatch that tripled false alarms and fixed it, from 60 to 3 in a 388-hour test. I test on data the model has never seen and report where it fails, which matters for studies with human participants. I write Python, C++ and PyTorch. I have not worked with heart recordings yet and I would learn them quickly.",
+        "value": "I bring embedded and signal processing experience. I built a small real-time model for a Raspberry Pi with a C++ front end, and worked out why it behaved differently on the real device than in testing. I test on unseen data and say where a model fails. I write Python, C++ and PyTorch. My thesis led to three papers, one accepted at ICBME 2026, one submitted to IEEE Sensors Journal and one to ICEE 2027. I have not worked with heart recordings yet and would learn them quickly.",
         "max": 500,
         "rows": 6
        }
@@ -1190,23 +1190,33 @@
     "files": [
      {
       "slot": "Attach a CV (required)",
-      "file": "01_CV.pdf",
+      "file": "1_CV_Mahrad_Ghazli.pdf",
       "note": "your academic CV, with the LinkedIn link"
      },
      {
       "slot": "Attach a cover letter",
-      "file": "KTH_wearable_application_letter.pdf",
+      "file": "2_Application_letter_KTH.pdf",
       "note": "one page, or paste the text below with Enter"
      },
      {
       "slot": "Other files",
-      "file": "04_English_paper_ICBME2026.pdf",
-      "note": "the representative publication"
+      "file": "3_Paper_ICBME2026_accepted.pdf",
+      "note": "accepted paper"
      },
      {
       "slot": "Other files",
-      "file": "02_MSc_transcript_unofficial_English.pdf",
-      "note": "grades"
+      "file": "4_Paper_IEEE_Sensors_Journal_submitted.pdf",
+      "note": "submitted manuscript"
+     },
+     {
+      "slot": "Other files",
+      "file": "5_Paper_ICEE2027_submitted.pdf",
+      "note": "submitted manuscript"
+     },
+     {
+      "slot": "Other files",
+      "file": "6_MSc_transcript_English.pdf",
+      "note": "grades, unofficial"
      },
      {
       "slot": "Other files",
@@ -1214,7 +1224,7 @@
       "note": "if you have them"
      }
     ],
-    "filesNote": "On your computer the files are in Documents/phd-applications/2026-11/UPLOAD. The advert asks for certified copies of diplomas and grades. Upload what you have before the deadline, and they will ask if they need more.",
+    "filesNote": "On your computer all of these are in Downloads/KTH-upload. The advert asks for certified copies of diplomas and grades. Upload what you have before the deadline, and they will ask if they need more.",
     "letter": true
    }
   },

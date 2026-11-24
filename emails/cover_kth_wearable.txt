@@ -5,7 +5,7 @@ Dear selection committee,
 
 I am applying for the doctoral position in wearable biofeedback systems for cardiovascular health in the Intelligent Heart Technology Lab. I completed the requirements for my MSc in Biomedical Engineering, with a bioelectric specialization, at Sharif University of Technology on 23 September 2026.
 
-The advert combines biosignal processing, embedded systems and physiology, and the first two are what I have worked on. My thesis was an always-on voice assistant for older adults that runs on a small device. I designed the compact model, wrote its real-time signal processing for the device, and studied why a model that works well in testing can behave differently on the hardware it is built for. The thesis led to three papers, one accepted at ICBME 2026 and two submitted.
+The advert combines biosignal processing, embedded systems and physiology, and the first two are what I have worked on. My thesis was an always-on voice assistant for older adults that runs on a small device. I designed the compact model, wrote its real-time signal processing for the device, and studied why a model that works well in testing can behave differently on the hardware it is built for. The thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027.
 
 I have not worked with cardiovascular recordings yet. I would like to bring my experience with small devices and careful testing to your wearable work, and to learn the cardiovascular side from your group. My CV, transcript and papers are in the application.
 
