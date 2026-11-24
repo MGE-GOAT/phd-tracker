@@ -1047,7 +1047,307 @@
    "latest": "lifelong and federated learning for activity recognition, the Smart Objects for Smart Care household sensing system",
    "note": "Apply through the University of Stavanger portal, link on the EURAXESS page. Upload the full master's thesis, CV, transcripts, the 2-page motivation letter and a grade-conversion note (done, in your upload folder). The advert also says English proficiency documentation 'if required', ask rekruttering@uis.no whether your English-free MSc needs a test, and ask early. Grades must convert to B or better. Your average 16.89 out of 20 converts to a B in the UiS table for Iran, and your thesis result P_EX is a top result. All files are in Downloads/Stavanger-upload. Apply without waiting. If they ask for English proof later, deal with it then.",
    "verified": "2026-11-23",
-   "competition": "Low"
+   "competition": "Low",
+   "kit": {
+    "title": "Stavanger, Lifelong ML for Human Activity Recognition (due 15 December)",
+    "intro": "Only Education and Jobs are required, they are the ones with the red tag on the form. Everything else is optional. Fill Education first, because the form will not let you apply without it. Fields marked leave empty are fine empty.",
+    "blocks": [
+     {
+      "heading": "Personal details, what do you work with?",
+      "note": "This text goes on a public list of applicants, so it has the role only, no company name.",
+      "fields": [
+       {
+        "label": "Your current position",
+        "value": "Applied AI Scientist"
+       },
+       {
+        "label": "Notice period (in months)",
+        "value": "0",
+        "hint": "Put 1 if you would need a month to leave"
+       }
+      ]
+     },
+     {
+      "heading": "Education 1, MSc (required)",
+      "note": "Click add education, then fill this one. Leave both checkboxes unticked.",
+      "fields": [
+       {
+        "label": "Course of study",
+        "value": "Biomedical Engineering (Bioelectric)"
+       },
+       {
+        "label": "School / educational institution",
+        "value": "Sharif University of Technology"
+       },
+       {
+        "label": "ECTS credits",
+        "value": "",
+        "hint": "Leave empty, Sharif does not use ECTS"
+       },
+       {
+        "label": "Degree",
+        "value": "Master of Science (M.Sc.)"
+       },
+       {
+        "label": "Grade",
+        "value": "16.89 out of 20 (value 4, B on the UiS scale for Iran)"
+       },
+       {
+        "label": "Extended description",
+        "value": "Thesis, Design and Implementation of a Voice Assistant for Elderly Emergency Situations, supervised by Dr. Hoda Mohammadzadeh. The thesis studies robust on-device keyword spotting under microphone-induced domain shift. Coursework includes digital signal processing, neural modeling, statistical learning, convex optimization, biosystem modeling and brain-machine learning. The thesis led to three papers, one accepted at ICBME 2026, one submitted to the IEEE Sensors Journal and one submitted to ICEE 2027.",
+        "multiline": true,
+        "rows": 7,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "September 2024",
+        "hint": "Leave Is still in education unticked"
+       },
+       {
+        "label": "To month and year",
+        "value": "September 2026",
+        "hint": "Your transcript says requirements were completed on 23 September 2026"
+       }
+      ]
+     },
+     {
+      "heading": "Education 2, BSc",
+      "note": "The start and end dates come from your Azad record (Fall 2019 to Spring 2023). Your CV still says 2019 to 2022, so confirm the end year.",
+      "fields": [
+       {
+        "label": "Course of study",
+        "value": "Biomedical Engineering (Biomaterials)"
+       },
+       {
+        "label": "School / educational institution",
+        "value": "Islamic Azad University, Science and Research Branch"
+       },
+       {
+        "label": "ECTS credits",
+        "value": "",
+        "hint": "Leave empty"
+       },
+       {
+        "label": "Degree",
+        "value": "Bachelor of Science (B.Sc.)"
+       },
+       {
+        "label": "Grade",
+        "value": "16.68 out of 20 (value 4, B on the UiS scale for Iran)"
+       },
+       {
+        "label": "Extended description",
+        "value": "Bachelor's degree in biomedical engineering with a biomaterials focus. I co-authored a paper on alginate hydrogel nanohybrids as a cancer treatment, published in the Iranian Journal of Basic Medical Sciences in 2024.",
+        "multiline": true,
+        "rows": 4,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "September 2019"
+       },
+       {
+        "label": "To month and year",
+        "value": "June 2023",
+        "hint": "Confirm the end year"
+       }
+      ]
+     },
+     {
+      "heading": "Job 1, Peekage (required)",
+      "note": "Add jobs with the add button. Most recent first.",
+      "fields": [
+       {
+        "label": "Employer",
+        "value": "Peekage"
+       },
+       {
+        "label": "Stilling (position)",
+        "value": "Applied AI Scientist"
+       },
+       {
+        "label": "Job percentage",
+        "value": "60",
+        "hint": "25 hours a week is about 60 percent, change it if wrong"
+       },
+       {
+        "label": "Description",
+        "value": "Built a production multi-agent LLM data-analysis system grounded in a live PostgreSQL database. Later rebuilt its core as one tool-using agent in which code computes every figure and rejects numbers the model types itself, which cut a chart request from 12 model calls to 2. Main developer of the agent harnesses and retrieval-augmented generation systems (graph, document and survey-question) of a conversational survey design product, with deterministic and live tests. Remote role.",
+        "multiline": true,
+        "rows": 7,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "February 2026",
+        "hint": "Tick Still employed here"
+       }
+      ]
+     },
+     {
+      "heading": "Job 2, Spun Holding",
+      "note": "",
+      "fields": [
+       {
+        "label": "Employer",
+        "value": "Spun Holding"
+       },
+       {
+        "label": "Stilling (position)",
+        "value": "Full-Stack Engineer"
+       },
+       {
+        "label": "Job percentage",
+        "value": "",
+        "hint": "Leave empty or add your own figure"
+       },
+       {
+        "label": "Description",
+        "value": "Sole engineer of a custom Persian CRM built from zero, with an MCP agent harness, order bots and automations.",
+        "multiline": true,
+        "rows": 3,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "April 2026",
+        "hint": "Tick Still employed here"
+       }
+      ]
+     },
+     {
+      "heading": "Job 3, Nobin",
+      "note": "",
+      "fields": [
+       {
+        "label": "Employer",
+        "value": "Nobin"
+       },
+       {
+        "label": "Stilling (position)",
+        "value": "Embedded / ML Systems Engineer"
+       },
+       {
+        "label": "Job percentage",
+        "value": "",
+        "hint": "Leave empty or add your own figure"
+       },
+       {
+        "label": "Description",
+        "value": "Developer of the Noban device, an on-device voice and fall assistant for elderly emergency response. Designed a 75k-parameter wake-word model with depthwise separable convolutions, attention and streaming PCEN features, trained with quantization-aware training to INT8 (182 KB, about 20 ms on a Raspberry Pi 4). Characterized microphone-domain shift in deployed keyword spotting and cut false activations from 60 to 3 over a 388-hour stress test using device-domain hard negatives. Verified that training and inference features match between C++ and Python and validated the system in a five-week continuous deployment on self-collected data from 53 speakers.",
+        "multiline": true,
+        "rows": 8,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "October 2024"
+       },
+       {
+        "label": "To month and year",
+        "value": "November 2026",
+        "hint": "Tick Still employed here instead if you still work there"
+       }
+      ]
+     },
+     {
+      "heading": "Languages (optional)",
+      "note": "Pick the language, then both skill levels.",
+      "fields": [
+       {
+        "label": "Persian",
+        "value": "Written Native language, verbal Native language"
+       },
+       {
+        "label": "English",
+        "value": "Written Fluent, verbal Fluent"
+       },
+       {
+        "label": "German",
+        "value": "Written Good knowledge, verbal Good knowledge",
+        "hint": "Your CV says intermediate, working toward B1"
+       }
+      ]
+     },
+     {
+      "heading": "Links (optional)",
+      "note": "Each link has a description of up to 140 characters.",
+      "fields": [
+       {
+        "label": "Website 1",
+        "value": "https://github.com/MGE-GOAT"
+       },
+       {
+        "label": "Description 1",
+        "value": "Code for my voice assistant, TinyML keyword spotting and other projects",
+        "max": 140
+       },
+       {
+        "label": "Website 2",
+        "value": "https://mge-goat.github.io/"
+       },
+       {
+        "label": "Description 2",
+        "value": "Personal site with my thesis, papers and projects",
+        "max": 140
+       },
+       {
+        "label": "Website 3",
+        "value": "https://www.linkedin.com/in/mahrad-ghazli-679703240"
+       },
+       {
+        "label": "Description 3",
+        "value": "LinkedIn profile",
+        "max": 140
+       }
+      ]
+     },
+     {
+      "heading": "References (skip)",
+      "note": "The form needs a mobile telephone number for every reference and Stavanger does not require references. Leave this section empty.",
+      "fields": []
+     }
+    ],
+    "files": [
+     {
+      "slot": "CV",
+      "file": "1_CV.pdf",
+      "note": "the new one with ICEE marked submitted"
+     },
+     {
+      "slot": "Motivation letter",
+      "file": "2_Motivation_letter.pdf",
+      "note": "written for this position"
+     },
+     {
+      "slot": "Transcripts",
+      "file": "3_MSc_transcript.pdf",
+      "note": "unofficial English, the official one can follow"
+     },
+     {
+      "slot": "Master's thesis",
+      "file": "4_MSc_thesis.pdf",
+      "note": "Persian, 5.4 MB"
+     },
+     {
+      "slot": "Grade conversion note",
+      "file": "5_Grade_conversion_note.pdf",
+      "note": "the Stavanger table for Iran, your average is a B"
+     },
+     {
+      "slot": "Extra, if there is a box",
+      "file": "6_Paper_ICBME2026.pdf",
+      "note": "your accepted paper, English"
+     },
+     {
+      "slot": "Extra, if there is a box",
+      "file": "7_BSc_transcript_unofficial_optional.pdf",
+      "note": "only if the form has a slot for it"
+     }
+    ],
+    "filesNote": "On your computer these are in Downloads/Stavanger-upload/activity-recognition-15Dec. If the portal says a file has active content, flatten it the way we did for Basel and tell Claude."
+   }
   },
   {
    "id": "hyttinen",
@@ -1105,7 +1405,307 @@
    "latest": "cardiac arrest physiology simulation, signal processing and statistical models of rhythm transitions",
    "note": "Same documents as the other Stavanger post. Master's grades must convert to B or better. Ask rekruttering@uis.no early whether an English proficiency document is needed. Do not apply to both on the same day without a different letter, the two letters are already different. Your average 16.89 out of 20 converts to a B in the UiS table for Iran, and your thesis result P_EX is a top result. All files are in Downloads/Stavanger-upload. Apply without waiting. If they ask for English proof later, deal with it then.",
    "verified": "2026-11-23",
-   "competition": "Low"
+   "competition": "Low",
+   "kit": {
+    "title": "Stavanger, Signal Processing for Medical Simulation (due 11 December)",
+    "intro": "Only Education and Jobs are required, they are the ones with the red tag on the form. Everything else is optional. Fill Education first, because the form will not let you apply without it. Fields marked leave empty are fine empty.",
+    "blocks": [
+     {
+      "heading": "Personal details, what do you work with?",
+      "note": "This text goes on a public list of applicants, so it has the role only, no company name.",
+      "fields": [
+       {
+        "label": "Your current position",
+        "value": "Applied AI Scientist"
+       },
+       {
+        "label": "Notice period (in months)",
+        "value": "0",
+        "hint": "Put 1 if you would need a month to leave"
+       }
+      ]
+     },
+     {
+      "heading": "Education 1, MSc (required)",
+      "note": "Click add education, then fill this one. Leave both checkboxes unticked.",
+      "fields": [
+       {
+        "label": "Course of study",
+        "value": "Biomedical Engineering (Bioelectric)"
+       },
+       {
+        "label": "School / educational institution",
+        "value": "Sharif University of Technology"
+       },
+       {
+        "label": "ECTS credits",
+        "value": "",
+        "hint": "Leave empty, Sharif does not use ECTS"
+       },
+       {
+        "label": "Degree",
+        "value": "Master of Science (M.Sc.)"
+       },
+       {
+        "label": "Grade",
+        "value": "16.89 out of 20 (value 4, B on the UiS scale for Iran)"
+       },
+       {
+        "label": "Extended description",
+        "value": "Thesis, Design and Implementation of a Voice Assistant for Elderly Emergency Situations, supervised by Dr. Hoda Mohammadzadeh. The thesis studies robust on-device keyword spotting under microphone-induced domain shift. Coursework includes digital signal processing, neural modeling, statistical learning, convex optimization, biosystem modeling and brain-machine learning. The thesis led to three papers, one accepted at ICBME 2026, one submitted to the IEEE Sensors Journal and one submitted to ICEE 2027.",
+        "multiline": true,
+        "rows": 7,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "September 2024",
+        "hint": "Leave Is still in education unticked"
+       },
+       {
+        "label": "To month and year",
+        "value": "September 2026",
+        "hint": "Your transcript says requirements were completed on 23 September 2026"
+       }
+      ]
+     },
+     {
+      "heading": "Education 2, BSc",
+      "note": "The start and end dates come from your Azad record (Fall 2019 to Spring 2023). Your CV still says 2019 to 2022, so confirm the end year.",
+      "fields": [
+       {
+        "label": "Course of study",
+        "value": "Biomedical Engineering (Biomaterials)"
+       },
+       {
+        "label": "School / educational institution",
+        "value": "Islamic Azad University, Science and Research Branch"
+       },
+       {
+        "label": "ECTS credits",
+        "value": "",
+        "hint": "Leave empty"
+       },
+       {
+        "label": "Degree",
+        "value": "Bachelor of Science (B.Sc.)"
+       },
+       {
+        "label": "Grade",
+        "value": "16.68 out of 20 (value 4, B on the UiS scale for Iran)"
+       },
+       {
+        "label": "Extended description",
+        "value": "Bachelor's degree in biomedical engineering with a biomaterials focus. I co-authored a paper on alginate hydrogel nanohybrids as a cancer treatment, published in the Iranian Journal of Basic Medical Sciences in 2024.",
+        "multiline": true,
+        "rows": 4,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "September 2019"
+       },
+       {
+        "label": "To month and year",
+        "value": "June 2023",
+        "hint": "Confirm the end year"
+       }
+      ]
+     },
+     {
+      "heading": "Job 1, Peekage (required)",
+      "note": "Add jobs with the add button. Most recent first.",
+      "fields": [
+       {
+        "label": "Employer",
+        "value": "Peekage"
+       },
+       {
+        "label": "Stilling (position)",
+        "value": "Applied AI Scientist"
+       },
+       {
+        "label": "Job percentage",
+        "value": "60",
+        "hint": "25 hours a week is about 60 percent, change it if wrong"
+       },
+       {
+        "label": "Description",
+        "value": "Built a production multi-agent LLM data-analysis system grounded in a live PostgreSQL database. Later rebuilt its core as one tool-using agent in which code computes every figure and rejects numbers the model types itself, which cut a chart request from 12 model calls to 2. Main developer of the agent harnesses and retrieval-augmented generation systems (graph, document and survey-question) of a conversational survey design product, with deterministic and live tests. Remote role.",
+        "multiline": true,
+        "rows": 7,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "February 2026",
+        "hint": "Tick Still employed here"
+       }
+      ]
+     },
+     {
+      "heading": "Job 2, Spun Holding",
+      "note": "",
+      "fields": [
+       {
+        "label": "Employer",
+        "value": "Spun Holding"
+       },
+       {
+        "label": "Stilling (position)",
+        "value": "Full-Stack Engineer"
+       },
+       {
+        "label": "Job percentage",
+        "value": "",
+        "hint": "Leave empty or add your own figure"
+       },
+       {
+        "label": "Description",
+        "value": "Sole engineer of a custom Persian CRM built from zero, with an MCP agent harness, order bots and automations.",
+        "multiline": true,
+        "rows": 3,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "April 2026",
+        "hint": "Tick Still employed here"
+       }
+      ]
+     },
+     {
+      "heading": "Job 3, Nobin",
+      "note": "",
+      "fields": [
+       {
+        "label": "Employer",
+        "value": "Nobin"
+       },
+       {
+        "label": "Stilling (position)",
+        "value": "Embedded / ML Systems Engineer"
+       },
+       {
+        "label": "Job percentage",
+        "value": "",
+        "hint": "Leave empty or add your own figure"
+       },
+       {
+        "label": "Description",
+        "value": "Developer of the Noban device, an on-device voice and fall assistant for elderly emergency response. Designed a 75k-parameter wake-word model with depthwise separable convolutions, attention and streaming PCEN features, trained with quantization-aware training to INT8 (182 KB, about 20 ms on a Raspberry Pi 4). Characterized microphone-domain shift in deployed keyword spotting and cut false activations from 60 to 3 over a 388-hour stress test using device-domain hard negatives. Verified that training and inference features match between C++ and Python and validated the system in a five-week continuous deployment on self-collected data from 53 speakers.",
+        "multiline": true,
+        "rows": 8,
+        "max": 2000
+       },
+       {
+        "label": "From month and year",
+        "value": "October 2024"
+       },
+       {
+        "label": "To month and year",
+        "value": "November 2026",
+        "hint": "Tick Still employed here instead if you still work there"
+       }
+      ]
+     },
+     {
+      "heading": "Languages (optional)",
+      "note": "Pick the language, then both skill levels.",
+      "fields": [
+       {
+        "label": "Persian",
+        "value": "Written Native language, verbal Native language"
+       },
+       {
+        "label": "English",
+        "value": "Written Fluent, verbal Fluent"
+       },
+       {
+        "label": "German",
+        "value": "Written Good knowledge, verbal Good knowledge",
+        "hint": "Your CV says intermediate, working toward B1"
+       }
+      ]
+     },
+     {
+      "heading": "Links (optional)",
+      "note": "Each link has a description of up to 140 characters.",
+      "fields": [
+       {
+        "label": "Website 1",
+        "value": "https://github.com/MGE-GOAT"
+       },
+       {
+        "label": "Description 1",
+        "value": "Code for my voice assistant, TinyML keyword spotting and other projects",
+        "max": 140
+       },
+       {
+        "label": "Website 2",
+        "value": "https://mge-goat.github.io/"
+       },
+       {
+        "label": "Description 2",
+        "value": "Personal site with my thesis, papers and projects",
+        "max": 140
+       },
+       {
+        "label": "Website 3",
+        "value": "https://www.linkedin.com/in/mahrad-ghazli-679703240"
+       },
+       {
+        "label": "Description 3",
+        "value": "LinkedIn profile",
+        "max": 140
+       }
+      ]
+     },
+     {
+      "heading": "References (skip)",
+      "note": "The form needs a mobile telephone number for every reference and Stavanger does not require references. Leave this section empty.",
+      "fields": []
+     }
+    ],
+    "files": [
+     {
+      "slot": "CV",
+      "file": "1_CV.pdf",
+      "note": "the new one with ICEE marked submitted"
+     },
+     {
+      "slot": "Motivation letter",
+      "file": "2_Motivation_letter.pdf",
+      "note": "written for this position"
+     },
+     {
+      "slot": "Transcripts",
+      "file": "3_MSc_transcript.pdf",
+      "note": "unofficial English, the official one can follow"
+     },
+     {
+      "slot": "Master's thesis",
+      "file": "4_MSc_thesis.pdf",
+      "note": "Persian, 5.4 MB"
+     },
+     {
+      "slot": "Grade conversion note",
+      "file": "5_Grade_conversion_note.pdf",
+      "note": "the Stavanger table for Iran, your average is a B"
+     },
+     {
+      "slot": "Extra, if there is a box",
+      "file": "6_Paper_ICBME2026.pdf",
+      "note": "your accepted paper, English"
+     },
+     {
+      "slot": "Extra, if there is a box",
+      "file": "7_BSc_transcript_unofficial_optional.pdf",
+      "note": "only if the form has a slot for it"
+     }
+    ],
+    "filesNote": "On your computer these are in Downloads/Stavanger-upload/medical-simulation-11Dec. If the portal says a file has active content, flatten it the way we did for Basel and tell Claude."
+   }
   },
   {
    "id": "kth_wearable",
