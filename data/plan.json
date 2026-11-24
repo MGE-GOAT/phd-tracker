@@ -1249,33 +1249,32 @@
    "competition": "Medium",
    "kit": {
     "title": "Basel, Machine Learning for Preterm Lung Health",
-    "intro": "Deadline 28 November. Apply through the University of Basel portal. Basel asks for five things, and two of them still need you, the bachelor transcript and the references.",
+    "intro": "Deadline 28 November. The Basel form is short, it has two upload boxes and a personal details section. Date of birth, email password and the privacy tick are for you to enter.",
     "blocks": [
      {
-      "heading": "Contact fields, if the form asks",
-      "note": "Type these into the form, top to bottom. Each box has a Copy button.",
+      "heading": "Form fields, top to bottom",
+      "note": "Email and password are yours to type. Use the email you want Basel to answer, and write the password down. Date of birth is not stored here, type it as MM/DD/YYYY.",
       "fields": [
        {
         "label": "First name",
         "value": "Mahrad"
        },
        {
-        "label": "Surname",
+        "label": "Last name",
         "value": "Ghazli"
        },
        {
-        "label": "Address",
-        "hint": "One line",
-        "value": "Flat 16, Block 9, 10th West Street, Mehrabi, North Sazeman Barname, Ayatollah Kashani"
+        "label": "Title",
+        "value": "Mr.",
+        "hint": "Pick it from the list"
        },
        {
-        "label": "C/O",
-        "value": "",
-        "hint": "Leave blank"
+        "label": "Address",
+        "value": "Flat 16, Block 9, 10th West Street, Mehrabi, North Sazeman Barname, Ayatollah Kashani",
+        "hint": "One line"
        },
        {
         "label": "Postal code",
-        "hint": "Ten digits",
         "value": "1483993969"
        },
        {
@@ -1283,13 +1282,14 @@
         "value": "Tehran"
        },
        {
-        "label": "Country",
-        "value": "Iran"
+        "label": "Earliest start date",
+        "value": "As soon as possible after visa approval",
+        "hint": "A free text box"
        },
        {
-        "label": "Mobile",
-        "hint": "No leading zero. Keep IR (+98) selected in the form.",
-        "value": "9101611521"
+        "label": "Country or region of residence",
+        "value": "Iran",
+        "hint": "Pick it from the list"
        }
       ]
      },
@@ -1313,7 +1313,7 @@
      },
      {
       "heading": "References, 2 to 3 contacts",
-      "note": "Ask each person first and wait for a yes before you list them. Basel only wants their contact details now, not letters.",
+      "note": "Ask each person first and wait for a yes before you list them. Basel only wants contact details.",
       "fields": [
        {
         "label": "Referee 1, your thesis advisor",
@@ -1327,34 +1327,31 @@
         "value": "",
         "multiline": true,
         "rows": 3,
-        "hint": "Someone who has seen your work, for example a professor or your manager at Peekage. Type their name, role, organisation and email here."
+        "hint": "Name, role, organisation and email"
+       },
+       {
+        "label": "Referee 3, optional",
+        "value": "",
+        "multiline": true,
+        "rows": 3,
+        "hint": "Name, role, organisation and email"
        }
       ]
      }
     ],
     "files": [
      {
-      "slot": "CV",
+      "slot": "Resume",
       "file": "1_CV_Mahrad_Ghazli.pdf",
       "note": "your academic CV"
      },
      {
-      "slot": "Cover letter (1 page)",
-      "file": "2_Cover_letter_Basel.pdf",
-      "note": "one page, or paste the text below"
-     },
-     {
-      "slot": "MSc transcript",
-      "file": "3_MSc_transcript_English.pdf",
-      "note": "unofficial, in English"
-     },
-     {
-      "slot": "BSc transcript",
-      "file": "you do not have this yet",
-      "note": "Azad SRB. Upload it as soon as you get it, or ask Basel whether to send it later"
+      "slot": "Cover letter, letter of recommendation and degree certificates in a single file",
+      "file": "2_Cover_letter_and_transcripts_SINGLE_FILE.pdf",
+      "note": "the cover letter and your MSc transcript in one PDF. Add the BSc transcript to it when you have it"
      }
     ],
-    "filesNote": "On your computer these are in Downloads/Basel-upload. The portal asks for both transcripts, so an application without the bachelor one may count as incomplete. Check the portal for whether it lets you submit and add it later.",
+    "filesNote": "On your computer these are in Downloads/Basel-upload. The box takes only one file, so everything goes into that one PDF. The advert also asks for 2 to 3 references. Put their name, role and email on a last page of that file, or in the form if it asks for them later.",
     "letter": true
    }
   },
