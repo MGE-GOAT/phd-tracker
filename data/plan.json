@@ -1045,7 +1045,7 @@
    "chance": 5,
    "approved": "B",
    "latest": "lifelong and federated learning for activity recognition, the Smart Objects for Smart Care household sensing system",
-   "note": "Apply through the University of Stavanger portal, link on the EURAXESS page. Upload the full master's thesis, CV, transcripts, the 2-page motivation letter and a grade-conversion note (done, in your upload folder). The advert also says English proficiency documentation 'if required', ask rekruttering@uis.no whether your English-free MSc needs a test, and ask early. Grades must convert to B or better. Your average 16.89 out of 20 converts to a B in the UiS table for Iran, and your thesis result P_EX is a top result. Send the email to rekruttering@uis.no first (card above), then submit.",
+   "note": "Apply through the University of Stavanger portal, link on the EURAXESS page. Upload the full master's thesis, CV, transcripts, the 2-page motivation letter and a grade-conversion note (done, in your upload folder). The advert also says English proficiency documentation 'if required', ask rekruttering@uis.no whether your English-free MSc needs a test, and ask early. Grades must convert to B or better. Your average 16.89 out of 20 converts to a B in the UiS table for Iran, and your thesis result P_EX is a top result. All files are in Downloads/Stavanger-upload. Apply without waiting. If they ask for English proof later, deal with it then.",
    "verified": "2026-11-23",
    "competition": "Low"
   },
@@ -1088,25 +1088,6 @@
    "competition": "Medium"
   },
   {
-   "id": "uis_questions",
-   "batch": 1,
-   "country": "Norway",
-   "who": "University of Stavanger recruitment office",
-   "where": "rekruttering@uis.no, about both PhD Fellow posts",
-   "why": "Two short questions before you apply, whether an English proficiency document is needed for a Persian-language MSc and whether a Persian thesis can be uploaded.",
-   "kind": "Email",
-   "hot": true,
-   "deadline": "2026-12-04",
-   "email": "email_uis_questions.txt",
-   "address": "rekruttering@uis.no",
-   "match": 9,
-   "chance": 5,
-   "approved": "B",
-   "competition": "Low",
-   "note": "Send this first. The grade-conversion note, Stavanger_grade_conversion_note.pdf, is in your upload folder and attaches to this email.",
-   "verified": "Address taken from the Stavanger advert."
-  },
-  {
    "id": "uis_sim",
    "batch": 1,
    "country": "Norway",
@@ -1122,7 +1103,7 @@
    "chance": 6,
    "approved": "B",
    "latest": "cardiac arrest physiology simulation, signal processing and statistical models of rhythm transitions",
-   "note": "Same documents as the other Stavanger post. Master's grades must convert to B or better. Ask rekruttering@uis.no early whether an English proficiency document is needed. Do not apply to both on the same day without a different letter, the two letters are already different. Your average 16.89 out of 20 converts to a B in the UiS table for Iran, and your thesis result P_EX is a top result. Send the email to rekruttering@uis.no first (card above), then submit.",
+   "note": "Same documents as the other Stavanger post. Master's grades must convert to B or better. Ask rekruttering@uis.no early whether an English proficiency document is needed. Do not apply to both on the same day without a different letter, the two letters are already different. Your average 16.89 out of 20 converts to a B in the UiS table for Iran, and your thesis result P_EX is a top result. All files are in Downloads/Stavanger-upload. Apply without waiting. If they ask for English proof later, deal with it then.",
    "verified": "2026-11-23",
    "competition": "Low"
   },
