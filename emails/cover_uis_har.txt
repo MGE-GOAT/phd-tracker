@@ -12,9 +12,9 @@ How my qualifications match
 The most important thing I learned is that a model that scores well offline can fail on real hardware. I recorded difficult cases on the device and retrained, and I learned how to measure this kind of shift and how to design a validation that matches real use. I can ship a model in C++ and Python, and I build tool-using LLM agents as an applied AI scientist. My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027.
 
 My research ideas
-First, activity recognition fails when a sensor, a person or a home changes, so I would study how to detect that change without labels, for example when a device notices that its own confidence drops. Second, my retraining on difficult cases was done by hand. I would like to automate it, so that a system collects its own hard cases and adapts while forgetting as little as possible. Third, I would test this under federated learning, where homes share only model updates, and measure what is lost in accuracy against what is gained in privacy.
+My thesis showed me that a model that works in the lab can fail in a real home. I would like to spend the PhD on three connected questions. How can a device notice that its sensor, its user or its home has changed, without anyone labelling new data? How can it then collect its own difficult cases and adapt without forgetting what it already knows? And if many homes learn together by sharing only model updates, how much accuracy do we give up for the privacy we gain? I do not have the answers yet, but these are the questions I would like to work on.
 
-I have not yet worked on continual or federated learning in depth, and I would like to build that knowledge in your group. I attach my master's thesis, CV, transcripts and a note on how the Iranian 0 to 20 grade scale converts to the Norwegian scale.
+I have not yet worked on continual or federated learning in depth, and I would like to build that knowledge in your group. My CV, transcripts and master's thesis are in the application. Grades are on the Iranian 0 to 20 scale and I can send a conversion note if you need one.
 
 Kind regards,
 Mahrad Ghazli
