@@ -1168,8 +1168,8 @@
        },
        {
         "label": "Job percentage",
-        "value": "60",
-        "hint": "25 hours a week is about 60 percent, change it if wrong"
+        "value": "",
+        "hint": "Optional, leave empty. It means the share of a full-time contract, 100 is full time"
        },
        {
         "label": "Description",
@@ -1200,7 +1200,7 @@
        {
         "label": "Job percentage",
         "value": "",
-        "hint": "Leave empty or add your own figure"
+        "hint": "Optional, leave empty. It means the share of a full-time contract, 100 is full time"
        },
        {
         "label": "Description",
@@ -1231,7 +1231,7 @@
        {
         "label": "Job percentage",
         "value": "",
-        "hint": "Leave empty or add your own figure"
+        "hint": "Optional, leave empty. It means the share of a full-time contract, 100 is full time"
        },
        {
         "label": "Description",
@@ -1526,8 +1526,8 @@
        },
        {
         "label": "Job percentage",
-        "value": "60",
-        "hint": "25 hours a week is about 60 percent, change it if wrong"
+        "value": "",
+        "hint": "Optional, leave empty. It means the share of a full-time contract, 100 is full time"
        },
        {
         "label": "Description",
@@ -1558,7 +1558,7 @@
        {
         "label": "Job percentage",
         "value": "",
-        "hint": "Leave empty or add your own figure"
+        "hint": "Optional, leave empty. It means the share of a full-time contract, 100 is full time"
        },
        {
         "label": "Description",
@@ -1589,7 +1589,7 @@
        {
         "label": "Job percentage",
         "value": "",
-        "hint": "Leave empty or add your own figure"
+        "hint": "Optional, leave empty. It means the share of a full-time contract, 100 is full time"
        },
        {
         "label": "Description",
