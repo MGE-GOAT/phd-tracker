@@ -1124,7 +1124,7 @@
     "blocks": [
      {
       "heading": "Contact fields",
-      "note": "Your address, postal code and phone are private. Paste each one into its box once. It stays in this browser only and is never saved on the public site.",
+      "note": "Type these into the form, top to bottom. Each box has a Copy button.",
       "fields": [
        {
         "label": "First name",
@@ -1136,8 +1136,8 @@
        },
        {
         "label": "Address",
-        "private": true,
-        "hint": "Street address, one line"
+        "hint": "One line",
+        "value": "Flat 16, Block 9, 10th West Street, Mehrabi, North Sazeman Barname, Ayatollah Kashani"
        },
        {
         "label": "C/O",
@@ -1146,8 +1146,8 @@
        },
        {
         "label": "Postal code",
-        "private": true,
-        "hint": "Ten digits"
+        "hint": "Ten digits",
+        "value": "1483993969"
        },
        {
         "label": "City",
@@ -1159,8 +1159,8 @@
        },
        {
         "label": "Mobile",
-        "private": true,
-        "hint": "No leading zero. Keep IR (+98) selected in the form."
+        "hint": "No leading zero. Keep IR (+98) selected in the form.",
+        "value": "9101611521"
        }
       ]
      },
