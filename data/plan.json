@@ -1259,7 +1259,7 @@
    "competition": "Medium",
    "kit": {
     "title": "Basel, Machine Learning for Preterm Lung Health",
-    "intro": "Deadline 28 November. The Basel form is short, it has two upload boxes and a personal details section. Date of birth, email password and the privacy tick are for you to enter. All files are ready, only the references are still open.",
+    "intro": "Deadline 28 November. The Basel form is short, it has two upload boxes and a personal details section. Date of birth, email password and the privacy tick are for you to enter. All files are ready, including the references page.",
     "blocks": [
      {
       "heading": "Form fields, top to bottom",
@@ -1371,15 +1371,15 @@
      {
       "slot": "Resume",
       "file": "1_CV_Mahrad_Ghazli.pdf",
-      "note": "your academic CV"
+      "note": "your CV. The 2-page academic CV is best for a PhD, a flattened 1-page version is in the parts folder"
      },
      {
       "slot": "Cover letter, letter of recommendation and degree certificates in a single file",
       "file": "2_Cover_letter_and_transcripts_SINGLE_FILE.pdf",
-      "note": "cover letter, MSc transcript and BSc transcript in one PDF, 5 pages. Add the references page when you have them"
+      "note": "cover letter, MSc transcript, unofficial BSc transcript and a references page (Mohammadzadeh, Vosoughi Vahdat, Attaran) in one PDF, 6 pages. Already flattened for the portal"
      }
     ],
-    "filesNote": "On your computer these are in Downloads/Basel-upload. The BSc transcript in the file is an unofficial English translation of your Azad record, and it says so on its first page. Send the official one later if Basel asks.",
+    "filesNote": "On your computer these are in Downloads/Basel-upload. The BSc transcript in the file is an unofficial English translation of your Azad record, and it says so on its first page. If a referee says no, tell Claude and the references page is rebuilt with a replacement.",
     "letter": true
    }
   },
