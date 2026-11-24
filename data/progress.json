@@ -97,9 +97,10 @@
   "hunyadi": "2026-11-23T21:31:21.146Z",
   "vullings": "2026-11-23T21:31:49.315Z",
   "jku_neuro_mail": "2026-11-23T21:31:52.236Z",
-  "innsbruck_dc10_mail": "2026-11-23T21:32:11.400Z"
+  "innsbruck_dc10_mail": "2026-11-23T21:32:11.400Z",
+  "kth_wearable": "2026-11-24T06:03:29.779Z"
  },
- "updated": "2026-11-23T21:32:14.549Z",
+ "updated": "2026-11-24T06:03:33.262Z",
  "log": [
   {
    "kind": "sent",
@@ -676,6 +677,12 @@
    "id": "innsbruck_dc10_mail",
    "on": true,
    "at": "2026-11-23T21:32:11.400Z"
+  },
+  {
+   "kind": "opened",
+   "id": "kth_wearable",
+   "on": true,
+   "at": "2026-11-24T06:03:29.779Z"
   }
  ]
 }
