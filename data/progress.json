@@ -106,9 +106,9 @@
   "uis_har": "2026-11-24T07:24:50.544Z",
   "jku_sp": "2026-11-24T07:29:29.208Z",
   "ref_attaran": "2026-11-24T08:59:55.354Z",
-  "ref_mohammadzadeh": "2026-11-24T09:34:56.568Z"
+  "ref_mohammadzadeh": "2026-11-24T09:40:39.345Z"
  },
- "updated": "2026-11-24T09:34:59.939Z",
+ "updated": "2026-11-24T09:40:42.882Z",
  "log": [
   {
    "kind": "sent",
@@ -775,6 +775,12 @@
    "id": "ref_mohammadzadeh",
    "on": true,
    "at": "2026-11-24T09:34:56.568Z"
+  },
+  {
+   "kind": "opened",
+   "id": "ref_mohammadzadeh",
+   "on": true,
+   "at": "2026-11-24T09:40:39.345Z"
   }
  ]
 }
