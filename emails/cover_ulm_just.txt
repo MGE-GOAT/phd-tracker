@@ -3,7 +3,7 @@ Subject: Cover letter, Doctoral student, Wearable Knee Orthosis for Personalized
 
 Dear Prof. Just,
 
-I am applying for the doctoral position on the wearable knee orthosis for personalized rehabilitation at the Institute of Biomedical Engineering. I am finishing my MSc in Biomedical Engineering at Sharif University of Technology. My thesis was a health device that has to work every day in people's homes, which is the problem your project describes. Most recovery after knee surgery happens at home without anyone watching, so the system has to run reliably there. Your recent work on sensorizing and motorizing a commercial knee orthosis with ROS2, and on EMG-based detection of movement effort, is the kind of system I would like to build with you.
+I am applying for the doctoral position on the wearable knee orthosis for personalized rehabilitation at the Institute of Biomedical Engineering. I completed my MSc in Biomedical Engineering at Sharif University of Technology in September 2026. My thesis was a health device that has to work every day in people's homes, which is the problem your project describes. Most recovery after knee surgery happens at home without anyone watching, so the system has to run reliably there. Your recent work on sensorizing and motorizing a commercial knee orthosis with ROS2, and on EMG-based detection of movement effort, is the kind of system I would like to build with you.
 
 For my thesis I built Noban, an always-on voice assistant for older adults who live alone, and I took it from an idea to a working device. It runs on a Raspberry Pi with a MEMS microphone, an OLED display, status LEDs and Bluetooth Low Energy pairing. The pipeline is written in C++ with TensorFlow Lite and runs as system services with automatic recovery, so it keeps working without anyone touching it. A server and a Flutter app for caregivers handle alerts, pill reminders and calls, and the device also runs a camera-based fall detector.
 
@@ -13,7 +13,7 @@ My thesis led to three papers. One is accepted at ICBME 2026, one is submitted t
 
 I care about the clinical side of this project. My device was built for older adults and their caregivers, and it taught me that a system only matters if patients and staff really use it. I would be glad to run usability and clinical studies with patients and therapists. My German is at an intermediate level, and I can reach B1 within the first year as the position asks.
 
-My CV, transcripts and code (github.com/MGE-GOAT) are attached. Thank you for considering my application.
+My CV, transcripts, a writing sample and my code (github.com/MGE-GOAT) are attached. I have requested official transcripts from both of my universities and I will send them as soon as they are issued. Thank you for considering my application.
 
 Kind regards,
 Mahrad Ghazli

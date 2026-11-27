@@ -9,7 +9,7 @@ The project needs efficient signal acquisition, preprocessing and a small model 
 
 I have not worked with spiking neural networks, FPGAs or neuromorphic hardware yet. I know signal processing, small neural networks and microcontroller-level deployment, and I want to learn spiking networks in this project.
 
-My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. German is not required for the position, and mine is intermediate. My CV, transcripts and references are in the application.
+My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. German is not required for the position, and mine is intermediate. My CV, transcripts and references are in the application, and the references are on the second page of this letter.
 
 Kind regards,
 Mahrad Ghazli

@@ -9,7 +9,7 @@ The advert asks for clean validation, noisy and incomplete data, and software th
 
 I also write production software in C++ and Python, and I work as an applied AI scientist building tool-using LLM agents. I have not yet worked with MRI, CT or EEG, and I would like to learn them with your group.
 
-My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. My German is intermediate and I am ready to reach B1. My CV, transcripts and references are in the application.
+My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. My German is intermediate and I am ready to reach B1. My CV, transcripts and references are in the application, and the references are on the second page of this letter.
 
 Kind regards,
 Mahrad Ghazli
