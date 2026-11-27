@@ -653,6 +653,26 @@
    "competition": "Low"
   },
   {
+   "id": "ulm_just_mail",
+   "batch": 1,
+   "country": "Germany",
+   "who": "Prof. Fabian Just (write first)",
+   "where": "Ulm University, Institute of Biomedical Engineering",
+   "why": "Ask whether unofficial transcripts are fine for now, since the official ones from Iran take weeks. Then apply in the portal.",
+   "kind": "Email",
+   "hot": true,
+   "deadline": "2026-12-06",
+   "page": "https://www.uni-ulm.de/in/bmt/institut/stellenangebote/wearable-knee-orthosis/",
+   "email": "email_ulm_just_mail.txt",
+   "address": "fabian.just@uni-ulm.de",
+   "match": 9,
+   "chance": 7,
+   "approved": "A",
+   "verified": "2026-11-27",
+   "competition": "Medium",
+   "note": "No attachment needed. If he does not answer in 3 or 4 days, submit anyway."
+  },
+  {
    "id": "ulm_just",
    "batch": 1,
    "country": "Germany",
@@ -673,7 +693,7 @@
    "competition": "Medium",
    "kit": {
     "title": "Ulm, Wearable Knee Orthosis",
-    "intro": "Deadline 6 December, screening is rolling so earlier is better. Apply through the REDCap portal, tick the consent box and press Begin survey. The fields only show after that, so if one is not covered here send Claude a screenshot. Send the short email to Prof. Just about the official transcripts first.",
+    "intro": "Deadline 6 December, screening is rolling so earlier is better. Apply through the REDCap portal, tick the consent box and press Begin survey. The fields only show after that, so if one is not covered here send Claude a screenshot. Send the email card to Prof. Just first, it is the card just above this one.",
     "blocks": [
      {
       "heading": "Personal details",
@@ -754,26 +774,6 @@
        {
         "label": "LinkedIn",
         "value": "https://www.linkedin.com/in/mahrad-ghazli-679703240"
-       }
-      ]
-     },
-     {
-      "heading": "Email to Prof. Just first",
-      "note": "Send from your Gmail. If he does not answer in 3 or 4 days, submit anyway, the cover letter already says the official copies will follow.",
-      "fields": [
-       {
-        "label": "To",
-        "value": "fabian.just@uni-ulm.de"
-       },
-       {
-        "label": "Subject",
-        "value": "PhD application, official transcripts in progress"
-       },
-       {
-        "label": "Body",
-        "value": "Dear Prof. Just,\n\nI am applying for the PhD position in your group. I have requested official transcripts from Sharif University of Technology (MSc) and Islamic Azad University (BSc), but issuing them in Iran can take several weeks.\n\nWould it be acceptable to submit my application now with the unofficial transcripts and my official BSc degree certificate, and send the official transcripts once they arrive?\n\nThank you for your time.\n\nBest regards,\nMahrad Ghazli",
-        "multiline": true,
-        "rows": 12
        }
       ]
      }
