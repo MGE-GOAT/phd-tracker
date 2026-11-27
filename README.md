@@ -1,6 +1,6 @@
 # PhD tracker
 
-Last updated 2026-11-24. Open `index.html` for the full view with filters.
+Last updated 2026-11-27. Open `index.html` for the full view with filters.
 
 ## Countries
 
@@ -32,7 +32,6 @@ Last updated 2026-11-24. Open `index.html` for the full view with filters.
 
 | Deadline | Fit | Status | Country | Institution | PI | Position |
 |---|---|---|---|---|---|---|
-| 2026-11-26 | 9 | new | Sweden | KTH Royal Institute of Technology | Associate Professor Seraina Dual (KTH), co-supervised with Associate Professor Eric Rullman (Karolinska Institute) | [Doctoral student in Wearable Biofeedback Systems for Cardiovascular Health](https://www.kth.se/lediga-jobb/984498?l=en) |
 | 2026-11-30 | 7 | new | Switzerland | University of Bern | Group not named in the advert | [PhD in Machine Learning in Medicine](https://jobs.unibe.ch/job-vacancies/phd-in-machine-learning-in-medicine/6a1bff95-646a-4364-bcbc-44573750bc5f) |
 | 2026-12-01 | 6 | new | Germany | Max Planck School of Biomedical AI (BMAI) | Program (choose up to 3 BMAI Fellows) | [25 PhD Positions (m/f/d), first BMAI cohort](https://biomedicalai.maxplanckschools.org/4056/application-process) |
 | 2026-12-06 | 9 | new | Germany | Ulm University | Prof. Dr. Fabian Just | [Doctoral student, Wearable Knee Orthosis for Personalized Rehabilitation](https://www.uni-ulm.de/in/bmt/institut/stellenangebote/wearable-knee-orthosis/) |
@@ -46,6 +45,7 @@ Last updated 2026-11-24. Open `index.html` for the full view with filters.
 | 2027-02-01 | 5 | new | Austria | University of Vienna | Prof. Narly Golestani | [University assistant predoctoral (Job ID 6181)](https://jobs.univie.ac.at/job/University-assistant-predoctoral/1435337633/) |
 | rolling | 9 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Dr. Michael Beigl | [Wearable Computing in Health Technologies (hardware, systems, AI) (full time, E13 payment)](https://www.teco.kit.edu/jobs/doktorand-oder-postdoc-informatik-gesundheitstechnologie-und-ki-full-time-e13-payment) |
 | rolling | 8 | new | Germany | Karlsruhe Institute of Technology (KIT) | Prof. Dr. Michael Beigl | [Toolchain for Wearable Computing and Hardware Development (full time, E13 payment)](https://www.teco.kit.edu/jobs/phd-position-toolchain-for-wearable-computing-full-time-e13-payment) |
+| 2026-11-26 | 9 | expired | Sweden | KTH Royal Institute of Technology | Associate Professor Seraina Dual (KTH), co-supervised with Associate Professor Eric Rullman (Karolinska Institute) | [Doctoral student in Wearable Biofeedback Systems for Cardiovascular Health](https://www.kth.se/lediga-jobb/984498?l=en) |
 | rolling | 10 | skip | Austria | TU Graz, Institute of Technical Informatics | Assoc. Prof. Olga Saukh | [PhD Student in Embedded Machine Learning (MSCA Doctoral Network, Embedded AI Systems and Applications)](https://tugraz.at/en/institutes/iti/jobs-training/jobs/project-assistant-m-f-x-phd-student-in-embedded-machine-learning) |
 
 ## Cold-email targets
