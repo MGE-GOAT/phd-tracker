@@ -1842,9 +1842,28 @@
    "match": 7,
    "chance": 6,
    "approved": "A",
-   "note": "The advert shows 17 May 2027 as the end date, so there is no rush. Check that the PhD is enrolled at Utrecht University.",
+   "note": "Dr. Meijborg replied and would be happy to receive your application. Apply on AcademicTransfer, the advert asks for a motivation letter and a CV with at least two references. Euraxess shows the advert as expired, but she invited you, so apply anyway.",
    "verified": "2026-11-24",
-   "competition": "Low"
+   "competition": "Low",
+   "reply": "Replied 27 Nov, invites you to apply. Uses existing electrogram methods, only part of the project. A major part is experimental, ex situ heart perfusion with human donor hearts and pig models. No cardiac experience needed, but you must be keen on the experimental work.",
+   "reply_kind": "open"
+  },
+  {
+   "id": "umcu_heart_apply",
+   "batch": 1,
+   "country": "Netherlands",
+   "who": "Dr. Veronique Meijborg",
+   "where": "University Medical Center Utrecht, Experimental Cardiology",
+   "why": "PhD on cardiac electrical signals during ex situ donor-heart perfusion, RRESHAPE-HTx. About half is experimental work in the lab with donor hearts and pig hearts, the rest is signal analysis. Cao UMC salary up to about €3,217 gross a month.",
+   "kind": "Apply online",
+   "hot": true,
+   "page": "https://www.academictransfer.com/en/jobs/365697/phd-candidate-cardiac-electrophysiology-during-ex-situ-heart-perfusion/apply/",
+   "match": 6,
+   "chance": 6,
+   "approved": "A",
+   "verified": "2026-11-28",
+   "competition": "Low",
+   "note": "She invited you to apply. Motivation letter and CV with at least two references. Ask her one question first if you want, whether the PhD is enrolled at Utrecht University, because you need doctoral enrolment for military service."
   },
   {
    "id": "rwth_eld_mail",
