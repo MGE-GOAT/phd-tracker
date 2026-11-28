@@ -672,7 +672,7 @@
    "approved": "A",
    "verified": "2026-11-27",
    "competition": "Medium",
-   "note": "No attachment needed. If he does not answer in 3 or 4 days, submit anyway."
+   "note": "No attachment needed. Sent, no answer yet. Submit the application anyway by about 2 December, the cover letter already says the official transcripts will follow."
   },
   {
    "id": "ulm_just",
@@ -1849,6 +1849,25 @@
    "reply_kind": "open"
   },
   {
+   "id": "umcu_heart_reply",
+   "batch": 1,
+   "country": "Netherlands",
+   "who": "Dr. Veronique Meijborg (reply)",
+   "where": "University Medical Center Utrecht, Experimental Cardiology",
+   "why": "Thank her, say you will apply this week, and ask whether the PhD is enrolled at Utrecht University.",
+   "kind": "Email",
+   "hot": true,
+   "page": "https://euraxess.ec.europa.eu/jobs/481383",
+   "email": "email_umcu_heart_reply.txt",
+   "address": "V.M.F.Meijborg-2@umcutrecht.nl",
+   "match": 6,
+   "chance": 6,
+   "approved": "A",
+   "verified": "2026-11-28",
+   "competition": "Low",
+   "note": "Check the sentence that says the mix of experimental work and data analysis suits you. Change it if it is not true for you."
+  },
+  {
    "id": "umcu_heart_apply",
    "batch": 1,
    "country": "Netherlands",
@@ -1863,7 +1882,92 @@
    "approved": "A",
    "verified": "2026-11-28",
    "competition": "Low",
-   "note": "She invited you to apply. Motivation letter and CV with at least two references. Ask her one question first if you want, whether the PhD is enrolled at Utrecht University, because you need doctoral enrolment for military service."
+   "note": "She invited you to apply. Motivation letter and CV with at least two references. Ask her one question first if you want, whether the PhD is enrolled at Utrecht University, because you need doctoral enrolment for military service.",
+   "kit": {
+    "title": "UMC Utrecht, Cardiac electrophysiology during ex situ heart perfusion",
+    "intro": "Send the reply email to Dr. Meijborg first, the card just above. Then apply on AcademicTransfer. I could not see its form without logging in, so only the files and references are ready here. If a field is not covered, send Claude a screenshot.",
+    "blocks": [
+     {
+      "heading": "Your details",
+      "note": "Date of birth and phone are yours to type.",
+      "fields": [
+       {
+        "label": "First name",
+        "value": "Mahrad"
+       },
+       {
+        "label": "Last name",
+        "value": "Ghazli"
+       },
+       {
+        "label": "Email",
+        "value": "mge.goat@gmail.com"
+       },
+       {
+        "label": "City",
+        "value": "Tehran"
+       },
+       {
+        "label": "Country",
+        "value": "Iran"
+       },
+       {
+        "label": "Highest degree",
+        "value": "MSc in Biomedical Engineering, Sharif University of Technology, September 2026"
+       }
+      ]
+     },
+     {
+      "heading": "References",
+      "note": "The advert asks for at least two references. The same two as for the other applications.",
+      "fields": [
+       {
+        "label": "Referee 1",
+        "value": "Dr. Hoda Mohammadzadeh, Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran. Advisor of my MSc thesis. hoda@sharif.edu",
+        "multiline": true,
+        "rows": 3
+       },
+       {
+        "label": "Referee 2",
+        "value": "Dr. Mehran Jahed, Associate Professor, Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran. I was his teaching assistant in the Biomedical Engineering Laboratory. jahed@sharif.edu",
+        "multiline": true,
+        "rows": 3
+       }
+      ]
+     },
+     {
+      "heading": "Links",
+      "fields": [
+       {
+        "label": "GitHub",
+        "value": "https://github.com/MGE-GOAT"
+       },
+       {
+        "label": "Personal site, with the thesis and papers",
+        "value": "https://mge-goat.github.io/"
+       },
+       {
+        "label": "LinkedIn",
+        "value": "https://www.linkedin.com/in/mahrad-ghazli-679703240"
+       }
+      ]
+     }
+    ],
+    "files": [
+     {
+      "slot": "Motivation letter",
+      "file": "1_Motivation_letter_with_references.pdf",
+      "note": "letter on page 1, references on page 2"
+     },
+     {
+      "slot": "CV",
+      "file": "2_CV.pdf",
+      "note": "the 2-page academic CV, it should include at least two references, they are on the letter too"
+     }
+    ],
+    "filesNote": "On your computer these are in Downloads/UMCU-upload. Check the sentence in the letter about the experimental part, change it if it is not true.",
+    "letter": true
+   }
   },
   {
    "id": "rwth_eld_mail",

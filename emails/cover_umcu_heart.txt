@@ -1,0 +1,19 @@
+To: UMC Utrecht, Dr. Veronique Meijborg
+Subject: Motivation letter, PhD candidate Cardiac electrophysiology during ex situ heart perfusion
+
+Dear Dr. Meijborg,
+
+Thank you for your reply and for the clear description of the project. I would like to apply for the PhD position on cardiac electrophysiology during ex situ heart perfusion.
+
+I completed my MSc in Biomedical Engineering at Sharif University of Technology in September 2026, with a bioelectric specialization and a GPA of 16.89 out of 20. My coursework covered biomedical signal processing. My thesis was about making a model work on noisy recordings from real hardware. I built an always-on voice assistant for older adults, compared several models fairly, and studied why a model that scores well in testing can fail on a real sensor. Checking whether a result holds on real recordings is the habit I would bring to the electrograms.
+
+I have not worked with cardiac recordings, and I have not done animal or donor-organ experiments. I would learn the cardiac side and the perfusion work in your team. I do not see the experimental part as a side task, because an analysis is only as good as the recording behind it, and I want to understand how those recordings are made.
+
+My thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. I am also a co-author of a published paper on alginate hydrogels from my bachelor's studies. I work as an applied AI scientist writing production Python, so I can build and automate the analysis pipelines the project needs.
+
+My CV is attached and my references are on the second page of this letter. Thank you for considering my application.
+
+Kind regards,
+Mahrad Ghazli
+MSc Biomedical Engineering, Sharif University of Technology
+mge.goat@gmail.com
