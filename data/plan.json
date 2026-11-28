@@ -698,6 +698,18 @@
     "intro": "Deadline 6 December, screening is rolling so earlier is better. Apply through the REDCap portal, tick the consent box and press Begin survey. The fields only show after that, so if one is not covered here send Claude a screenshot. Send the email card to Prof. Just first, it is the card just above this one.",
     "blocks": [
      {
+      "heading": "Motivation box",
+      "note": "The portal has a text box for this, not an upload. Limit 500 words, this is 455. Paste it with the paragraph breaks. Leave the Additional documents slot empty, it is for postdocs.",
+      "fields": [
+       {
+        "label": "Motivation (paste into the box)",
+        "value": "Dear Prof. Just,\n\nI am applying for the doctoral position on the wearable knee orthosis for personalized rehabilitation at the Institute of Biomedical Engineering. I completed my MSc in Biomedical Engineering at Sharif University of Technology in September 2026. My thesis was a health device that has to work every day in people's homes, which is the problem your project describes. Most recovery after knee surgery happens at home without anyone watching, so the system has to run reliably there. Your recent work on sensorizing and motorizing a commercial knee orthosis with ROS2, and on EMG-based detection of movement effort, is the kind of system I would like to build with you.\n\nFor my thesis I built Noban, an always-on voice assistant for older adults who live alone, and I took it from an idea to a working device. It runs on a Raspberry Pi with a MEMS microphone, an OLED display, status LEDs and Bluetooth Low Energy pairing. The pipeline is written in C++ with TensorFlow Lite and runs as system services with automatic recovery, so it keeps working without anyone touching it. A server and a Flutter app for caregivers handle alerts, pill reminders and calls, and the device also runs a camera-based fall detector.\n\nThe most useful lesson came from real use. A model that looked good offline behaved differently on the device's own sensor, so I recorded data on the device and retrained. I expect the same gap between lab data and daily life in movement data from an orthosis, and I know how to measure it and close it.\n\nMy thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. I also work as an embedded and ML systems engineer, writing firmware and Linux services in C and C++, and I am at home with hands-on electronics. My strongest side is software and signal processing, and I would bring that to the orthosis while I learn the PCB design your compact sensor electronics need.\n\nI care about the clinical side of this project. My device was built for older adults and their caregivers, and it taught me that a system only matters if patients and staff really use it. I would be glad to run usability and clinical studies with patients and therapists. My German is at an intermediate level, and I can reach B1 within the first year as the position asks.\n\nMy CV, transcripts, a writing sample and my code (github.com/MGE-GOAT) are attached. I have requested official transcripts from both of my universities and I will send them as soon as they are issued. Thank you for considering my application.\n\nKind regards,\nMahrad Ghazli",
+        "multiline": true,
+        "rows": 16
+       }
+      ]
+     },
+     {
       "heading": "Personal details",
       "note": "Date of birth and phone are yours to type.",
       "fields": [
