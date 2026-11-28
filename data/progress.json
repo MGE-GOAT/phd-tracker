@@ -59,7 +59,8 @@
   "ref_vosoughi": "2026-11-24T10:00:09.307Z",
   "ref_hassanzadeh": "2026-11-24T10:00:29.989Z",
   "ref_baharifar": "2026-11-24T10:05:05.610Z",
-  "basel_ml": "2026-11-24T11:03:40.000Z"
+  "basel_ml": "2026-11-24T11:03:40.000Z",
+  "ulm_just_mail": "2026-11-28T07:08:50.617Z"
  },
  "opened": {
   "schiele": "2026-11-23T09:33:36.851Z",
@@ -121,7 +122,7 @@
   "ref_baharifar": "2026-11-24T10:04:06.688Z",
   "jku_neuro": "2026-11-27T06:32:06.124Z"
  },
- "updated": "2026-11-27T06:33:02.732Z",
+ "updated": "2026-11-28T07:08:54.051Z",
  "log": [
   {
    "kind": "sent",
@@ -962,6 +963,24 @@
    "id": "ulm_just",
    "on": true,
    "at": "2026-11-27T06:32:59.207Z"
+  },
+  {
+   "kind": "sent",
+   "id": "ulm_just_mail",
+   "on": true,
+   "at": "2026-11-28T07:08:49.443Z"
+  },
+  {
+   "kind": "sent",
+   "id": "ulm_just_mail",
+   "on": false,
+   "at": "2026-11-28T07:08:50.220Z"
+  },
+  {
+   "kind": "sent",
+   "id": "ulm_just_mail",
+   "on": true,
+   "at": "2026-11-28T07:08:50.617Z"
   }
  ]
 }
