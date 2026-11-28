@@ -1923,7 +1923,7 @@
    "country": "Netherlands",
    "who": "Dr. Veronique Meijborg",
    "where": "University Medical Center Utrecht, Experimental Cardiology",
-   "why": "PhD on cardiac electrical signals during ex situ donor-heart perfusion, RRESHAPE-HTx. About half is experimental work in the lab with donor hearts and pig hearts, the rest is signal analysis. Cao UMC salary up to about €3,217 gross a month.",
+   "why": "PhD on cardiac electrical signals during ex situ donor-heart perfusion, RRESHAPE-HTx. About half is experimental work in the lab with donor hearts and pig hearts, the rest is signal analysis. Cao UMC salary €3,217 to €4,077 gross a month for 36 hours.",
    "kind": "Apply online",
    "hot": true,
    "page": "https://www.academictransfer.com/en/jobs/365697/phd-candidate-cardiac-electrophysiology-during-ex-situ-heart-perfusion/apply/",
@@ -1932,7 +1932,7 @@
    "approved": "A",
    "verified": "2026-11-28",
    "competition": "Low",
-   "note": "She invited you to apply. Motivation letter and CV with at least two references. Ask her one question first if you want, whether the PhD is enrolled at Utrecht University, because you need doctoral enrolment for military service.",
+   "note": "She invited you to apply. Motivation letter and CV with at least two references. The listing shows 17 May 2027, but the advert also says it closes as soon as the right candidate is found, so apply within a week or two. Send her the reply email first, it asks whether the PhD is enrolled at Utrecht University.",
    "kit": {
     "title": "UMC Utrecht, Cardiac electrophysiology during ex situ heart perfusion",
     "intro": "Send the reply email to Dr. Meijborg first, the card just above. Then apply on AcademicTransfer. I could not see its form without logging in, so only the files and references are ready here. If a field is not covered, send Claude a screenshot.",
@@ -2017,7 +2017,8 @@
     ],
     "filesNote": "On your computer these are in Downloads/UMCU-upload. Check the sentence in the letter about the experimental part, change it if it is not true.",
     "letter": true
-   }
+   },
+   "deadline": "2027-05-17"
   },
   {
    "id": "rwth_eld_mail",
