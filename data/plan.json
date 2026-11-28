@@ -758,7 +758,7 @@
      },
      {
       "heading": "Referee form fields",
-      "note": "The Ulm form has four boxes per referee. Reference letter is optional, leave it empty. Mohammadzadeh's rank is not written down here, add it to Function if you know it.",
+      "note": "The Ulm form has four boxes per referee. Reference letter is optional, leave it empty. Ranks are from the Sharif EE faculty page, both Associate Professor. Her own page spells her name Mohammadzade, without the h.",
       "fields": [
        {
         "label": "First referee, Name",
@@ -770,7 +770,7 @@
        },
        {
         "label": "First referee, Function",
-        "value": "Advisor of my MSc thesis"
+        "value": "Associate Professor, advisor of my MSc thesis"
        },
        {
         "label": "First referee, University",
@@ -800,7 +800,7 @@
       "fields": [
        {
         "label": "Referee 1",
-        "value": "Dr. Hoda Mohammadzadeh, Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran. Advisor of my MSc thesis. hoda@sharif.edu",
+        "value": "Dr. Hoda Mohammadzadeh, Associate Professor, Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran. Advisor of my MSc thesis. hoda@sharif.edu",
         "multiline": true,
         "rows": 3
        },
