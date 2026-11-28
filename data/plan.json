@@ -688,7 +688,7 @@
    "email": "cover_ulm_just.txt",
    "match": 9,
    "chance": 7,
-   "note": "Apply through the REDCap portal (link on the advert), not by email. Cover letter max 2 pages. German B1 is expected within the first year. Official transcripts are pending, ask Prof. Just first, then submit with the unofficial ones.",
+   "note": "Apply through the REDCap portal (link on the advert), not by email. Motivation letter in a text box, max 500 words. German B1 is expected within the first year. Official transcripts are pending, ask Prof. Just first, then submit with the unofficial ones.",
    "approved": "A",
    "latest": "sensorised and motorised knee orthosis with ROS2, EMG movement-effort detection",
    "verified": "2026-11-23",
@@ -699,11 +699,11 @@
     "blocks": [
      {
       "heading": "Motivation box",
-      "note": "The portal has a text box for this, not an upload. Limit 500 words, this is 430. Paste it with the paragraph breaks. Leave the Additional documents slot empty, it is for postdocs.",
+      "note": "The portal has a text box for the motivation letter, not an upload. Limit 500 words, this is 457. Paste it with the paragraph breaks. Leave the Additional documents slot empty, it is for postdocs.",
       "fields": [
        {
         "label": "Motivation (paste into the box)",
-        "value": "Dear Prof. Just,\n\nI am applying for the doctoral position on the wearable knee orthosis at the Institute of Biomedical Engineering. I completed my MSc in Biomedical Engineering at Sharif University of Technology in September 2026. Most recovery after knee surgery happens at home without anyone watching, and your project aims to build a device that works there. That is the problem I worked on in my thesis, in a different setting.\n\nFor my thesis I built Noban, an always-on voice assistant for older adults who live alone. It runs on a Raspberry Pi with a MEMS microphone, a small display and status LEDs. I built the device software in C++ with TensorFlow Lite and ran it as Linux services that restart on their own. A server and a Flutter app for caregivers handle alerts, pill reminders and calls. I tested the device in continuous use for five weeks, not only on a dataset.\n\nThe main thing I learned is that a model that looks good offline can behave differently on the sensor it really runs on. My thesis measured that gap for microphones, and retraining on data recorded on the device cut its false activations from 60 to 3 in a long stress test. I have not done this with movement or EMG data. I think the same way of working carries over, but I would have to show it, and I would start by checking it on your own recordings.\n\nI should say clearly what I do not know yet. I have not worked with ROS2, EMG or motion sensors, motor control or gait data. I have not designed a PCB or written firmware for a microcontroller. I have not run a study with patients. My experience is in signal processing, machine learning and building a complete device in software on a Raspberry Pi. I would learn the rest in your group, starting with the electronics and the ROS2 system of the orthosis.\n\nMy thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. I also work as an applied AI scientist writing production Python.\n\nMy German is at an intermediate level and I am working toward B1, which I plan to reach within the first year as the position asks. My CV, transcripts, a writing sample and my code (github.com/MGE-GOAT) are attached. I have requested official transcripts from both of my universities and I will send them as soon as they are issued. Thank you for considering my application.\n\nKind regards,\nMahrad Ghazli",
+        "value": "Dear Prof. Just,\n\nI am applying for the doctoral position on the wearable knee orthosis at the Institute of Biomedical Engineering. I completed my MSc in Biomedical Engineering at Sharif University of Technology in September 2026. Most recovery after knee surgery happens at home without anyone watching, and your project aims to build a device that works there. That is the problem I worked on in my thesis, in a different setting.\n\nFor my thesis I built Noban, an always-on voice assistant for older adults who live alone. It runs on a Raspberry Pi with a MEMS microphone, a small display and status LEDs. I built the device software in C++ with TensorFlow Lite and ran it as Linux services that restart on their own. A server and a Flutter app for caregivers handle alerts, pill reminders and calls. I tested the device in continuous use for five weeks, not only on a dataset.\n\nI should say clearly what I do not know yet. I have not worked with ROS2, EMG or motion sensors, motor control or gait data. I have not designed a PCB or written firmware for a microcontroller. I have not run a study with patients. My experience is in signal processing, machine learning and building a complete device in software on a Raspberry Pi.\n\nI am motivated to close these gaps, and I learn fast by building. Noban started as an idea, and I taught myself the parts I did not know, from the C++ audio pipeline to the server, the mobile app and the calls between the device and the phone. I keep several open-source projects with tests on GitHub, and at work I learned to build tool-using LLM agents within a few months. I love learning how things work by building them, and I want to go deeper into embedded systems and hardware design. A project that joins sensors, electronics, a motor and clinical use is the best place I can think of to do that. I would start with the electronics and the ROS2 system of the orthosis, and I would ask for help early.\n\nMy thesis led to three papers. One is accepted at ICBME 2026, one is submitted to the IEEE Sensors Journal and one to ICEE 2027. I also work as an applied AI scientist writing production Python.\n\nMy German is at an intermediate level and I am working toward B1, which I plan to reach within the first year as the position asks. My CV, transcripts, a writing sample and my code (github.com/MGE-GOAT) are attached. I have requested official transcripts from both of my universities and I will send them as soon as they are issued. Thank you for considering my application.\n\nKind regards,\nMahrad Ghazli",
         "multiline": true,
         "rows": 16
        }
@@ -794,9 +794,9 @@
     ],
     "files": [
      {
-      "slot": "Cover letter",
-      "file": "1_Cover_letter.pdf",
-      "note": "1 page, the limit is 2"
+      "slot": "Motivation letter, only if a slot asks for a file",
+      "file": "1_Motivation_letter.pdf",
+      "note": "1 page, same text as the box"
      },
      {
       "slot": "CV",
